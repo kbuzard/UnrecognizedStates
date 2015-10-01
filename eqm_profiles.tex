@@ -67,8 +67,25 @@ For Markov-perfect equilibrium, strategy profile must be dependent on state vari
 Period 1
 \begin{itemize}
 	\item Patron: $R_{p1} = \frac{\beta}{1-\de} - \left(q_{s1} - l_{s1}\right)$ to augment $q_{s1}$ if this is greater than 0. Else, $R_{p1} = 0$. Can write in max language.
-	\item International community: If $R_{p1} + q_{s1} - l_{s1} \geq \frac{\beta}{1-\de}$, $R_{c1} =0$. Otherwise $R_{c1} = l_{s1} - \left(q_{s1} + R_{p1} \right)$ to augment $l_{s1}$.
-	\item Gov't / Secessionists: Choose unilateral, simultaneous best responses depending on magnitudes of $Q_{i1}$, $L_{i1}$ and $\omega{i1}$
+		\begin{itemize}
+			\item Patron might also want to invest to encourage recognition. Most efficient way to do this is to augment $L_{g1}$ (other options are to push either $g$ or $s$ to war, but probability of other outcome diminishes efficiency of investment, and assume payoff to war is lower to begin with).
+		\end{itemize}
+	
+	\item International community: 
+		\begin{enumerate}
+			\item If $R_{p1} + q_{s1} - l_{s1} \geq \frac{\beta}{1-\de}$, $R_{c1} =0$
+			\item Otherwise $R_{c1} = l_{s1} - \left(q_{s1} + R_{p1} \right) + \ve$ to augment $l_{s1}$
+				\begin{itemize}
+					\item (SQ,Cede) is played and game ends
+				\end{itemize}
+			
+		\end{enumerate}
+	
+	\item Gov't / Secessionists: Choose unilateral, simultaneous best responses depending on magnitudes of $Q_{i1}$, $L_{i1}$ and $\omega_{i1}$
+		\begin{itemize}
+			\item Game only continues if (SQ,SQ) or (Cede, Cede) was played
+		\end{itemize}
+	
 \end{itemize}
 
 \end{document}
