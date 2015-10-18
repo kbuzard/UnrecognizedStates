@@ -106,7 +106,7 @@ Period 1
 		\begin{itemize}
 			\item Equivalent to $q_{s1} + R_{p1} \geq l_{s1} + R_{c1}$ / $Q_{s0} + \mu + R_{p1} \geq L_{s0} + R_{c1}$ / $R_{p1} \geq R_{c1} - \left( Q_{s0} - \mu - L_{s0}\right)$
 				\begin{itemize}
-					\item Equivalent to $R_{c1} \leq \frac{\beta}{1-\de} \Rightarrow$ $R_{p1} \geq \frac{\beta}{1-\de} - \left( Q_{s0} - \mu - L_{s0}\right)$ allows the patron to ensure the original inequality
+					\item $R_{c1} \leq \frac{\beta}{1-\de} \Rightarrow$ $R_{p1} \geq \frac{\beta}{1-\de} - \left( Q_{s0} - \mu - L_{s0}\right)$ allows the patron to ensure the original inequality
 					\item Initial assumption means $R_{p1} \geq \frac{\beta}{1-\de} + \mu$ is a tighter condition
 					\item Since patron is willing to pay up to $R_{p1} = \frac{\alpha}{1-\de}$, when $\frac{\alpha}{1-\de} \geq \frac{\beta}{1-\de} + \mu$, it will invest $R_{p1} = \frac{\beta}{1-\de} - \left( Q_{s0} - \mu - L_{s0}\right)$ to augment $q_{s1}$ if this is greater than 0. Else, $R_{p1} = 0$. 
 					  \begin{enumerate}
@@ -118,7 +118,15 @@ Period 1
 						\end{enumerate}
 				\end{itemize}
 		\end{itemize}	
-	\item Patron might also want to invest to encourage recognition directly. How much to augment $l_{g1}$?	
+	\item Patron would like $L_{g1} > Q_{g1}$ to achieve recognition directly. Must invest to augment $l_{g1}$
+		\begin{itemize}
+			\item Equivalent to $l_{g1} + R_{p1} > q_{g1} + R_{c1}$ / $L_{g0} + R_{p1} > Q_{g0} + R_{c1}$ / $R_{p1} > R_{c1} + \left( Q_{g0} - L_{g0}\right)$
+				\begin{itemize}
+					\item $R_{c1} \leq \frac{\nu}{1-\de} \Rightarrow$ $R_{p1} > \frac{\nu}{1-\de} + \left( Q_{g0} - L_{g0}\right)$ allows the patron to ensure the original inequality
+					\item Since patron is willing to pay up to $R_{p1} = \frac{\lambda +\mu + \beta}{1-\de}$, when $\frac{\lambda +\mu + \beta}{1-\de} \leq \frac{\nu}{1-\de}$, patron will invest 0 in $l_{g1}$. $R_{c1} = 0$ as well.
+					\item If instead assumption 4 did not hold and $R_{p1} > \frac{\nu}{1-\de} + \left( Q_{g0} - L_{g0}\right)$, it will invest this amount to augment $l_{g1}$. Again, $R_{c1} = 0$. (Cede, SQ) is played and game ends.
+				\end{itemize}
+		\end{itemize}
 	\item Patron might also want to instigate fighting. If $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de}$ is positive, invest in $w_{s1}$ to change $\omega_{s1}$. Will not invest in $w_{s1}$ when the quantity is non-positive.
 		\begin{itemize}
 			\item $c$ will counter up to $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}$
