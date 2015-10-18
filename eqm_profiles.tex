@@ -127,9 +127,13 @@ Period 1
 					\item If instead assumption 4 did not hold and $R_{p1} > \frac{\nu}{1-\de} + \left( Q_{g0} - L_{g0}\right)$, it will invest this amount to augment $l_{g1}$. Again, $R_{c1} = 0$. (Cede, SQ) is played and game ends.
 				\end{itemize}
 		\end{itemize}
-	\item Patron might also want to instigate fighting. If $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de}$ is positive, invest in $w_{s1}$ to change $\omega_{s1}$. Will not invest in $w_{s1}$ when the quantity is non-positive.
+	\item Patron might want to instigate fighting to have a $p_{1s}$ probability of achieving recognition indirectly. If $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de}$ is positive, invest in $w_{s1}$ to change $\omega_{s1}$. Will not invest when the quantity is non-positive. Inequality is $\omega_{s1} > Q_{s1}$
 		\begin{itemize}
-			\item $c$ will counter up to $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}$
+			\item $\omega_{s1} = -\zeta_{s}(1-\de) + W_{s1}p_{1s} + L_{s1}(1-p_{1s}) > Q_{s1}$
+			\item $-\zeta_{s}(1-\de) + (W_{s0}+R_{p1})p_{1s} + L_{s0}(1-p_{1s}) > Q_{s0} - \mu + R_{c1}$
+			\item $R_{p1}p_{1s} > R_{c1} - \mu + Q_{s0} - \left(-\zeta_{s}(1-\de) + W_{s0}p_{1s} + L_{s0}(1-p_{1s})\right)$
+			\item $R_{c1} \leq \frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}$, so if $R_{p1}p_{1s} > \frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_{s0} - \left(-\zeta_{s}(1-\de) + W_{s0}p_{1s} + L_{s0}(1-p_{1s})\right)$, $R_{c1}=0$ and (SQ,Fight) is played in third stage. Outcome depends on war lottery.
+			\item Patron will spend at most $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) +\mu + \beta}{1 -\de}$
 		\end{itemize}
 	\item Patron could also invest in $q_g$ to counter investment by $c$ in government's payoffs. But this would only been needed if $c$ had incentive to invest in $g$ playing Fight, and we've ruled that out.
 \end{enumerate}
