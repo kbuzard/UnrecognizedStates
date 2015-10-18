@@ -93,18 +93,30 @@ This leaves four state varibles in which the patron may invest: $q_s$, $q_g$, $l
 \end{itemize}
 
 \vskip.2in
+Assumptions
+\begin{itemize}
+	\item $Q_{s0} \geq L_{s0} \Rightarrow q_{s1} + \mu \geq l_{s1}$
+	\item $Q_{g0} \geq L_{g0} \Rightarrow q_{g1} \geq l_{g1}$
+\end{itemize}
+
+\vskip.2in
 Period 1
 \begin{enumerate}
-	\item Patron: $R_{p1} = \frac{\beta}{1-\de} - \left(q_{s1} - l_{s1}\right)$ to augment $q_{s1}$ if this is greater than 0. Else, $R_{p1} = 0$. Can write in max language.
+	\item Patron would like $Q_{s1} \geq L_{s1}$ to prevent $c$ from incentivizing secessionists to Cede
 		\begin{itemize}
-			\item International community: 
-				\begin{enumerate}
-					\item If $R_{p1} + q_{s1} - l_{s1} \geq \frac{\beta}{1-\de}$, $R_{c1} =0$
-					\item Otherwise $R_{c1} = l_{s1} - \left(q_{s1} + R_{p1} \right) + \ve$ to augment $l_{s1}$
-						\begin{itemize}
-							\item (SQ,Cede) is played and game ends
-						\end{itemize}
-				\end{enumerate}
+			\item Equivalent to $q_{s1} + R_{p1} \geq l_{s1} + R_{c1}$ / $Q_{s0} + \mu + R_{p1} \geq L_{s0} + R_{c1}$ / $R_{p1} \geq R_{c1} - \left( Q_{s0} - \mu - L_{s0}\right)$
+				\begin{itemize}
+					\item Equivalent to $R_{c1} \leq \frac{\beta}{1-\de} \Rightarrow$ $R_{p1} \geq \frac{\beta}{1-\de} - \left( Q_{s0} - \mu - L_{s0}\right)$ allows the patron to ensure the original inequality
+					\item Initial assumption means $R_{p1} \geq \frac{\beta}{1-\de} + \mu$ is a tighter condition
+					\item Since patron is willing to pay up to $R_{p1} = \frac{\alpha}{1-\de}$, when $\frac{\alpha}{1-\de} \geq \frac{\beta}{1-\de} + \mu$, it will invest $R_{p1} = \frac{\beta}{1-\de} - \left( Q_{s0} - \mu - L_{s0}\right)$ to augment $q_{s1}$ if this is greater than 0. Else, $R_{p1} = 0$. 
+					  \begin{enumerate}
+							\item If $R_{p1} + \left( Q_{s0} - \mu - L_{s0}\right) \geq \frac{\beta}{1-\de}$, $R_{c1} =0$. (SQ,SQ) is played and game continues.
+							\item If instead $R_{p1} + \left( Q_{s0} - \mu - L_{s0}\right) < \frac{\beta}{1-\de}$ (i.e. assumption doesn't hold), $R_{c1} = l_{s1} - \left(q_{s1} + R_{p1} \right) + \ve$ to augment $l_{s1}$. Note optimal $R_{p1}$ in this case is 0.
+								\begin{itemize}
+									\item (SQ,Cede) is played and game ends
+								\end{itemize}
+						\end{enumerate}
+				\end{itemize}
 		\end{itemize}	
 	\item Patron might also want to invest to encourage recognition directly. How much to augment $l_{g1}$?	
 	\item Patron might also want to instigate fighting. If $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de}$ is positive, invest in $w_{s1}$ to change $\omega_{s1}$. Will not invest in $w_{s1}$ when the quantity is non-positive.
