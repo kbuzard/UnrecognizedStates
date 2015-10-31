@@ -190,4 +190,50 @@ Now generalize profiles for all $t$
 	\item Patron could also invest in $q_g$ to counter investment by $c$ in government's payoffs. But this would only been needed if $c$ had incentive to invest in $g$ playing Fight, and we've ruled that out.
 \end{enumerate}
 
+
+\vskip.2in
+Now generalize profiles for all $t$
+\begin{enumerate}
+	\item Patron would like $Q_{st} \geq L_{st}$ to prevent $c$ from incentivizing secessionists to Cede
+		\begin{itemize}
+			\item Equivalent to $q_{st} + R_{pt} \geq l_{st} + R_{ct}$ / $Q_{s,t-1} + \mu + R_{pt} \geq L_{s,t-1} + R_{ct}$ / $R_{pt} \geq R_{ct} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right)$
+				\begin{itemize}
+					\item $R_{ct} \leq \frac{\beta}{1-\de} \Rightarrow$ $R_{pt} \geq \frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right)$ allows the patron to ensure the original inequality
+					\item Assumption 1 combined with equilibrium play (equivalently, if $L_{s,t-1} > Q_{s,t-1}$, the game would have ended before the start of period $t$) means $R_{pt} \geq \frac{\beta}{1-\de} + \mu$ is a tighter condition
+					\item Since patron is willing to pay up to $R_{pt} = \frac{\alpha}{1-\de}$, when $\frac{\alpha}{1-\de} \geq \frac{\beta}{1-\de} + \mu$, it will invest $R_{pt} = \frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right)$ to augment $q_{st}$ if this is greater than 0. Else, $R_{pt} = 0$. 
+					  \begin{enumerate}
+							\item If $R_{pt} + \left( Q_{s,t-1} - \mu - L_{s,t-1}\right) \geq \frac{\beta}{1-\de}$, $R_{ct} =0$. (SQ,SQ) is played and game continues.
+							\item If instead $R_{pt} + \left( Q_{s,t-1} - \mu - L_{s,t-1}\right) < \frac{\beta}{1-\de}$ (i.e. assumption 3 doesn't hold), $R_{ct} = l_{st} - \left(q_{st} + R_{pt} \right) + \ve$ where $\ve$ is small to augment $l_{st}$. Note optimal $R_{pt}$ in this case is 0.
+								\begin{itemize}
+									\item (SQ,Cede) is played and game ends
+								\end{itemize}
+						\end{enumerate}
+				\end{itemize}
+		\end{itemize}	
+	\item Patron would like $L_{gt} > Q_{gt}$ to achieve recognition directly. Must invest to augment $l_{gt}$
+		\begin{itemize}
+			\item Equivalent to $l_{gt} + R_{pt} > q_{gt} + R_{ct}$ / $L_{g,t-1} + R_{pt} > Q_{g,t-1} + R_{ct}$ / $R_{pt} > R_{ct} + \left( Q_{g,t-1} - L_{g,t-1}\right)$
+				\begin{itemize}
+					\item $R_{ct} \leq \frac{\nu}{1-\de} \Rightarrow$ $R_{pt} > \frac{\nu}{1-\de} + \left( Q_{g,t-1} - L_{g,t-1}\right)$ allows the patron to ensure the original inequality
+					\item Since patron is willing to pay up to $R_{pt} = \frac{\lambda +\mu + \beta}{1-\de} - \mu$, when $\frac{\lambda +\mu + \beta}{1-\de} -\mu \leq \frac{\nu}{1-\de}$, patron will invest 0 in $l_{gt}$. $R_{ct} = 0$ as well.
+					\item If instead assumption 4 did not hold and $R_{pt} > \frac{\nu}{1-\de} + \left( Q_{g,t-1} - L_{g,t-1}\right)$, patron will invest this amount to augment $l_{gt}$. Again, $R_{ct} = 0$. (Cede, SQ) is played and game ends.
+				\end{itemize}
+		\end{itemize}
+	\item Patron might want to instigate fighting to have a $p_{1s}$ probability of achieving recognition indirectly. If $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de} -\mu$ is positive, invest in $w_{st}$ to change $\omega_{st}$. Will not invest when the quantity is non-positive. Inequality is $\omega_{st} > Q_{st}$
+		\begin{itemize}
+			\item $\omega_{st} = -\zeta_{s}(1-\de) + W_{st}p_{1s} + L_{st}(1-p_{1s}) > Q_{st}$
+			\item $-\zeta_{s}(1-\de) + (W_{s,t-1}+R_{pt})p_{1s} + L_{s,t-1}(1-p_{1s}) > Q_{s,t-1} - \mu + R_{ct}$
+			\item $R_{pt}p_{1s} > R_{ct} - \mu + Q_{s,t-1} - \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)$
+			\item $R_{ct} \leq \frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}$, so if $R_{pt}p_{1s} > \frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_{s,t-1} - \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)$, $R_{ct}=0$ and (SQ,Fight) is played in third stage. Outcome depends on war lottery.
+			\item Patron will spend at most $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) +\mu + \beta}{1 -\de} - \mu$
+				\begin{itemize}
+					\item So need
+						\begin{multline}
+							\textstyle p_{1s}\left[\frac{\lambda p_{1s} - \alpha (1-p_{1s}) +\mu + \beta}{1 -\de} - \mu\right] < \frac{\lambda p_{1s} - \alpha (1-p_{1s}) +\mu + \beta}{1 -\de} - \mu \leq \frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu \\ \leq \frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_{s,t-1} - \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)
+						\end{multline}
+				\end{itemize}
+		\end{itemize}
+	\item Patron could also invest in $q_g$ to counter investment by $c$ in government's payoffs. But this would only been needed if $c$ had incentive to invest in $g$ playing Fight, and we've ruled that out.
+\end{enumerate}
+
 \end{document}
