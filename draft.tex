@@ -33,6 +33,7 @@
 \newcommand{\un}{\underline}
 \newcommand{\ov}{\overline}
 \newcommand{\de}{\delta}
+\newcommand{\ve}{\varepsilon}
 \linespread{1.05} % Palatino needs more leading (space between lines)
 \title{Unrecognized States: A Theory of Self-Determination and Foreign Influence}
 
@@ -287,6 +288,21 @@ We begin by listing and providing intuition for a set of restrictions on the pre
 \end{enumerate}
 \end{definition}
 
+\begin{definition}
+ The Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood.
+
+On the equilibrium path, the patron invests to avoid the reunification outcome. That is, it invests in the secessionists' status quo payoffs to deter the international community from investing in the secessionists' payoffs from ceding. In period $t$, the patron invests $R_{pt} = \max\left\{\frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right),0\right\}$ to augment the status quo payoffs of the secessionists, $q_{st}$. Player $c$ then chooses $R_{ct} =0$ so that playing status quo is a best response for both inside players. (SQ,SQ) is played in the third stage and the game continues to period $t+1$.
+
+If instead $R_{pt} < \frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right)$ (i.e. assumption 3 doesn't hold), player $c$ will invest $R_{ct} = l_{st} - \left(q_{st} + R_{pt} \right) + \ve$, for $\ve$ small, to augment $l_{st}$. In this case, status quo remains a best response for the government but cede becomes the best response for the secessionists. The game ends with the secessionist territory being reunited. This path is ruled out by Assumption 3 (see Lemma 2).
+
+The patron would prefer to invest to provoke the recognition outcome, which it can attempt to do directly by investing in the government's payoffs from ceding, $l_{gt}$. If the patron invests $R_{pt} > \frac{\nu}{1-\de} + \left( Q_{g,t-1} - L_{g,t-1}\right)$ to augment $l_{gt}$, player $c$ will then choose $R_{ct} = 0$ and cede will be the best response for the government. Status quo remains the best response for the secessionists, so the game ends with the secessionists gaining recognition. This path is ruled out by Assumption 4 (see Lemma 3).
+
+As long as $R_{pt} \leq \frac{\nu}{1-\de} + \left( Q_{g,t-1} - L_{g,t-1}\right)$, player $c$ will counter with $R_{ct} = R_{pt} - \left( Q_{g,t-1} - L_{g,t-1}\right)$ to augment $l_{gt}$. This makes status quo a best response for the government as well as for the secessionists so that the status quo equilibrium is played and the game continues to period $t+1$. Note that the optimal investments in the government's payoffs zero.
+
+Instead of instigating recognition directly by improving the government's payoffs from ceding, the patron might want to instigate fighting, which would lead to recognition with probability $p_{1s}$. If the patron invests $R_{pt}p_{1s} > \frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_{s,t-1} - \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)$ to augment $w_{s,t}$, player $c$ will choose $R_{ct}=0$ and Fight becomes a best response for the secessionists so (SQ,Fight) is played in third stage. The game will end with an outcome that depends on the war lottery. This path is ruled out by a combination of Assumptions 3 and 4 (see Lemma 4).
+
+If the patron spends less than this amount, player $c$ will counter by investing $R_{ct} = R_{pt}p_{1s} + \mu - Q_{s,t-1} + \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)$ in $q_{st}$, the secessionists' status quo payoffs. This makes playing Status Quo a best response for both players so that the status quo equilibrium is played and the game continues to period $t+1$. Here again the optimal investment by both parties is zero.\footnote{Note that the patron could also invest in $q_{gt}$ to counter investment by player $c$ in the government's payoffs from war. But this would only been needed if $c$ had incentive to invest in $g$ playing Fight, and we've ruled that out.}
+\end{definition}
 
 \begin{quotation}
 \noindent \bf \emph{Proposition 1:} \rm  \emph{There exists an equilibrium in which the outcome is perpetual unrecognized statehood. The actions in this equilibrium are for $p$ to invest to create a buffer of $\frac{\beta}{1-\de}$ between the payoffs from ceding and the status quo in the first period and to invest up to $\mu$ each period thereafter to maintain the buffer; for $c$ to pay nothing; and for both $g$ and $s$ to play $Status$ $Quo$ each period.}
