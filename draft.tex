@@ -170,12 +170,13 @@ Player $p$ most prefers recognized independence, aligning its interests with the
 We acknowledge that there may exist patrons whose most-preferred outcome is the status quo. This naturally makes a status quo equilibrium easier to achieve, as there is an actor who strictly prefers the status quo and can expend resources to make it more likely. We choose to examine the case where the patron's most preferred outcome is independence because this is the condition under which the status quo is least likely. Even in this circumstance, the status quo remains an equilibrium outcome.    
 
 \subsection{Timing and Structure of Interaction}
+\label{sec:structure}
 
 The game begins at a status quo in which the secessionist elite controls at least some of the disputed territory, but cannot gain international recognition unless the central government cedes its claim to the territory. This condition is archetypical of cases in which a militarily successful war of secession ends in a ceasefire.  
 
-The payoff functions and all parameters, including probabilities in the war lottery, are common knowledge for all players, and actions are immediately observed by all players at the time they occur. There are an infinite number of periods $t=1,2,\ldots$, with play proceeding until an absorbing state is reached.
+The payoff functions and all parameters, including probabilities in the war lottery, are common knowledge for all players, and actions are immediately observed by all players at the time they occur. There are an infinite number of periods $t=1,2,\ldots$, with play proceeding until an absorbing state is reached. This is a dynamic game because the fundamentals determining the payoffs of the inside actors are state variables whose values persist from period to period and in which the outside actors can make investments.
 
-Future payoffs are discounted with a common parameter $\de$, where 1/$\de$ is each player's discount rate and $0\leq\de\leq1$.\footnote{All of the results that follow go through essentially unchanged in the general case where the players potentially discount at different rates. This simplifying assumption is made solely to highlight the essential mechanisms of the model.} Therefore payoffs for the entire game for player $i\in \{s, g, p, c\} $ can be expressed by the discounted stream of payments $\Sigma_{t=1}^{\infty} U_{it} \de^{t-1}$. 
+Future payoffs are discounted with a common parameter $\de$, where 1/$\de$ is each player's discount rate and $0\leq\de\leq1$.\footnote{All of the results that follow go through essentially unchanged in the general case where the players potentially discount at different rates. This simplifying assumption is made solely to highlight the essential mechanisms of the model.} Therefore payoffs for the entire game for player $i\in \{s, g, p, c\} $ can be expressed by the discounted stream of payments $\Sigma_{t=1}^{\infty} U_{it} \de^{t-1}$.
 
 In each period, play proceeds as follows:
 
@@ -303,7 +304,7 @@ In equilibrium, the outside actors' investments are paired: the patron's investm
 \begin{definition}
 A Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood.
 
-The strategies for the government and secessionists in this equilibrium are to play their best responses in the stage game given the continuation values induced by the investments of the outside actors. Unless otherwise noted below, playing Status Quo is the best response for both inside actors. The strategies for the insides actors are the the following, organized according to the patron's investments in each state variable. In period $t$:
+The strategies for the government and secessionists in this equilibrium are to play their best responses in the stage game given the continuation values induced by the investments of the outside actors. Unless otherwise noted below, playing Status Quo is the best response for both inside actors. The strategies for the insides actors are the following, organized according to the patron's investments in each state variable. In period $t$:
 
 \begin{enumerate}
 	\item The patron invests $R_{pt} = \max\left\{\frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right),0\right\}$ to augment $q_{st}$. Player $c$ invests $R_{ct} =0$ in $l_{st}$.
