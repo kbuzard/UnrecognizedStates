@@ -267,7 +267,7 @@ Despite the preferences of the international community for peace, the most commo
 \label{sec:mainproof}
 Unrecognized states are frequently viewed as temporary phenomena or as non-equilibrium outcomes attributable to players' misperceptions of the strategic situation, or their fundamental irrationality. Our central result shows that unrecognized statehood can be an equilibrium outcome capable of being sustained in perpetuity by fully rational, perfectly informed actors. This is true even when there is no actor that prefers unrecognized statehood as a first-best outcome.
 
-We begin by listing and providing intuition for a set of restrictions on the preferences of the actors and their resources for which we can guarantee that unrecognized statehood is an equilibrium outcome of the repeated game. This set of restrictions identifies a class of games, $\mathcal{G}$: 
+We begin by listing and providing intuition for a set of restrictions on the preferences of the actors and their resources for which we can guarantee that unrecognized statehood is an equilibrium outcome. This set of restrictions identifies a class of games, $\mathcal{G}$: 
 
 \begin{definition}
 \emph{The class $\mathcal{G}$ includes all those games for which the parameters satisfy the following restrictions:}
@@ -288,9 +288,24 @@ We begin by listing and providing intuition for a set of restrictions on the pre
 \end{enumerate}
 \end{definition}
 
+There are many potential equilibrium outcomes of this game, including, under the right parameters, immediate ceding by either party as well as fighting (see Section~\ref{sec:alt}). As we are interested particularly in the outcome of long-term unrecognized statehood, here we focus on the question of the existence of an equilibrium that leads to this outcome in perpetuity. We will show that, given a game satisfying the parameter restrictions in Definition 1, at least one status quo equilibrium will exist.
+
 Our concept of equilibrium will be stationary Markov equilibrium as defined in Mailath and Samuelson (2006). That is, a strategy profile is a stationary Markov equilibrium if it is a stationary Markov strategy profile and a subgame-perfect equilibrium. In turn, a strategy profile is defined to be a stationary Markov strategy if any two ex post histories terminating in the same state play identically from the termination point forward. That is, stationary Markov strategies ignore all details of the history aside from the current state.
 
 
+\vskip.5in
+We have six state variables, so $s = \left(q_s,q_g,l_s,l_g,w_s,w_g \right)$.
+\begin{itemize}
+	\item Strategies for the patron and $c$ are also how much to invest in each of the six state variables. Some can be ruled out by preference assumptions:
+		\begin{itemize}
+			\item $c$ dislikes war, so will never invest in $w_s$ or $w_g$. It would also not want to make the government lose, so won't invest in $l_g$ either.
+			\item Because the patron's preferences are aligned with the secessionists and against the government, it never invests in $w_g$ or $l_s$.
+		\end{itemize}
+	\item This leaves four state varibles in which the patron may invest: $q_s$, $q_g$, $l_g$ and $w_s$. Three in which $c$ may invest: $q_s$, $q_g$, $l_s$.
+\end{itemize}
+
+
+\vskip1in
 \begin{definition}
  The Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood.
 
@@ -314,8 +329,6 @@ If the patron spends less than this amount, player $c$ will counter by investing
 \end{quotation}
 
 These conditions for the status quo are sufficient but not necessary. For example, if the status quo initially has a much higher long term payoff than the next best alternative for the secessionists, Condition (6) need not be met to maintain the status quo in the short run. The inequality \emph{will} bind for some set of periods $t \geq 1$ because the secessionist payoffs from the status quo decrease over time. In cases where condition (6) is not met, we can have unrecognized statehood for some time, but it is not a long-run equilibrium outcome.
-
-\textbf{There are many other potential equilibrium outcomes of this game, including, under the right parameters, immediate ceding by either party as well as fighting (see Section~\ref{sec:alt}). As we are interested particularly in the outcome of long-term unrecognized statehood, here we focus on the question of the existence of an equilibrium that leads to this outcome in perpetuity. We will use the solution concept of stationary Markov equilibrium to show that, given the sufficient conditions in Proposition 1, at least one status quo equilibrium will exist.}\\
 
 \noindent {\bf Proof of Proposition 1} \\
 Recall that each period is composed of three action stages: player $p$'s investment decision (stage 1), player $c$'s investment decision (stage 2), and the simultaneous game between players $g$ and $s$ (stage 3). Although period $t$ may be reached either because in period $t-1$ both players ceded or the status quo had been maintained, the strategic landscape in period $t$ is the same. Thus all periods in which the players are able to move are in an equivalence class in which the only possible strategic difference is in the value of the state variables.
