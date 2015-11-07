@@ -290,7 +290,7 @@ We begin by listing and providing intuition for a set of restrictions on the pre
 
 There are many potential equilibrium outcomes of this game, including, under the right parameters, immediate ceding by either party as well as fighting (see Section~\ref{sec:alt}). As we are interested particularly in the outcome of long-term unrecognized statehood, here we focus on the question of the existence of an equilibrium that leads to this outcome in perpetuity. We will show that, given a game satisfying the parameter restrictions in Definition 1, at least one status quo equilibrium will exist.
 
-Our concept of equilibrium will be stationary Markov equilibrium as defined in Mailath and Samuelson (2006). That is, a strategy profile is a stationary Markov equilibrium if it is a stationary Markov strategy profile and a subgame-perfect equilibrium. In turn, a strategy profile is defined to be a stationary Markov strategy if any two ex post histories terminating in the same state play identically from the termination point forward. That is, stationary Markov strategies ignore all details of the history aside from the current state.
+Our concept of equilibrium will be stationary Markov equilibrium as defined in Mailath and Samuelson (2006). That is, a strategy profile is a stationary Markov equilibrium if it is a stationary Markov strategy profile and a subgame-perfect equilibrium. In turn, a strategy profile is defined to be a stationary Markov strategy if any two ex post histories terminating in the same state play identically from the termination point forward. In other words, stationary Markov strategies ignore all details of the history aside from the current state.
 
 The state is a vector of six variables comprised of the payoffs from the status quo, ceding, and winning the issue of status for each of the two inside actors. That is, $s = \left(q_s,q_g,l_s,l_g,w_s,w_g \right)$. Strategies for the patron and the international community are how much to invest in each of the six state variables. However, positive investments in some of the state variables can be ruled out by preference assumptions.
 
@@ -298,10 +298,12 @@ Player $c$ dislikes war and so will never invest in $w_s$ or $w_g$, which only s
 
 Because the patron's preferences are aligned with the secessionists and against the government, it never invests in $w_g$ or $l_s$. The only reason the patron would invest in $q_g$ is to counter an investment by player $c$ in the government's payoffs from war; since player $c$ will not make such an investment, we can also rule out investments by the patron in $q_g$. This leaves four state variables in which the patron may invest: $q_s$, $l_g$ and $w_s$.
 
-In equilibrium, the outside actors' investments are paired: the patron investments in the secessionists' status quo payoffs deter player $c$'s investments in the secessionists' payoffs from ceding. Likewise, investments by player $c$ in the government's status quo payoffs deter the patron from investing in the government's payoffs from ceding. Investments by player $c$ in the secessionists' status quo payoffs deter the patron from investing in the secessionists' payoffs from winning the conflict via fighting. In each case, the investments are sufficient to make the largest continuation payoffs in the game between the secessionists and the government those from playing status quo.
+In equilibrium, the outside actors' investments are paired: the patron's investments in the secessionists' status quo payoffs deter player $c$'s investments in the secessionists' payoffs from ceding. Likewise, investments by player $c$ in the government's status quo payoffs deter the patron from investing in the government's payoffs from ceding. Investments by player $c$ in the secessionists' status quo payoffs deter the patron from investing in the secessionists' payoffs from winning the conflict via fighting. In each case, the investments are sufficient to make the largest continuation payoffs in the game between the secessionists and the government those from playing status quo.
 
 \begin{definition}
-The Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood. The strategy profiles are the following, organized according to the patron's investments in each state variable. In period $t$:
+A Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood.
+
+The strategies for the government and secessionists in this equilibrium are to play their best responses in the stage game given the continuation values induced by the investments of the outside actors. Unless otherwise noted below, playing Status Quo is the best response for both inside actors. The strategies for the insides actors are the the following, organized according to the patron's investments in each state variable. In period $t$:
 
 \begin{enumerate}
 	\item The patron invests $R_{pt} = \max\left\{\frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right),0\right\}$ to augment $q_{st}$. Player $c$ invests $R_{ct} =0$ in $l_{st}$.
@@ -316,7 +318,6 @@ If $R_{pt} > \frac{\nu}{1-\de} + \left( Q_{g,t-1} - L_{g,t-1}\right)$ to augment
 
 If $R_{pt} > \frac{1}{p_{1s}}\left[\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_{s,t-1} - \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)\right] $ to augment $w_{s,t}$, player $c$ will choose $R_{ct}=0$. Fight becomes the unique best response for the secessionists.
 \end{enumerate}
-The government and secessionists play their best responses in the stage game given the continuation values induced by the investments of the outside actors. Unless otherwise noted above, playing Status Quo is the best response for both inside actors.
 \end{definition}
 
 \textbf{Need text to give intuition or tell where I'm going to give intuition.}
