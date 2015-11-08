@@ -306,7 +306,7 @@ In equilibrium, the outside actors' investments are paired: the patron's investm
 \begin{definition}
 A Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood.
 
-The strategies for the government and secessionists in this equilibrium are to play their best responses in the stage game given the continuation values induced by the investments of the outside actors. Unless otherwise noted below, playing Status Quo is the best response for both inside actors. The strategies for the insides actors are the following, organized according to the patron's investments in each state variable. In period $t$:
+The strategies for the government and secessionists in this equilibrium are to play their best responses in the stage game given the continuation values induced by the investments of the outside actors. Unless otherwise noted below, playing Status Quo is the best response for both inside actors. The strategies for the insides actors are the following, organized according to the patron's investments in each relevant state variable. In period $t$:
 
 \begin{enumerate}
 	\item The patron invests $R_{pt} = \max\left\{\frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right),0\right\}$ to augment $q_{st}$. Player $c$ invests $R_{ct} =0$ in $l_{st}$.
@@ -323,7 +323,7 @@ If $R_{pt} > \frac{1}{p_{1s}}\left[\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} 
 \end{enumerate}
 \end{definition}
 
-To understand this equilibrium, notice that there are three possible ways to disturb the Status Quo: (1) the international community can provoke the secessionists to Cede, (2) the patron can provoke the government to cede, or (3) the patron can provoke the secessionists to fight.\footnote{The international community might also provoke the government to fight, but it is assumed to avoid conflict.} In order for the Status Quo Equilibrium to persist, each of these three disturbances must be deterred.  
+To understand the construction of this equilibrium, notice that there are three possible ways to disturb the Status Quo: (1) the international community can provoke the secessionists to Cede, (2) the patron can provoke the government to cede, or (3) the patron can provoke the secessionists to fight.\footnote{The international community might also provoke the government to fight, but it is assumed to avoid conflict.} In order for the Status Quo Equilibrium to persist, each of these three disturbances must be deterred.  
 
 Since the patron moves first, in the Status Quo Equilibrium, the only investment that takes place is the patron's investment in the status quo payoffs of the secessionists to deter the international community from provoking the secessionists to cede the issue of sovereignty. The international community's willingness to counteract investments by the patron toward the other two disturbances implies that there will be no investments in equilibrium in cases (2) and (3).
 
@@ -339,9 +339,9 @@ The restrictions on the class of games in $\mathcal{G}$ are sufficient but not n
 
 \vskip.1in
 \noindent {\bf Proof of Proposition 1} \\
-Recall that each period is composed of three action stages: player $p$'s investment decision (stage 1), player $c$'s investment decision (stage 2), and the simultaneous game between players $g$ and $s$ (stage 3). Although period $t$ may be reached either because in period $t-1$ both players ceded or the status quo had been maintained, the strategic landscape in period $t$ is the same. Thus all periods in which the players are able to move are in an equivalence class in which the only possible strategic difference is in the value of the state variables.
+Recall that each period is composed of three action stages: player $p$'s investment decision (stage 1), player $c$'s investment decision (stage 2), and the simultaneous game between players $g$ and $s$ (stage 3). Although period $t$ may be reached either because in period $t-1$ both players ceded or the status quo had been maintained, the strategic landscape in period $t$ is the same given our restriction to stationary Markov strategies.
 
-Analysis of the posited equilibrium proceeds most naturally by backward induction within each period. Thus we begin with the stage game between the government and secessionists. We assume that the government and secessionists choose the Status Quo strategy whenever indifferent between it and any other strategy.
+To establish that the Status Quo Equilibrium of Definition 2 exists, we must show that the given strategies constitute a Nash equilibrium in each subgame within a period given the induced continuation values.\footnote{Subgame perfection within the one-shot game combined with the stationary Markovian property ensures subgame perfection in the whole game.} We begin with the stage game between the government and secessionists. We assume that the government and secessionists choose the Status Quo strategy whenever indifferent between it and any other strategy.
 
 \begin{lemma}
 $Q_{it} \geq L_{it}$ and $\frac {Q_{it}}{1-\delta} \geq  -\zeta_i+\frac{W_{it}(p_{1i}) + L_{it}(1-p_{1i})}{1-\delta}$ for $i \in \left\{g,s\right\}$ are sufficient for (Status Quo,Status Quo) to be the outcome of Stage 3 in period $t \ \forall t$. 
@@ -349,7 +349,9 @@ $Q_{it} \geq L_{it}$ and $\frac {Q_{it}}{1-\delta} \geq  -\zeta_i+\frac{W_{it}(p
 
 The proofs of the lemmas are in the Appendix.
 
-Lemma 1 establishes ranges for the payoffs for players $g$ and $s$---gross of investments by the outside players---in which the status quo outcome can occur. The rest of this section tackles the more difficult task of determining the incentives and actions of the outside actors---that is, the patron state and the international community---to impact those payoffs.
+Lemma 1 establishes ranges for the payoffs for players $g$ and $s$---gross of investments by the outside players---in which the status quo outcome can occur.
+
+We now turn to the incentives of the outside actors---that is, the patron state and the international community---in the subgames that begin in the first and second stages.
 
 Recall that either outside actor could invest toward increasing any of the six state variables in a period: $q_{st},q_{gt},w_{st},w_{gt},l_{st},$ and $l_{gt}$. However, each outside actor only considers investments in three of the state variables as treated in the three cases in Definition 2. The remainder of the proof addresses each set of matched investment decisions in turn.
 
@@ -384,7 +386,7 @@ Note that this result depends on an implicit assumption that the patron is not a
 
 %Our status quo equilibrium requires that $p$ invests in every period enough to maintain $F^*$ by offsetting the $\mu$ decline in the secessionists' status quo payoffs. The total per-period equilibrium investment $R_{pn}$, a flow payment, in the long run is thus $\mu$ per period in this steady state. In a status quo equilibrium $c$ need not invest at all since stage game payoffs of $g$ do not deteriorate.\footnote{ In the absence of the assumption in the model setup above that player $c$ does not want war, the patron would need to retain a second buffer against $c$ funding war.  The expected value of war for the home state would need to be maintained at a level lower than the status quo payoff by a buffer of $F*=\frac{\beta}{1-\delta_c}$. If this buffer did not exist in the first round of the game, the patron would fund the alteration of payoffs to create the buffer, thus assuring payments by $c$ would be ineffective at trying to change the home state's payoffs to make war more attractive than the status quo.}
 
-By contributing $\mu$ in each period, the patron supplies sufficient resources to the unrecognized state to ensure that the secessionist elite prefers the status quo to surrendering independence.   \hfill $\blacksquare$
+Lemmas 2 through 4 establish that the only incentive compatible investment is that of the patron to deter the international community from inducing reunification, supported by the strategies described in cases (1)-(3) in Definition 2. This combined with Lemma 1 ensures the existence of the Status Quo Equilibrium described in Definition 2. \hfill $\blacksquare$
 
 \subsection{Discussion}
 
