@@ -28,6 +28,7 @@
 
 \newtheorem{definition}{Definition}
 \newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
 \newcommand{\ta}{\theta}
 \newcommand{\Ta}{\Theta}
 \newcommand{\ga}{\gamma}
@@ -334,16 +335,17 @@ Equilibrium actions are for the patron to maintain the status quo by investing $
 	For any game in the class of games $\mathcal{G}$, there exists at least one Status Quo Equilibrium.
 \end{proposition}
 
-These conditions for the status quo are sufficient but not necessary. For example, if the status quo initially has a much higher long term payoff than the next best alternative for the secessionists, Condition (6) need not be met to maintain the status quo in the short run. The inequality \emph{will} bind for some set of periods $t \geq 1$ because the secessionist payoffs from the status quo decrease over time. In cases where condition (6) is not met, we can have unrecognized statehood for some time, but it is not a long-run equilibrium outcome.
+The restrictions on the class of games in $\mathcal{G}$ are sufficient but not necessary. For example, if the status quo initially has a much higher long term payoff than the next best alternative for the secessionists, Condition (6) need not be met to maintain the status quo in the short run. The inequality \emph{will} bind for some set of periods $t \geq 1$ because the secessionist payoffs from the status quo decrease over time. In cases where condition (6) is not met, we can have unrecognized statehood for some time, but it is not a long-run equilibrium outcome.
 
+\vskip.1in
 \noindent {\bf Proof of Proposition 1} \\
 Recall that each period is composed of three action stages: player $p$'s investment decision (stage 1), player $c$'s investment decision (stage 2), and the simultaneous game between players $g$ and $s$ (stage 3). Although period $t$ may be reached either because in period $t-1$ both players ceded or the status quo had been maintained, the strategic landscape in period $t$ is the same. Thus all periods in which the players are able to move are in an equivalence class in which the only possible strategic difference is in the value of the state variables.
 
 Analysis of the posited equilibrium proceeds most naturally by backward induction within each period. Thus we begin with the stage game between the government and secessionists. We assume that the government and secessionists choose the Status Quo strategy whenever indifferent between it and any other strategy.
 
-\begin{quotation}
-\noindent \textit{{\bf Lemma 1:} $Q_{it} \geq L_{it}$ and $\frac {Q_{it}}{1-\delta} \geq  -\zeta_i+\frac{W_{it}(p_{1i}) + L_{it}(1-p_{1i})}{1-\delta}$ for $i \in \left\{g,s\right\}$ are sufficient for status quo to be the outcome of Stage 3 in period $t \ \forall t$.} 
-\end{quotation}
+\begin{lemma}
+$Q_{it} \geq L_{it}$ and $\frac {Q_{it}}{1-\delta} \geq  -\zeta_i+\frac{W_{it}(p_{1i}) + L_{it}(1-p_{1i})}{1-\delta}$ for $i \in \left\{g,s\right\}$ are sufficient for (Status Quo,Status Quo) to be the outcome of Stage 3 in period $t \ \forall t$. 
+\end{lemma}
 
 The proofs of the lemmas are in the Appendix.
 
@@ -355,9 +357,9 @@ To begin, note that either outside actor could invest toward increasing any of t
 
 Lemma 2 addresses potential efforts by the international community to influence the outcome toward \emph{Reunification}:
 
-\begin{quotation}
-\noindent \textit{{\bf Lemma 2:} When Condition 3 holds, the patron's willingness to invest to maintain the status quo is sufficient to deter the international community from intervening to encourage reunification.}
-\end{quotation}
+\begin{lemma}
+When Condition 3 holds, the patron's willingness to invest to maintain the status quo is sufficient to deter the international community from intervening to encourage reunification.
+\end{lemma}
 
 \noindent Condition 3 provides a bound on the amount that player $p$ must be \emph{willing} to invest each period in order to prevent player $c$ from contesting the status quo outcome. To complete the equilibrium construction, we must determine the utility maximizing investments by $p$ and conditions to ensure that it is \emph{able} to make those investments.\footnote{Efforts by the patron to create the conditions for the \emph{Recognition} outcome are addressed in Lemma 3 once the equilibrium investments are established.}
 
@@ -367,17 +369,17 @@ In periods $t > 1$, there are two cases to consider. Either (a) the buffer creat
 
 With the equilibrium status quo investments determined, we can proceed to Lemma 3, which rules out spending for or against recognition of the secessionist state:
 
-\begin{quotation}
-\noindent \textit{{\bf Lemma 3:} When Condition 4 holds, the international community's willingness to invest to avoid recognition of the secessionist state is sufficient to deter the patron from investing to achieve recognition.}
-\end{quotation}
+\begin{lemma}
+When Condition 4 holds, the international community's willingness to invest to avoid recognition of the secessionist state is sufficient to deter the patron from investing to achieve recognition.
+\end{lemma}
 
 In the equilibrium under consideration here, the patron will invest to maintain an outcome that is not its most preferred, but it will not invest to achieve its most preferred outcome. This behavior may appear counterintuitive, but we frequently observe patron states whose preferred outcomes are recognized independence for the secessionists who  nonetheless contribute resources to sustain a status-quo outcome that is costly to all involved. The patron does not attempt to contribute sufficient resources to force recognition by the home state because doing so would induce offsetting expenditures by the international community to prevent this outcome.\footnote{We do not provide conditions on the budget of player $c$ similar to Conditions (5) and (6): since the size of the international community relative to any particular country is large, it can be assumed that a budget constraint does not bind.}
 
 One last possibility is ruled out by Lemma 4: that the patron would invest to encourage the secessionists to fight. 
 
-\begin{quotation}
-\noindent \textit{{\bf Lemma 4:} Conditions 3 and 4 ensure that the international community's willingness to invest to discourage new conflict is sufficient to deter the patron from investing to instigate such fighting.}
-\end{quotation}
+\begin{lemma}
+Conditions 3 and 4 ensure that the international community's willingness to invest to discourage new conflict is sufficient to deter the patron from investing to instigate such fighting.
+\end{lemma}
 
 Note that this result depends on an implicit assumption that the patron is not able to skew the odds of the secessionists winning the conflict in a way that cannot be nullified by the international community. All other conflict scenarios are ruled out by the international community's assumed preference to avoid conflict.
 
