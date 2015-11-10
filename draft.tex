@@ -759,18 +759,23 @@ Since the patron is willing to invest up to $\frac{\lambda + \beta + \mu}{1 -\de
 \\
 \\
 \noindent {\bf Proof of Lemma 4} \\
-The difference in continuation values from switching from the status quo to taking the war lottery for player $p$ is $\frac{\lambda p_{1s} - \alpha (1-p_{1s})}{1 -\de} +R_p^{SQ} -R_p^{WAR}$. For player $c$ it is $\frac{-\nu p_{1s} + \beta (1-p_{1s})}{1 -\de} + R_c^{SQ} -R_c^{WAR}$. As noted above, $R_c^{SQ} =0$. So $c$ is willing to invest up to $\frac{-\nu p_{1s} + \beta (1-p_{1s})}{1 -\de}$ toward preventing fighting if this quantity is negative (leave the case where it is non-negative until later).
+The difference in continuation values from switching from the status quo to taking the war lottery for player $p$ is $\frac{\lambda p_{1s} - \alpha (1-p_{1s})}{1 -\de} +R_p^{SQ} -R_p^{WAR}$. For player $c$ it is $\frac{-\nu p_{1s} + \beta (1-p_{1s})}{1 -\de} + R_c^{SQ} -R_c^{WAR}$. As noted above, $R_c^{SQ} =0$. So $c$ is willing to invest up to $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}$ toward preventing fighting.
 
-$p$ is willing to invest up to $\frac{\lambda p_{1s} - \alpha (1-p_{1s})}{1 -\de} +R_p^{SQ}$ toward instigating fighting when this quantity is positive, and will not invest when the quantity is non-positive. Thus we must only examine the case where this quantity is positive.
+The patron is willing to invest up to $\frac{\lambda p_{1s} - \alpha (1-p_{1s})}{1 -\de} +R_p^{SQ}$ toward instigating fighting when this quantity is positive, and will not invest when the quantity is non-positive. Thus we must only examine the case where this quantity is positive.
 
-We will again set $R_p^{SQ}$ at its largest value of $\frac{\mu + \beta}{1-\de} -\mu$ as this is most restrictive. In this only case of interest, we have $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de} -\mu> 0$.
+We will again set $R_p^{SQ}$ at its largest value of $\frac{\mu + \beta}{1-\de} -\mu$ as this is most restrictive. In this only case of interest, we have $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de} -\mu> 0$ for an upper bound on the amount the patron is willing to invest to instigate fighting.
 
-Multiplying Restriction (3) by $-(1-p_{1s})$, we have $-\beta \cdot (1-p_{1s}) \geq -\alpha \cdot (1-p_{1s})$. Using this with Restriction (4), we have $\nu p_{1s} - \beta (1-p_{1s}) \geq \lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta> 0 \ \forall p_{1s}$ and therefore also
-\[
-  \textstyle -\left(\frac{-\nu p_{1s} + \beta (1-p_{1s})}{1 -\de}\right) \geq \frac{\lambda p_{1s} - \alpha (1-p_{1s})+ \mu + \beta}{1 - \de}> 0 \ \forall p_{1s}.
-\]
+If $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  < \omega_{st}\left(R_{pt}\right) - Q_{st}$, the patron's investment in $\omega_{st}$ creates a large enough difference between the payoffs from fighting and the status quo so that player $c$ will not find it worthwhile to re-establish the status quo outcome.
 
-Hence when player $p$'s gain from instigating war is positive, player $c$'s loss is negative and larger in absolute magnitude. Player $c$ will thus counter any such investment by player $p$, deterring the investment in the first place. \hfill $\blacksquare$
+On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce fighting---e.g. counter an addition to $\omega_{st}$ with an investment to $q_{st}$---as long as $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  \geq \omega_{st}\left(R_{pt}\right) - Q_{st}$.
+
+This can be expanded as $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  \geq -\zeta_{s}(1-\de) + (W_{s,t-1}+R_{pt})p_{1s} + L_{s,t-1}(1-p_{1s}) - Q_{s,t-1} +\mu = \omega_{s,t-1} - Q_{s,t-1} +R_{pt} p_{1s} + \mu$. 
+
+Restriction (1) combined with equilibrium play implies that  $Q_{s,t-1} \geq \omega_{s,t-1}$ so a tighter condition for preventing player $p$ from inducing fighting is $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu \geq R_{pt} p_{1s}$. 
+
+Since $R_{pt} \leq \frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de} -\mu$, if we can show $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  - \mu \geq p_{1s} \frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de} - p_{1s} \mu$, we will have the guarantee that player $c$ will counterinvest after any effort by the patron to instigate fighting, thereby making $p$'s optimal investment in fighting zero.
+
+Multiplying Restriction (3) by $-(1-p_{1s})$, we have $\frac{-\beta \cdot (1-p_{1s})}{1-\de} -\mu (1-p_{1s}) \geq \frac{-\alpha \cdot (1-p_{1s})}{1-\de}$. Using this with Restriction (4) multiplied by $\frac{1}{1-\de}$, we have $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1-\de} -\mu \geq \frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1-\de} -p_{1s} \mu$. Since it is assumed that the war lottery probabilities are non-degenerate, we also have $\frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1-\de} -p_{1s} \mu > p_{1s} \frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1-\de} -p_{1s} \mu$. \hfill $\blacksquare$
 \\
 \\
 {\bf Proof of Proposition 2} \\
