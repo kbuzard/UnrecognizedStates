@@ -310,17 +310,17 @@ The strategies for the government and secessionists in this equilibrium are to p
 The strategies for the inside actors are the following, organized according to the patron's investments in each relevant state variable. In period $t$:
 
 \begin{enumerate}
-	\item The patron invests $R_p^t = \max\left\{\frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right),0\right\}$ to augment $q_s^t$. Player $c$ invests $R_c^t =0$ in $l_s^t$.
+	\item The patron invests $R_p^t = \max\left\{\frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right),0\right\}$ to augment $q_s^t$. Player $c$ invests $R_c^t =0$ in $l_s^t$.
 
-If $R_p^t < \frac{\beta}{1-\de} - \left( Q_{s,t-1} - \mu - L_{s,t-1}\right)$ player $c$ invests $R_c^t = l_s^t - \left(q_s^t + R_p^t \right) + \ve$, for $\ve$ small, in $l_s^t$. Cede becomes the unique best response for the secessionists.
+If $R_p^t < \frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right)$ player $c$ invests $R_c^t = l_s^t - \left(q_s^t + R_p^t \right) + \ve$, for $\ve$ small, in $l_s^t$. Cede becomes the unique best response for the secessionists.
 
-	\item As long as $R_p^t \leq \frac{\nu}{1-\de} + \left( Q_{g,t-1} - L_{g,t-1}\right)$ to augment $l_g^t$, player $c$ invests $R_c^t = R_p^t - \left( Q_{g,t-1} - L_{g,t-1}\right)$ in $q_g^t$. Note that the outcome is that investments in $l_g^t$ and $q_g^t$ are zero.
+	\item As long as $R_p^t \leq \frac{\nu}{1-\de} + \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $l_g^t$, player $c$ invests $R_c^t = R_p^t - \left( Q_g^{t-1} - L_g^{t-1}\right)$ in $q_g^t$. Note that the outcome is that investments in $l_g^t$ and $q_g^t$ are zero.
 
-If $R_p^t > \frac{\nu}{1-\de} + \left( Q_{g,t-1} - L_{g,t-1}\right)$ to augment $l_g^t$, player $c$ invests $R_c^t = 0$. Cede becomes the unique best response for the government.
+If $R_p^t > \frac{\nu}{1-\de} + \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $l_g^t$, player $c$ invests $R_c^t = 0$. Cede becomes the unique best response for the government.
 
-	\item As long as $R_p^t \leq \frac{1}{p_{1s}} \left[\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_{s,t-1} - \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)\right]$ to augment $w_s^t$, player $c$ invests $R_c^t = R_p^tp_{1s} + \mu - Q_{s,t-1} + \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)$ in $q_s^t$. Similar to case two, the outcome is that investments in $w_s^t$ and $q_s^t$ are zero.
+	\item As long as $R_p^t \leq \frac{1}{p_{1s}} \left[\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_s^{t-1} - \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_{1s} + L_s^{t-1}(1-p_{1s})\right)\right]$ to augment $w_s^t$, player $c$ invests $R_c^t = R_p^tp_{1s} + \mu - Q_s^{t-1} + \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_{1s} + L_s^{t-1}(1-p_{1s})\right)$ in $q_s^t$. Similar to case two, the outcome is that investments in $w_s^t$ and $q_s^t$ are zero.
 
-If $R_p^t > \frac{1}{p_{1s}}\left[\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_{s,t-1} - \left(-\zeta_{s}(1-\de) + W_{s,t-1}p_{1s} + L_{s,t-1}(1-p_{1s})\right)\right] $ to augment $w_s^t$, player $c$ will choose $R_c^t=0$. Fight becomes the unique best response for the secessionists.
+If $R_p^t > \frac{1}{p_{1s}}\left[\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu + Q_s^{t-1} - \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_{1s} + L_s^{t-1}(1-p_{1s})\right)\right] $ to augment $w_s^t$, player $c$ will choose $R_c^t=0$. Fight becomes the unique best response for the secessionists.
 \end{enumerate}
 \end{definition}
 
@@ -362,7 +362,7 @@ When Restriction (3) of Definition 1 holds, the patron's willingness to invest t
 
 \noindent Restriction (3) provides a bound on the amount that player $p$ must be \emph{willing} to invest each period in order to prevent player $c$ from contesting the status quo outcome. To complete the equilibrium construction, we must determine the utility maximizing investments by $p$ and conditions to ensure that it is \emph{able} to make those investments.\footnote{Efforts by the patron to create the conditions for the \emph{Recognition} outcome are addressed in Lemma 3 once the equilibrium investments are established.}
 
-Consider period 1. When Restriction (3) holds, the patron will want to invest just enough to create a buffer of $\frac{\beta}{1-\de}$ between $Q_{s1} \ (= q_{s1} + R_{s1})$ and $l_{s1}$ so that $c$ will not invest. That is, in equilibrium, $R_p^1 = \frac{\beta}{1-\de} -(q_{s1} - l_{s1})$ as long as $p$ can afford to make this investment. Thus we need Restriction (5): $B_p^1 \geq\frac{\beta}{1-\de} - \left(Q_s^0 - \mu - L_s^0 \right)$, where $B_p^1$ is the amount $p$ has available to spend on the conflict in period $1$.
+Consider period 1. When Restriction (3) holds, the patron will want to invest just enough to create a buffer of $\frac{\beta}{1-\de}$ between $Q_s^1 \ (= q_s^1 + R_s^1)$ and $l_s^1$ so that $c$ will not invest. That is, in equilibrium, $R_p^1 = \frac{\beta}{1-\de} -(q_s^1 - l_s^1)$ as long as $p$ can afford to make this investment. Thus we need Restriction (5): $B_p^1 \geq\frac{\beta}{1-\de} - \left(Q_s^0 - \mu - L_s^0 \right)$, where $B_p^1$ is the amount $p$ has available to spend on the conflict in period $1$.
 
 In periods $t > 1$, there are two cases to consider. Either (a) the buffer created in period $t-1$ was precisely the necessary $\frac{\beta}{1-\de}$, or (b) the buffer is larger than $\frac{\beta}{1-\de}$. In case (a), the patron must spend exactly $\mu$ to offset the degradation in the status quo payoffs and re-establish the buffer of $\frac{\beta}{1-\de}$.\footnote{A third case in which the buffer is smaller than $\frac{\beta}{1-\de}$ provides lower welfare to player $p$. Restrictions (3) and (5) ensure that player $p$ can avoid this case.} In case (b), the patron can spend less than $\mu$ in period $t$. However, because in each period $q_s^t$ degrades by $\mu$, eventually the buffer will be reached and we will be returned to case (a). Again, assuming Restriction (3) holds, the patron will want to make this investment if its budget allows, and so a sufficient condition is that $p$'s budget is at least as large as $\mu$ in every period $t > 1$ (Restriction 6). 
 
@@ -728,31 +728,31 @@ Given that the continuation value from Status Quo is higher than both that from 
 \\
 \\
 \noindent {\bf Proof of Lemma 2} \\
-In the status quo, we have $U_p^t^{SQ}= -R_p^{SQ}$ and $U_c^t^{SQ}= -R_c^{SQ}$. If the outcome is reunification, payoffs in this absorbing state in the period in which the investment is made are $U_p^t^{RU}= -\alpha -R_p^{RU}$ and $U_c^t^{RU}= \beta -R_c^{RU}$ where $SQ$ and $RU$ distinguish investments under the status quo and reunification scenarios respectively.
+In the status quo, we have $U_p^{t,SQ}= -R_p^{SQ}$ and $U_c^{t,SQ}= -R_c^{SQ}$. If the outcome is reunification, payoffs in this absorbing state in the period in which the investment is made are $U_p^{t,RU}= -\alpha -R_p^{RU}$ and $U_c^{t,RU}= \beta -R_c^{RU}$ where $SQ$ and $RU$ distinguish investments under the status quo and reunification scenarios respectively.
 
 Since reunification is the patron's least preferred state, $R_p^{RU} =0$; that is, the patron is not willing to invest to provoke reunification. But the patron \textit{would} be willing to invest the amount it would lose from reunification to maintain the Status Quo: that is, $R_p^{SQ} = \frac{\alpha}{1 -\de}$. 
 
 For player $c$ the difference in continuation values from switching from the status quo to reunification is $\frac{\beta + R_c^{SQ}}{1 -\de} -R_c^{RU}$. So $c$ is willing to invest up to $\frac{\beta+ R_c^{SQ}}{1 -\de}$ toward reunification---or preventing the status quo.
 
-Player $c$ would be able to induce the secessionists to play Cede---e.g. counter an addition to $q_s^t$ with an investment to $l_s^t$---as long as $R_c^{RU} = \frac{\beta + R_c^{SQ}}{1 -\de} > Q_{s,t-1} -\mu + R_p^t - L_{s,t-1}$.\footnote{Here we assume that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.} For this to work, the investment required of player $c$ must be no more than the gain player $c$ receives from investing.
+Player $c$ would be able to induce the secessionists to play Cede---e.g. counter an addition to $q_s^t$ with an investment to $l_s^t$---as long as $R_c^{RU} = \frac{\beta + R_c^{SQ}}{1 -\de} > Q_s^{t-1} -\mu + R_p^t - L_s^{t-1}$.\footnote{Here we assume that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.} For this to work, the investment required of player $c$ must be no more than the gain player $c$ receives from investing.
 
-On the other hand, if $\frac{\beta + R_c^{SQ}}{1 -\de} \leq Q_{s,t-1} -\mu + R_p^t - L_{s,t-1}$, the patron's investment creates a large enough difference in $Q_s^t - L_s^t$ (net of player $c$'s investment) so that player $c$ will not find contesting the status quo to be in its interest. Whenever the status quo will be the outcome in this way, $c$ maximizes its utility by choice of $R_c^{SQ} =0$. 
+On the other hand, if $\frac{\beta + R_c^{SQ}}{1 -\de} \leq Q_s^{t-1} -\mu + R_p^t - L_s^{t-1}$, the patron's investment creates a large enough difference in $Q_s^t - L_s^t$ (net of player $c$'s investment) so that player $c$ will not find contesting the status quo to be in its interest. Whenever the status quo will be the outcome in this way, $c$ maximizes its utility by choice of $R_c^{SQ} =0$. 
 
-Restriction (1) combined with equilibrium play implies that  $Q_{s,t-1} > L_{s,t-1}$. Combining this with $R_c^{SQ} =0$, a tighter condition for preventing player $c$ from inducing reunification is $\frac{\beta}{1 -\de} + \mu \leq R_p^t$. 
+Restriction (1) combined with equilibrium play implies that  $Q_s^{t-1} > L_s^{t-1}$. Combining this with $R_c^{SQ} =0$, a tighter condition for preventing player $c$ from inducing reunification is $\frac{\beta}{1 -\de} + \mu \leq R_p^t$. 
 
 Since the patron is willing to invest up to $\frac{\alpha}{1 -\de}$, $\frac{\beta}{1 -\de} + \mu \leq \frac{\alpha}{1 -\de}$ is a sufficient condition to prevent $c$ from inducing the \emph{reunification} outcome. \hfill $\blacksquare$
 \\
 \\
 \noindent {\bf Proof of Lemma 3} \\
-Again, in the status quo, we have $U_p^t^{SQ}= -R_p^{SQ}$ and $U_c^t^{SQ}= -R_c^{SQ}$. If the outcome is recognition of the secessionists, per-period payoffs in this absorbing state become $U_p^t^{REC}= \lambda -R_p^{REC}$ and $U_c^t^{REC}= -\nu -R_c^{REC}$ where $SQ$ and $REC$ distinguish investments under the status quo and recognition scenarios respectively.
+Again, in the status quo, we have $U_p^{t,SQ}= -R_p^{SQ}$ and $U_c^{t,SQ}= -R_c^{SQ}$. If the outcome is recognition of the secessionists, per-period payoffs in this absorbing state become $U_p^{t,REC}= \lambda -R_p^{REC}$ and $U_c^{t,REC}= -\nu -R_c^{REC}$ where $SQ$ and $REC$ distinguish investments under the status quo and recognition scenarios respectively.
 
 Thus the difference in continuation values from switching from the status quo to recognition for player $p$ is $\frac{\lambda +R_p^{SQ}}{1 -\de} -R_p^{REC}$. For player $c$ it is $\frac{-\nu + R_c^{SQ}}{1 -\de}-R_c^{REC}$. $R_c^{REC} =0$ since the international community will not invest to create its least preferred outcome. So $c$ is willing to invest up to $\nu$ per period toward maintaining the status quo, and $p$ is willing to invest up to $\frac{\lambda +R_p^{SQ}}{1 -\de}$ toward recognition. We have shown that the largest possible investments by $p$ in the status quo are $\frac{\beta}{1 -\de}$ in $t=1$ and $\mu$ in each period thereafter, so the largest this difference can be for $p$ is $\frac{\lambda + \beta + \mu}{1 -\de} -\mu$.
 
-If $\frac{\nu}{1-\de} < L_{g,t-1} + R_p^t - Q_{g,t-1}$, the patron's investment in $l_g^t$ creates a large enough difference in $L_s^t - Q_s^t$ (net of player $c$'s investment) so that player $c$ will not find it worthwhile to re-establish the status quo outcome.
+If $\frac{\nu}{1-\de} < L_g^{t-1} + R_p^t - Q_g^{t-1}$, the patron's investment in $l_g^t$ creates a large enough difference in $L_s^t - Q_s^t$ (net of player $c$'s investment) so that player $c$ will not find it worthwhile to re-establish the status quo outcome.
 
-On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce recognition---e.g. counter an addition to $l_g^t$ with an investment to $q_g^t$---as long as $\frac{\nu}{1-\de} \geq L_{g,t-1} + R_p^t - Q_{g,t-1}$.\footnote{As in the proof of Lemma 2, we have assumed that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.}
+On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce recognition---e.g. counter an addition to $l_g^t$ with an investment to $q_g^t$---as long as $\frac{\nu}{1-\de} \geq L_g^{t-1} + R_p^t - Q_g^{t-1}$.\footnote{As in the proof of Lemma 2, we have assumed that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.}
 
-Restriction (1) combined with equilibrium play implies that  $Q_{s,t-1} > L_{s,t-1}$ so that a tighter condition for preventing player $p$ from inducing recognition is $\frac{\nu}{1 -\de} \geq R_p^t$. 
+Restriction (1) combined with equilibrium play implies that  $Q_s^{t-1} > L_s^{t-1}$ so that a tighter condition for preventing player $p$ from inducing recognition is $\frac{\nu}{1 -\de} \geq R_p^t$. 
 
 Since the patron is willing to invest up to $\frac{\lambda + \beta + \mu}{1 -\de} -\mu$, when $\frac{\nu}{1 -\de} \geq \frac{\lambda + \beta + \mu}{1 -\de} -\mu$, player $c$'s willingness to counter the patron's investments is sufficient to prevent the \emph{recognition} outcome. A slightly weaker version of this inequality is stated as Restriction (4) so that this deterrence dynamic is guaranteed to operate through the war lottery as well, as will be seen in Lemma 4. \hfill $\blacksquare$
 \\
@@ -768,9 +768,9 @@ If $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  < \omega_s^t\left(R_p^t\right)
 
 On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce fighting---e.g. counter an addition to $\omega_s^t$ with an investment to $q_s^t$---as long as $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  \geq \omega_s^t\left(R_p^t\right) - Q_s^t$.
 
-This can be expanded as $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  \geq -\zeta_{s}(1-\de) + (W_{s,t-1}+R_p^t)p_{1s} + L_{s,t-1}(1-p_{1s}) - Q_{s,t-1} +\mu = \omega_{s,t-1} - Q_{s,t-1} +R_p^t p_{1s} + \mu$. 
+This can be expanded as $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  \geq -\zeta_{s}(1-\de) + (W_s^{t-1}+R_p^t)p_{1s} + L_s^{t-1}(1-p_{1s}) - Q_s^{t-1} +\mu = \omega_s^{t-1} - Q_s^{t-1} +R_p^t p_{1s} + \mu$. 
 
-Restriction (1) combined with equilibrium play implies that  $Q_{s,t-1} \geq \omega_{s,t-1}$ so a tighter condition for preventing player $p$ from inducing fighting is $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu \geq R_p^t p_{1s}$. 
+Restriction (1) combined with equilibrium play implies that  $Q_s^{t-1} \geq \omega_s^{t-1}$ so a tighter condition for preventing player $p$ from inducing fighting is $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de} - \mu \geq R_p^t p_{1s}$. 
 
 Since $R_p^t \leq \frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de} -\mu$, if we can show $\frac{\nu p_{1s} - \beta (1-p_{1s})}{1 -\de}  - \mu \geq p_{1s} \frac{\lambda p_{1s} - \alpha (1-p_{1s}) + \mu + \beta}{1 - \de} - p_{1s} \mu$, we will have the guarantee that player $c$ will counterinvest after any effort by the patron to instigate fighting, thereby making $p$'s optimal investment in fighting zero.
 
