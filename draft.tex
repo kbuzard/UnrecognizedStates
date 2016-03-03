@@ -178,7 +178,13 @@ We acknowledge that there may exist patrons whose most-preferred outcome is the 
 
 The game begins at a status quo in which the secessionist elite controls at least some of the disputed territory, but cannot gain international recognition unless the central government cedes its claim to the territory. This condition is archetypical of cases in which a militarily successful war of secession ends in a ceasefire.  
 
-The payoff functions and all parameters, including probabilities in the war lottery, are common knowledge for all players, and actions are immediately observed by all players at the time they occur. There are an infinite number of periods $t=1,2,\ldots$, with play proceeding until an absorbing state is reached. This is a dynamic game because the fundamentals determining the payoffs of the inside actors are state variables whose values persist from period to period and in which the outside actors can make investments.
+The payoff functions and all parameters, including probabilities in the war lottery, are common knowledge for all players, and actions are immediately observed by all players at the time they occur. There are an infinite number of periods $t=1,2,\ldots$, with play proceeding until an absorbing state is reached.
+
+Importantly, the payoffs for what we term the `inside actors'---the secessionists and the home government---are modeled as state variables. The status quo payoffs for the secessionists are special in that the transition of this state variable from one period to the next involves an automatic reduction by $\mu$. The steady reduction by $\mu$ represents the costs of non-recognition discussed in the introduction. As the economy in the secessionist region deteriorates, so does the standard of living for the secessionists. Therefore, the payoffs to the secessionists from the status quo evolve according to the law of motion $Q_s^{t} = Q_s^{t-1} - \mu + R_p^t - R_c^t$ where $R_p^t$ is the investment of the patron and $R_c^t$ is the investment of the international community in period $t$.\footnote{Here we anticipate a bit the incentives of the patron and international community to sign the impact of contributions: the patron will want to increase the value of the status quo to the secessionists, while the international community could only desire to reduce this value.}
+
+The other payoffs for the inside actors are also modeled as state variables. However, they remain unchanged from period to period unless players $p$ or $c$ make an investment, e.g. $L_s^t = L_s^{t-1} - R_p^t + R_c^t$ where $L_s^t$ is the per-period payoff to the secessionists from ceding the issue of status. The full set of payoffs for the inside actors are described in Section~\ref{sec:stage}.
+
+Both because of the presence of absorbing states and these state variables whose values persist from period to period, this is a dynamic game rather than a standard repeated game.
 
 Future payoffs are discounted with a common parameter $\de$, where 1/$\de$ is each player's discount rate and $0\leq\de\leq1$.\footnote{All of the results that follow go through essentially unchanged in the general case where the players potentially discount at different rates. This simplifying assumption is made solely to highlight the essential mechanisms of the model.} Therefore payoffs for the entire game for player $i\in \{s, g, p, c\} $ can be expressed by the discounted stream of payments $\Sigma_{t=1}^{\infty} U_i^t \de^{t-1}$.
 
@@ -202,6 +208,7 @@ In each period, play proceeds as follows:
 In order to fully describe the structure of the game, we first introduce the stage game payoffs.
 
 \subsubsection{Stage Game Payoffs}
+\label{sec:stage}
 
 \noindent Stage game payoffs for players $s$ and $g$ in period $n$, gross of investments by players $p$ and $c$, are:
 \vspace{2pt}
@@ -225,9 +232,7 @@ There are three ways to end up in war: either of the parties may attack first, o
 
 For probabilities $p$ of outright victory and $1-p$ of loss, player $i \in \{s, g\}$ in period $t$ with a fixed cost of war $\zeta_i$ faces war lottery $\omega_i^t \equiv (p (W_i^t-\zeta_i), \left(1-p\right)( L_i^t-\zeta_i))$. $\Omega^t \equiv (\omega_g^t, \omega_s^t).$\footnote{Baseline costs of war are fixed ($\zeta_i$) but additional costs of war based on war's result are captured in $W_i$ and $L_i$. Note that the structure of the war lottery along with the assumption that the outside actors influence the payoffs only and not the probabilities of winning imply that any way in which the patron influences the payoffs from war can be counteracted by the international community through its own investments.} Players are assumed to approach war lotteries as expected values.
 
-If both $s$ and $g$ play Status Quo, then the status quo persists. The status quo payoffs for the secessionists are modeled as a state variable. The transition of this state variable from one period to the next involves an increase by the amount of the patron's investment and an automatic reduction by $\mu$.\footnote{Note that it is also possible for the international community to make an investment in the secessionists' status quo payoffs, but we will show that they have no incentive to do so.} The steady reduction by $\mu$ represents the costs of non-recognition discussed in the introduction. As the economy in the secessionist region deteriorates, so does the standard of living for the secessionists. Therefore, the payoffs from the status quo evolve according to the following law of motion: $Q_s^{t} = Q_s^{t-1} - \mu + R_p^t - R_c^t$.\footnote{Here we anticipate a bit the incentives of the patron and international community in the next section to sign the impact of contributions: the patron will want to increase the value of the status quo to the secessionists, while the international community could only desire to reduce this value.}
-
-Other payoffs are also modeled as state variables. However, they remain unchanged from period to period unless players $p$ or $c$ make an investment, e.g. $L_s^t = L_s^{t-1} - R_p^t + R_c^t$ and similarly for player $g$ and for the payoffs from winning for both players and the status quo for player $g$. 
+If both $s$ and $g$ play Status Quo, then the status quo persists.
 
 
 \subsubsection{Payoffs for the Patron and International Community}
