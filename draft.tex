@@ -287,7 +287,7 @@ We begin by listing and providing intuition for a set of restrictions on the pre
 
 \item \textit{For both players $g$ and $s$, $\frac {Q_i^0}{1-\delta} \geq \frac {\omega_i^0}{1-\delta} = -\zeta_i+\frac{W_i^0(p_i) + L_i^0(1-p_i)}{1-\delta}$: the expected outcome under war is worse than the status quo at the beginning of the game.}\label{res:2}
 
-\item \textit{Either (a) $\frac{L_s^0}{1-\delta}  > \frac{\omega_s^0}{1-\delta}$ or (b) $0 > \frac{\lambda p_s - \alpha (1-p_s)}{1-\de} > -\mu$: either the secessionists prefer ceding to war or the patron's disutility from war is greater than the per-period cost of offsetting the deterioration in the secessionists' status quo payoffs.}\label{res:new}
+\item \textit{Either (a) $\frac{L_s^0}{1-\delta}  > \frac{\omega_s^0}{1-\delta}$ or (b) $0 > -\mu > \frac{\lambda p_s - \alpha (1-p_s)}{1-\de}$: either the secessionists prefer ceding to war or the patron's disutility from war is greater than the per-period cost of offsetting the deterioration in the secessionists' status quo payoffs.}\label{res:new}
 
 \item \textit{$\frac{\alpha}{1-\de} \geq \frac{\beta}{1-\de} + \mu$: reunification is more important for the patron to avoid than for the international community to achieve.}\label{res:3}
 
@@ -315,22 +315,22 @@ We now turn to defining and describing the Status Quo Equilibrium. We will see t
 \begin{definition}
 A Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood.
 
-The strategies for the government and secessionists in this equilibrium are to play their best responses in the stage game given the continuation values induced by the investments of the outside actors. Unless otherwise noted below, playing Status Quo is the best response for both inside actors.
+The strategies for the government and secessionists in this equilibrium are to play their best responses given the continuation values induced by the investments of the outside actors. The continuation value from choosing war is the expected future stream of payoffs from the two possible absorbing states net of the cost of war $\left(-\zeta_i +\frac{W_i^t(p_i)+ L_i^t(1-p_i)}{1-\delta}\right)$. Similarly, the continuation value from ceding is $\frac{L_i^t}{1-\de}$ while that for the status quo is $\sum_{s=t}^\infty \de^{t-s} Q_i^t$. Unless otherwise noted below, playing Status Quo is the dynamic best response for both inside actors.
 
 The strategies for the inside actors are the following, organized according to the patron's investments in each relevant state variable. In period $t$:
 
 \begin{enumerate}
-	\item The patron invests $R_p^t = \max\left\{\frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right),0\right\}$ to augment $Q_s^{t-1}$. Player $c$ invests $R_c^t =0$ to augment $L_s^{t-1}$.
+	\item The patron invests $R_p^t = \max\left\{\frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right),\frac{\omega_s^{t-1}}{1-\de} +\mu - \frac{Q_s^{t-1}}{1-\de},0\right\}$ to augment $Q_s^{t-1}$. Player $c$ invests $R_c^t =0$ to augment $L_s^{t-1}$.
 
-If $R_p^t < \frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right)$ player $c$ invests $R_c^t = L_s^{t-1} - \left(Q_s^{t-1} - \mu + R_p^t \right) + \ve$, for $\ve$ small, to augment $L_s^{t-1}$. Cede becomes the unique best response for the secessionists.
+If $\frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right) > 0$ and $R_p^t < \frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right)$, player $c$ invests $R_c^t = L_s^{t-1} - \left(Q_s^{t-1} - \mu + R_p^t \right) + \ve$, for $\ve$ small, to augment $L_s^{t-1}$ so that the secessionists play Cede.
 
 	\item As long as $R_p^t \leq \frac{\nu}{1-\de} + \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $L_g^{t-1}$, player $c$ invests $R_c^t = R_p^t - \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $Q_g^{t-1}$. Note that the outcome is that investments to augment $L_g^{t-1}$ and $Q_g^{t-1}$ are zero.
 
-If $R_p^t > \frac{\nu}{1-\de} + \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $L_g^{t-1}$, player $c$ invests $R_c^t = 0$. Cede becomes the unique best response for the government.
+If the patron invests $R_p^t > \frac{\nu}{1-\de} + \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $L_g^{t-1}$, player $c$ is deterred from investing in $Q_g^{t-1}$ ($R_c^t = 0$) so that the government plays Cede.
 
 	\item As long as $R_p^t \leq \frac{1}{p_s} \left[\frac{\nu p_s - \beta (1-p_s)}{1 -\de} - \mu + Q_s^{t-1} - \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_s + L_s^{t-1}(1-p_s)\right)\right]$ to augment $W_s^{t-1}$, player $c$ invests $R_c^t = R_p^tp_s + \mu - Q_s^{t-1} + \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_s + L_s^{t-1}(1-p_s)\right)$ to augment $Q_s^{t-1}$. Similar to case two, the outcome is that investments to augment $W_s^{t-1}$ and $Q_s^{t-1}$ are zero.
 
-If $R_p^t > \frac{1}{p_s}\left[\frac{\nu p_s - \beta (1-p_s)}{1 -\de} - \mu + Q_s^{t-1} - \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_s + L_s^{t-1}(1-p_s)\right)\right] $ to augment $W_s^{t-1}$, player $c$ will choose $R_c^t=0$. Fight becomes the unique best response for the secessionists.
+If the patron invests $R_p^t > \frac{1}{p_s}\left[\frac{\nu p_s - \beta (1-p_s)}{1 -\de} - \mu + Q_s^{t-1} - \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_s + L_s^{t-1}(1-p_s)\right)\right] $ to augment $W_s^{t-1}$, player $c$ is deterred from investing in $Q_s^{t-1}$ ($R_c^t=0$) so that the secessionists play Fight.
 \end{enumerate}
 \end{definition}
 
@@ -386,7 +386,7 @@ When Restriction (\ref{res:4}) of Definition 1 holds, the international communit
 
 In the Status Quo equilibrium, the patron will invest to maintain an outcome that is not its most preferred, but it will not invest to achieve its most preferred outcome. This behavior may appear counterintuitive, but we frequently observe patron states whose preferred outcomes are recognized independence for the secessionists who  nonetheless contribute resources to sustain a status-quo outcome that is costly to all involved. The patron does not attempt to contribute sufficient resources to force recognition by the home state because doing so would induce offsetting expenditures by the international community to prevent this outcome.\footnote{We do not provide conditions on the budget of player $c$ similar to Restrictions (\ref{res:5}) and (\ref{res:6}): since the size of the international community relative to any particular country is large, it can be assumed that a budget constraint does not bind.}
 
-One last possibility is ruled out by Lemma 4: that the patron would invest to encourage the secessionists to fight. 
+One last possibility is ruled out by Lemma 4: that the patron would invest to encourage the secessionists to fight. Note that the patron has no incentive to make this investment if Restriction \ref{res:new}b holds.
 
 \begin{lemma}
 Restrictions (\ref{res:3}) and (\ref{res:4}) of Definition 1 ensure that the international community's willingness to invest to discourage new conflict is sufficient to deter the patron from investing to instigate such fighting.
@@ -754,7 +754,7 @@ Restriction (\ref{res:1}) combined with equilibrium play implies that  $Q_s^{t-1
 
 Since the patron is willing to invest up to $\frac{\alpha}{1 -\de}$, $\frac{\beta}{1 -\de} + \mu \leq \frac{\alpha}{1 -\de}$ is a sufficient condition to prevent $c$ from inducing the \emph{reunification} outcome.
 
-If Restriction \ref{res:new}a is violated, as the secessionists' status quo payoffs degrade from period to period, they will fall below $\omega_s^t$ before they fall below $L_s^t$. If no investment is made in $Q_s^{t-1}$, the secessionists will choose the war outcome. Restriction \ref{res:new}b guarantees that the patron will make the investment $R_p^{t'}  = \omega_s^{t-1} -\mu - Q_s^{t-1} \leq \mu$ to prevent the secessionists choosing war since this $R_p^{t'}$ is strictly less than the patron's expected loss from the war outcome. Note that the patron's actual investment will be the maximum of the investment required to prevent the war and ceding outcomes. \hfill $\blacksquare$
+If Restriction \ref{res:new}a is violated, as the secessionists' status quo payoffs degrade from period to period, they will fall below $\omega_s^t$ before they fall below $L_s^t$. If no investment is made in $Q_s^{t-1}$, the secessionists will choose the war outcome. Restriction \ref{res:new}b guarantees that the patron will make the investment $R_p^{t'}  = \frac{\omega_s^{t-1}}{1-\de} +\mu - \frac{Q_s^{t-1}}{1-\de} \leq \mu$ to prevent the secessionists choosing war since this $R_p^{t'}$ is strictly less than the patron's expected loss from the war outcome. Note that the patron's actual investment will be the maximum of the investment required to prevent the war and ceding outcomes. \hfill $\blacksquare$
 \\
 \\
 \noindent {\bf Proof of Lemma 3} \\
