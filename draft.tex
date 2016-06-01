@@ -18,7 +18,7 @@
 %\usepackage{geometry}
 \usepackage{nicefrac}
 \usepackage{pdfsync}
-\usepackage{url}
+\usepackage{url,bm}
 \usepackage{pst-all}
 \usepackage{pdflscape}
 \usepackage{rotating}
@@ -182,17 +182,17 @@ The payoff functions and all parameters, including probabilities in the war lott
 
 Within each period, there is first an investment stage in which first the patron and then the international community each make decisions about how much to invest in altering the payoffs of the `inside actors'---the secessionists and the home government. Then, the inside actors play a ``conflict stage game'' in which they simultaneously choose whether to cede the issue of status, fight, or maintain the status quo.
 
-The payoffs at the end of a period are determined by these actions and six state variables, which keep track of the per-period value of the status quo ($Q_s^t$ and $Q_g^t$), losing the issue of recognition ($L_s^t$ and $L_g^t$) and winning the issue of recognition ($W_s^t$ and $W_g^t$) to the secessionists and government respectively. The game continues into the next period if the inside players selected (status quo, status quo) or (cede, cede). Otherwise, the game ends in an absorbing state as described below.
+The payoffs at the end of a period are determined by these actions and six state variables, which keep track of the evolving value of the status quo ($Q_s^t$ and $Q_g^t$), losing the issue of recognition ($L_s^t$ and $L_g^t$) and winning the issue of recognition ($W_s^t$ and $W_g^t$) to the secessionists and government respectively. The game continues into the next period if the inside players selected (status quo, status quo) or (cede, cede). Otherwise, the game ends in an absorbing state as described below.
 
 The status quo payoffs for the secessionists are special in that the transition of this state variable from one period to the next involves an automatic reduction by $\mu$. The steady reduction by $\mu$ represents the costs of non-recognition discussed in the introduction. As the economy in the secessionist region deteriorates, so does the standard of living for the secessionists. Therefore, the payoffs to the secessionists from the status quo evolve according to the law of motion $Q_s^{t} = Q_s^{t-1} - \mu + R_p^t - R_c^t$ where $R_p^t$ is the investment of the patron and $R_c^t$ is the investment of the international community in period $t$.\footnote{Here we anticipate a bit the incentives of the patron and international community to sign the impact of contributions: the patron will want to increase the value of the status quo to the secessionists, while the international community could only desire to reduce this value.}
 
-The other payoffs for the inside actors are also modeled as state variables. However, they remain unchanged from period to period unless players $p$ or $c$ make an investment, e.g. $L_s^t = L_s^{t-1} - R_p^t + R_c^t$ where $L_s^t$ is the per-period payoff to the secessionists from ceding the issue of status. The full set of payoffs for the inside actors are described in Section~\ref{sec:stage}.
+The other payoffs for the inside actors are also modeled as state variables. However, they remain unchanged from period to period unless players $p$ or $c$ make an investment, to be precise $L_s^t = L_s^{t-1} - R_p^t + R_c^t$ where $L_s^t$ is the per-period payoff to the secessionists from ceding the issue of status. The full set of payoffs for the inside actors are described in Section~\ref{sec:stage}.
 
-Both because of the presence of absorbing states and these state variables whose values depend on their values in the previous period, this is a dynamic game rather than a standard repeated game.
+Both because of the presence of absorbing states and state variables, this is a dynamic game rather than a standard repeated game.
 
-Future payoffs are discounted with a common parameter $\de$, where 1/$\de$ is each player's discount rate and $0\leq\de\leq1$.\footnote{All of the results that follow go through essentially unchanged in the general case where the players potentially discount at different rates. This simplifying assumption is made solely to highlight the essential mechanisms of the model.} Therefore payoffs for the entire game for player $i\in \{s, g, p, c\} $ can be expressed by the discounted stream of payments $\Sigma_{t=1}^{\infty} U_i^t \de^{t-1}$.
+Future payoffs are discounted with a common parameter $\de$, where 1/$\de$ is each player's discount rate and $0\leq\de\leq1$.\footnote{All of the results that follow go through essentially unchanged in the general case where the players potentially discount at different rates. This simplifying assumption is made solely to highlight the essential mechanisms of the model.} Therefore payoffs for the entire game for player $i\in \{s, g, p, c\} $ can be expressed by the discounted stream of payments $\Sigma_{t=1}^{\infty} \de^{t-1} U_i^t $ where $U_i^t$ is player $i$'s payoff in period $t$.
 
-In each period, play proceeds as follows:
+In each period $t$, play proceeds as follows:
 
 \begin{figure}
 \includegraphics{Timeline2.pdf}
@@ -202,9 +202,9 @@ In each period, play proceeds as follows:
 \begin{enumerate} 
 \item The status quo payoffs for $s$ are reduced by $\mu$.
 
-\item $p$ chooses a level of resource expenditure $R_p^t\in \mathbb{R}^+$ in period $t$ and invests it to alter the payoffs of players $s$ and/or $g$. 
+\item $p$ chooses an investment level $R_p^t\in \mathbb{R}^+$. 
  
-\item $c$ chooses a level of resource expenditure $R_c^t\in \mathbb{R}^+$ in period $t$ and invests it to alter the payoffs of players $s$ and/or $g$. 
+\item $c$ chooses an investment level $R_c^t\in \mathbb{R}^+$. 
  
 \item $s$ and $g$ play a stage game in which each chooses simultaneously from the following actions: $\{\text{Fight, Status Quo, Cede}\}$. 
 \end{enumerate}
@@ -220,9 +220,9 @@ In order to fully describe the structure of the game, we first introduce the sta
 \begin{tabular}{|  c| c | c | c |} 
 \hline
   $g\downarrow$,     $ s\rightarrow$  & Fight & Status Quo &Cede \\ \hline
-	Fight & $\Omega^t$ &$\Omega^t$&$W_g^t, L_s^t$ \\ \hline
-	Status Quo& $\Omega^t$& $Q_g^t, Q_s^t$ &$W_g^t, L_s^t$ \\ \hline
-	Cede&$L_g^t, W_s^t$& $L_g^t, W_s^t$ &$Q_g^t, Q_s^t$ \\ \hline
+	Fight & $p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$ &$p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$&$W_g^t, L_s^t$ \\ \hline
+	Status Quo& $p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$& $\bm{Q_g^t, Q_s^t}$ &$W_g^t, L_s^t$ \\ \hline
+	Cede&$L_g^t, W_s^t$& $L_g^t, W_s^t$ &$\bm{Q_g^t, Q_s^t}$ \\ \hline
  \multicolumn{4}{c} {Figure 2: Stage Game Payoffs}\\ 
 \end{tabular}
 \end{center}
@@ -230,18 +230,18 @@ In order to fully describe the structure of the game, we first introduce the sta
 
 If either $s$ or $g$ plays Cede while the other plays Fight or Status Quo, the game enters an absorbing state (i.e. the game ends), with payoffs in every subsequent period given by the corresponding entry in the stage game (Figure 2). We interpret one player ceding as that player ceding the issue of status (independence vs. reunification) in exchange for some set of (relatively small) payments from the opposing player. For example, if the secessionists cede, the secessionist region is reunified with the home state and the payoffs are $L_s$ for the secessionists and $W_g$ for the home state. Therefore, if one player agrees to cede while the other player chooses to remain in the status quo or fight, the result is a negotiated settlement benefiting the player who did not cede. 
 
-If both states simultaneously play Cede, we assume that both renege immediately and that the status quo is preserved for that period. In this case neither player has demonstrated a willingness to give up more than the other. Therefore, payoffs for both players ceding simultaneously are identical to the status quo payoffs.%\footnote{This assumption is appropriate as precise simultaneity is an artifact of discrete time modeling: it is not a phenomenon we observe in the real world.} 
-
 There are three ways to end up in war: either of the parties may attack first, or both may attack simultaneously. We denote the payoffs of war as a lottery $\Omega$.\footnote{Because the unrecognized state already controls territory and the \emph{de facto} borders are armed, there is likely only a small advantage to be gained by attacking first for either side. Therefore, we argue it is not essential to differentiate between these war scenarios analytically.} This lottery determines whether the secessionists or government wins the war. For simplicity, we assume the outcome of the war is an absorbing state.\footnote{The model can easily be extended to encompass the possibility of an indecisive war.} Outright victory would, among other things, allow an unrecognized state to force recognition by the home state government. Therefore, outright victory requires more than simply securing control of the disputed territory (which the secessionists have already done when the game begins) and requires the ability to impose the terms of settlement. In practice, this likely involves the capture of the home state capital and/or the overthrow of the home state government.
 
 For probabilities $p$ of outright victory and $1-p$ of loss, player $i \in \{s, g\}$ in period $t$ with a fixed cost of war $\zeta_i$ faces war lottery $\omega_i^t \equiv (p (W_i^t-\zeta_i), \left(1-p\right)( L_i^t-\zeta_i))$. $\Omega^t \equiv (\omega_g^t, \omega_s^t).$\footnote{Baseline costs of war are fixed ($\zeta_i$) but additional costs of war based on war's result are captured in $W_i$ and $L_i$. Note that the structure of the war lottery along with the assumption that the outside actors influence the payoffs only and not the probabilities of winning imply that any way in which the patron influences the payoffs from war can be counteracted by the international community through its own investments.} Players are assumed to approach war lotteries as expected values.
 
-If both $s$ and $g$ play Status Quo, then the status quo persists.
+Only two outcomes of the stage game do not lead to absorbing states, and the payoffs for these are bolded. If both $s$ and $g$ play Status Quo, then the status quo persists. Likewise, if both states simultaneously play Cede, we assume that both renege immediately and that the status quo is preserved for that period. In this case neither player has demonstrated a willingness to give up more than the other. Therefore, payoffs for both players ceding simultaneously are identical to the status quo payoffs.%\footnote{This assumption is appropriate as precise simultaneity is an artifact of discrete time modeling: it is not a phenomenon we observe in the real world.} 
+
+
 
 
 \subsubsection{Payoffs for the Patron and International Community}
 
-At the start of each period, the patron, $p$, and player $c$ may invest resources to affect the payoffs of $s$ and $g$ in the stage game. For example, if $p$ expends resources $R_p^t$ to increase the government's payoffs from ceding, the previous period's payoff $L_g^{t-1}$ is augmented so that $L_g^t = L_g^{t-1} + R_p^t$. We can write analogous expressions for any of the state variables, recalling that the international community can also make investments to increase whichever of these payoffs they like. $B_p^t$ denotes the total that the patron can devote to interceding in the conflict; we assume that player $c$, which is often a large coalition of states, does not have a binding budget constraint.
+At the start of each period, the patron, $p$, and player $c$ may invest resources to affect the payoffs of $s$ and $g$ in the stage game. For example, if $p$ expends resources $R_p^t$ to increase the government's payoffs from ceding, the previous period's payoff $L_g^{t-1}$ is augmented so that $L_g^t = L_g^{t-1} + R_p^t - R_c^t$. We can write analogous expressions for any of the state variables, recalling that the international community can also make investments to increase whichever of these payoffs they like. $B_p^t$ denotes the total that the patron can devote to interceding in the conflict; we assume that player $c$, which is often a large coalition of states, does not have a binding budget constraint.
 
 We assume player $c$ prefers peace to war. For simplicity, we limit our modeling of $c$'s preference for peace to the assumption that $c$ will not choose to fund a military buildup that it expects will induce war. This assumption is not necessary for the basic results to hold; however, it justifies our decision not to address military support of armed reconquest by the home state as a deliberate strategy by $c$ to achieve reunification. 
 
