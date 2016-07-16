@@ -3,10 +3,6 @@
 \usepackage{natbib}
 \usepackage{setspace}
 \usepackage{fancyhdr}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\rhead{\thepage}
-\pagestyle{fancy}
 \usepackage{fullpage}
 \usepackage[reqno]{amsmath}
 \usepackage{endnotes}
@@ -54,10 +50,18 @@ Ben Horne\\
 University of California, San Diego}
 
 \date{\today}
+
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rhead{Buzard \\ \thepage}
+\pagestyle{fancy}
+
+
 \begin{document}
 %\hypersetup{pageanchor=false}
 %\begin{titlepage}
 \maketitle
+\thispagestyle{fancy}
 %\thispagestyle{empty}
 %\center{This article is a working paper and is subject to future revision during the peer-review process. The authors welcome any comments, and may be reached by e-mail at benjamin.a.graham@usc.edu.}
 
