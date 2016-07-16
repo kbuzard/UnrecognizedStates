@@ -127,10 +127,7 @@ In contrast, we argue that members of the international community (player $c$) a
 The contributions of this paper are primarily theoretical, but it is useful to introduce the empirical landscape that informs our model. %We reference individual cases throughout to illustrate our theory and to justify its assumptions. 
 Table 1 catalogs the post-WWII cases of unrecognized statehood, separated according to their current status. We define unrecognized states as territories in which a non-state actor controls territory, governs a population, and seeks but does not receive broad recognition as an independent state.\footnote{This excludes, for example, the territories governed by FARC in Colombia because FARC does not seek recognized statehood and includes cases, like South Ossetia, where recognition is obtained by only a handful of other states. We also exclude entities, like the Slovak Republic, whose secession was not opposed by the state from which it seceded. We acknowledge that other scholars might differ with us with regard to the inclusion or exclusion of specific cases. We assert that our model is a useful tool for analyzing each of the cases in this table; it may be useful in explaining some of the ambiguous cases we exclude as well.} All six current unrecognized states have now been unrecognized for over twenty years.
 
-%\pagebreak
-\begin{center}
-\includegraphics[width=6.25in]{Table_1_082214.pdf}
-\end{center}
+\textbf{<<COMP: Place Table 1 about here>>}
 
 Of those cases in the table, all but Moheli controlled territory and govern(ed) populations for at least two years. These cases represent the most successful cases of attempted secession in the Post-WWII era, and yet eventual military defeat by the home state is still the modal form of resolution. Recognition by the home state is similarly rare, occurring in only three cases and never except as a direct result of concessions won on the battlefield. In cases where recognition by the home state or the right to a referendum on independence is not secured as part of the initial peace agreement, it has not historically been forthcoming. Only four cases of negotiated reunification are observed: secessionists who are strong enough to secure and retain territorial control are rarely willing to surrender their independence at the bargaining table, even though the chances of eventual recognition are vanishingly slim. Thus, the number of long-running, costly stalemates has been substantial, most of them eventually ending in military reconquest by the home state.
 
@@ -175,17 +172,14 @@ Player $p$ most prefers recognized independence, aligning its interests with the
 
 We acknowledge that there may exist patrons whose most-preferred outcome is the status quo. This naturally makes a status quo equilibrium easier to achieve, as there is an actor who strictly prefers the status quo and can expend resources to make it more likely. We choose to examine the case where the patron's most preferred outcome is independence because this is the condition under which the status quo is least likely. We will show that even in this circumstance the status quo remains an equilibrium outcome.    
 
+\textbf{<<COMP: Place Figure 1 about here>>}
+
 \subsection{Details of the Dynamic Game}
 \label{sec:structure}
 
 The game begins at a status quo in which the secessionist elite controls at least some of the disputed territory, but cannot gain international recognition unless the central government cedes its claim to the territory. This condition is archetypical of cases in which a militarily successful war of secession ends in a ceasefire.  
 
 There are an infinite number of discrete periods $t=1,2,\ldots$. Play proceeds in each period $t$ as follows (and as shown in Figure 1) until an absorbing state is reached.
-
-\begin{figure}
-\includegraphics{Timeline2.pdf}
-\caption{Timeline}
-\end{figure}
 
 \begin{enumerate} 
 \item $p$ chooses an investment level $R_p^t\in \left[0,B_p^t\right]$ to influence the payoffs of $s$ and $g$, where $B_p^t$ is an exogenous limit on the finances of the patron. 
@@ -209,16 +203,7 @@ The payoff functions and all parameters, including probabilities in the war lott
 
 \noindent Payoffs for players $s$ and $g$ in period $t$, gross of investments by players $p$ and $c$, are:
 \vspace{2pt}
-\begin{center}
-\begin{tabular}{|  c| c | c | c |} 
-\hline
-  $g\downarrow$,     $ s\rightarrow$  & Fight & Status Quo &Cede \\ \hline
-	Fight & $p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$ &$p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$&$W_g^t, L_s^t$ \\ \hline
-	Status Quo& $p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$& $\bm{Q_g^t, Q_s^t}$ &$W_g^t, L_s^t$ \\ \hline
-	Cede&$L_g^t, W_s^t$& $L_g^t, W_s^t$ &$\bm{Q_g^t, Q_s^t}$ \\ \hline
- \multicolumn{4}{c} {Figure 2: Stage Game Payoffs}\\ 
-\end{tabular}
-\end{center}
+\textbf{<<COMP: Place Figure 2 about here>>}
 \vspace{2.5pt}
 
 All the state variables except for the secessionists' status quo payoffs remain unchanged from period to period unless players $p$ or $c$ make an investment.\footnote{We will see below that restrictions on the initial values of the state variables are essential for characterizing our main result, but in general we leave them unrestricted.} To be precise, we have\footnote{Here we anticipate a bit the incentives of the patron and international community to sign the impact of contributions in each case.}
@@ -609,9 +594,96 @@ By providing economic and other aid to the unrecognized state, the patron keeps 
 
 Our model also suggests, however, that the historical pattern of costly stalemate followed by violent resolution is not the only possible path. We show that the stabilizing effect of the patron can be overcome by a sufficiently motivated international community. While the most frequently employed means through which outside actors attempt to induce settlement---sanctions---also increases the risk of war, we show that it is possible for outside actors to induce their preferred outcome without running this risk. In particular, we suggest that they can provide positive inducements for settlement and serve as a third-party guarantor of negotiated settlements in which unrecognized states rejoin the home state as autonomous regions. It is often not the lack of available means that prevents outside actors from inducing their preferred outcome, but rather the lack of will.
 
+
+\pagebreak
+\appendix
+\section{Appendix} 
+
+{\bf Proof of Lemma 1} \\
+Recall that the upper case notation represents payoffs gross of investments by the outside players. Without loss of generality, consider the incentives to deviate for player $s$ in period $t$ given that the other three players play their equilibrium actions. Given the stationary equilibrium actions, playing Status Quo will lead to $Q_s^t \ \forall t$, so the continuation value is $\frac{Q_s^t}{1-\delta}$. Player $s$'s continuation value from the one-shot deviation to Cede, which leads to an absorbing state with payoff $L_s^t$ in each period, is $\frac{L_s^t}{1-\delta}$. The one-shot deviation to fight results in the war lottery, with a cost of $-\zeta_s$, $W_s$ forever with probability $p$, and $L_s$ forever with probability $1-p$. Thus the continuation value is $-\zeta_s +\frac{W_s^t(p)+ L_s^t(1-p)}{1-\delta}$.
+
+Given that the continuation value from Status Quo is higher than both that from playing Cede and Fight, player $s$ will play Status Quo. The argument for player $g$ is symmetric. \hfill $\blacksquare$
+\\
+\\
+\noindent {\bf Proof of Lemma 2} \\
+Begin by assuming Restriction \ref{res:new}a holds. In the status quo, we have $U_p^{t,SQ}= -R_p^{SQ}$ and $U_c^{t,SQ}= -R_c^{SQ}$. If the outcome is reunification, payoffs in this absorbing state in the period in which the investment is made are $U_p^{t,RU}= -\alpha -R_p^{RU}$ and $U_c^{t,RU}= \beta -R_c^{RU}$ where $SQ$ and $RU$ distinguish investments under the status quo and reunification scenarios respectively.
+
+Since reunification is the patron's least preferred state, $R_p^{RU} =0$; that is, the patron is not willing to invest to provoke reunification. But the patron \textit{would} be willing to invest the amount it would lose from reunification to maintain the Status Quo: that is, $R_p^{SQ} = \frac{\alpha}{1 -\de}$. 
+
+For player $c$ the difference in continuation values from switching from the status quo to reunification is $\frac{\beta + R_c^{SQ}}{1 -\de} -R_c^{RU}$. So $c$ is willing to invest up to $\frac{\beta+ R_c^{SQ}}{1 -\de}$ toward reunification---or preventing the status quo.
+
+Player $c$ would be able to induce the secessionists to play Cede---e.g. counter an addition to $Q_s^{t-1}$ with an investment to $L_s^{t-1}$---as long as $R_c^{RU} = \frac{\beta + R_c^{SQ}}{1 -\de} > Q_s^{t-1} -\mu + R_p^t - L_s^{t-1}$.\footnote{Here we assume that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.} For this to work, the investment required of player $c$ must be no more than the gain player $c$ receives from investing.
+
+On the other hand, if $\frac{\beta + R_c^{SQ}}{1 -\de} \leq Q_s^{t-1} -\mu + R_p^t - L_s^{t-1}$, the patron's investment creates a large enough difference in the secessionist's payoffs from the status quo versus ceding (net of player $c$'s investment) so that player $c$ will not find contesting the status quo to be in its interest. Whenever the status quo will be the outcome in this way, $c$ maximizes its utility by choice of $R_c^{SQ} =0$. 
+
+Restriction (\ref{res:1}) combined with equilibrium play implies that  $Q_s^{t-1} > L_s^{t-1}$. Combining this with $R_c^{SQ} =0$, a tighter condition for preventing player $c$ from inducing reunification is $\frac{\beta}{1 -\de} + \mu \leq R_p^t$. 
+
+Since the patron is willing to invest up to $\frac{\alpha}{1 -\de}$, $\frac{\beta}{1 -\de} + \mu \leq \frac{\alpha}{1 -\de}$ is a sufficient condition to prevent $c$ from inducing the \emph{reunification} outcome.
+
+If Restriction \ref{res:new}a is violated, as the secessionists' status quo payoffs degrade from period to period, they will fall below $\omega_s^t$ before they fall below $L_s^t$. If no investment is made in $Q_s^{t-1}$, the secessionists will choose the war outcome. Restriction \ref{res:new}b guarantees that the patron will make the investment $R_p^{t'}  = \frac{\omega_s^{t-1}}{1-\de} +\mu - \frac{Q_s^{t-1}}{1-\de} \leq \mu$ to prevent the secessionists choosing war since this $R_p^{t'}$ is strictly less than the patron's expected loss from the war outcome. Note that the patron's actual investment will be the maximum of the investment required to prevent the war and ceding outcomes. \hfill $\blacksquare$
+\\
+\\
+\noindent {\bf Proof of Lemma 3} \\
+Again, in the status quo, we have $U_p^{t,SQ}= -R_p^{SQ}$ and $U_c^{t,SQ}= -R_c^{SQ}$. If the outcome is recognition of the secessionists, per-period payoffs in this absorbing state become $U_p^{t,REC}= \lambda -R_p^{REC}$ and $U_c^{t,REC}= -\nu -R_c^{REC}$ where $SQ$ and $REC$ distinguish investments under the status quo and recognition scenarios respectively.
+
+Thus the difference in continuation values from switching from the status quo to recognition for player $p$ is $\frac{\lambda +R_p^{SQ}}{1 -\de} -R_p^{REC}$. For player $c$ it is $\frac{-\nu + R_c^{SQ}}{1 -\de}-R_c^{REC}$. $R_c^{REC} =0$ since the international community will not invest to create its least preferred outcome. So $c$ is willing to invest up to $\nu$ per period toward maintaining the status quo, and $p$ is willing to invest up to $\frac{\lambda +R_p^{SQ}}{1 -\de}$ toward recognition. We have shown that the largest possible investments by $p$ in the status quo are $\frac{\beta}{1 -\de}$ in $t=1$ and $\mu$ in each period thereafter, so the largest this difference can be for $p$ is $\frac{\lambda + \beta + \mu}{1 -\de} -\mu$.
+
+If $\frac{\nu}{1-\de} < L_g^{t-1} + R_p^t - Q_g^{t-1}$, the patron's investment to augment $L_g^{t-1}$ creates a large enough difference in the secessionists' payoffs of ceding versus the status quo (net of player $c$'s investment) so that player $c$ will not find it worthwhile to re-establish the status quo outcome.
+
+On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce recognition---e.g. counter an addition to $L_g^{t-1}$ with an investment to augment $Q_g^{t-1}$---as long as $\frac{\nu}{1-\de} \geq L_g^{t-1} + R_p^t - Q_g^{t-1}$.\footnote{As in the proof of Lemma 2, we have assumed that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.}
+
+Restriction (\ref{res:1}) combined with equilibrium play implies that  $Q_s^{t-1} > L_s^{t-1}$ so that a tighter condition for preventing player $p$ from inducing recognition is $\frac{\nu}{1 -\de} \geq R_p^t$. 
+
+Since the patron is willing to invest up to $\frac{\lambda + \beta + \mu}{1 -\de} -\mu$, when $\frac{\nu}{1 -\de} \geq \frac{\lambda + \beta + \mu}{1 -\de} -\mu$, player $c$'s willingness to counter the patron's investments is sufficient to prevent the \emph{recognition} outcome. A slightly weaker version of this inequality is stated as Restriction (\ref{res:4}) so that this deterrence dynamic is guaranteed to operate through the war lottery as well, as will be seen in Lemma 4. \hfill $\blacksquare$
+\\
+\\
+\noindent {\bf Proof of Lemma 4} \\
+The difference in continuation values from switching from the status quo to taking the war lottery for player $p$ is $\frac{\lambda p_s - \alpha (1-p_s)}{1 -\de} +R_p^{SQ} -R_p^{WAR}$. For player $c$ it is $\frac{-\nu p_s + \beta (1-p_s)}{1 -\de} + R_c^{SQ} -R_c^{WAR}$. As noted above, $R_c^{SQ} =0$. So $c$ is willing to invest up to $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}$ toward preventing fighting.
+
+The patron is willing to invest up to $\frac{\lambda p_s - \alpha (1-p_s)}{1 -\de} +R_p^{SQ}$ toward instigating fighting when this quantity is positive, and will not invest when the quantity is non-positive. Thus we must only examine the case where this quantity is positive.
+
+We will again set $R_p^{SQ}$ at its largest value of $\frac{\mu + \beta}{1-\de} -\mu$ as this is most restrictive. In this only case of interest, we have $\frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1 - \de} -\mu> 0$ for an upper bound on the amount the patron is willing to invest to instigate fighting.
+
+If $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  < \omega_s^t\left(R_p^t\right) - Q_s^t$, the patron's investment in $\omega_s^t$ creates a large enough difference between the payoffs from fighting and the status quo so that player $c$ will not find it worthwhile to re-establish the status quo outcome.
+
+On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce fighting---e.g. counter an addition to $\omega_s^t$ with an investment to augment $Q_s^{t-1}$---as long as $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  \geq \omega_s^t\left(R_p^t\right) - Q_s^t$.
+
+This can be expanded as $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  \geq -\zeta_{s}(1-\de) + (W_s^{t-1}+R_p^t)p_s + L_s^{t-1}(1-p_s) - Q_s^{t-1} +\mu = \omega_s^{t-1} - Q_s^{t-1} +R_p^t p_s + \mu$. 
+
+Restriction (\ref{res:1}) combined with equilibrium play implies that  $Q_s^{t-1} \geq \omega_s^{t-1}$ so a tighter condition for preventing player $p$ from inducing fighting is $\frac{\nu p_s - \beta (1-p_s)}{1 -\de} - \mu \geq R_p^t p_s$. 
+
+Since $R_p^t \leq \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1 - \de} -\mu$, if we can show $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  - \mu \geq p_s \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1 - \de} - p_s \mu$, we will have the guarantee that player $c$ will counterinvest after any effort by the patron to instigate fighting, thereby making $p$'s optimal investment in fighting zero.
+
+Multiplying Restriction (\ref{res:3}) by $-(1-p_s)$, we have $\frac{-\beta \cdot (1-p_s)}{1-\de} -\mu (1-p_s) \geq \frac{-\alpha \cdot (1-p_s)}{1-\de}$. Using this with Restriction (\ref{res:4}) multiplied by $\frac{1}{1-\de}$, we have $\frac{\nu p_s - \beta (1-p_s)}{1-\de} -\mu \geq \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1-\de} -p_s \mu$. Since it is assumed that the war lottery probabilities are non-degenerate, we also have $\frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1-\de} -p_s \mu > p_s \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1-\de} -p_s \mu$. \hfill $\blacksquare$
+\\
+\\
+{\bf Proof of Proposition 2} \\
+Suppose that sanctions are applied by player $c$ in period $t+1$ after a Status Quo equilibrium such as the one supported by the construction in Proposition 1 has been established in period $t$. As the only alteration is a reduction in $Q_s^t$ by the amount of the sanctions, it is immediate that if player $p$ is willing and able to supplement player $s$'s status quo payoffs to counteract sanctions, then player $s$'s incentives to play Status Quo are not disturbed. As in Proposition 1, it is not necessary that the patron make these payments immediately if player $s$'s utility from playing Status Quo is high enough relative to its other options, but the degradation of the status quo payoffs will eventually make these payments necessary in order to sustain a Status Quo equilibrium.
+
+Therefore if sanctions are to disrupt the Status Quo equilibrium and potentially lead to ceding by the secessionists, it must be that the patron is either not able or not willing to make the investment required to maintain the status quo under player $c$'s sanctions (Condition 1).
+
+Assume then that Condition 1 holds so that the patron makes no investments in the Status Quo payoffs of player $s$. We also need the patron to withhold investments toward encouraging the secessionists to fight. Lemma 4 of Proposition 1 is not sufficient to guarantee this behavior since no investments are being made in the Status Quo. In addition, the reference outcome changes: players $p$ and $c$ must now compare their payoffs in the war scenario to the reunification outcome. To be precise, the least stringent condition is $m$ periods of Status Quo followed by the Reunification outcome, where $m$ is the maximal number of periods that it takes for the sanctions to degrade the status quo payoffs below the level of the payoffs from ceding for player $s$. 
+
+Player $p$'s continuation value when the status quo is played for $m-1$ periods before ceding is $0 - \frac{\de^m}{1-\de} \alpha$, whereas the continuation value from war is $\frac{\lambda p_s - \alpha (1-p_s)}{1-\de}$. For player $c$, it is $0 + \frac{\de^m}{1-\de} \beta$ versus $\frac{-\nu p_s + \beta (1 - p_s)}{1-\de}$. Thus the condition for $p$'s willingness to instigate fighting to outweigh $c$'s willingness to deter fighting is
+\[
+  \textstyle \frac{\lambda p_s - \alpha (1-p_s)}{1-\de} + \frac{\de^m}{1-\de} \alpha > \frac{-\nu p_s + \beta (1-p_s)}{1-\de} -  \frac{\de^m}{1-\de} \beta
+\]
+
+If this condition holds, then there will be no investments following sanctions. But it is still not guaranteed that the secessionists will choose to cede. Status Quo is no longer a long-run equilibrium strategy, but even without outside investments, it is possible that Fight could be a more attractive action than Cede.
+
+The status quo payoffs will degrade period by period in the absence of investments. Whether the secessionists choose Cede or Fight depends on which strategy yields the higher continuation value. In order to avoid conflict, sanctions must cause player $s$'s continuation value from playing Status Quo to fall below its continuation value from playing Cede before it falls below the continuation value from playing Fight. \hfill $\blacksquare$
+
+%Several possibilities exist. First, the sanctions could degrade the payoffs to ceding more than they degrade the status quo payoffs. If $S_L > \mu + S_Q$ where $S_L$ and $S_Q$ are the per-period reduction in the payoffs to ceding and maintaining the Status Quo, respectively, both payoffs will degrade until eventually player $s$ will choose \emph{Fight}. This occurs because the continuation value from \emph{Cede} will remain below that from playing \emph{Status Quo}, but the sanctions only have a partial effect in reducing the \emph{Fight} continuation value through the war lottery, while their entire impact is felt on the \emph{Status Quo} continuation value. The gap between the Status Quo and Fight continuation values that was positive without sanctions will eventually become negative, leading to conflict.
+
+%Thus we must have $\mu + S_Q > S_L$ if there is any chance that the secessionists will choose to cede.
+
+\newpage
+
+\theendnotes
+
 \pagebreak
 
-\section{References}\label{A:references}
+\section*{References}\label{A:references}
 \hangindent=1cm
 
 \begin{enumerate}[1.]
@@ -738,90 +810,30 @@ Our model also suggests, however, that the historical pattern of costly stalemat
 \end{enumerate}
 
 
-\pagebreak
-\appendix
-\section{Appendix} 
-
-{\bf Proof of Lemma 1} \\
-Recall that the upper case notation represents payoffs gross of investments by the outside players. Without loss of generality, consider the incentives to deviate for player $s$ in period $t$ given that the other three players play their equilibrium actions. Given the stationary equilibrium actions, playing Status Quo will lead to $Q_s^t \ \forall t$, so the continuation value is $\frac{Q_s^t}{1-\delta}$. Player $s$'s continuation value from the one-shot deviation to Cede, which leads to an absorbing state with payoff $L_s^t$ in each period, is $\frac{L_s^t}{1-\delta}$. The one-shot deviation to fight results in the war lottery, with a cost of $-\zeta_s$, $W_s$ forever with probability $p$, and $L_s$ forever with probability $1-p$. Thus the continuation value is $-\zeta_s +\frac{W_s^t(p)+ L_s^t(1-p)}{1-\delta}$.
-
-Given that the continuation value from Status Quo is higher than both that from playing Cede and Fight, player $s$ will play Status Quo. The argument for player $g$ is symmetric. \hfill $\blacksquare$
-\\
-\\
-\noindent {\bf Proof of Lemma 2} \\
-Begin by assuming Restriction \ref{res:new}a holds. In the status quo, we have $U_p^{t,SQ}= -R_p^{SQ}$ and $U_c^{t,SQ}= -R_c^{SQ}$. If the outcome is reunification, payoffs in this absorbing state in the period in which the investment is made are $U_p^{t,RU}= -\alpha -R_p^{RU}$ and $U_c^{t,RU}= \beta -R_c^{RU}$ where $SQ$ and $RU$ distinguish investments under the status quo and reunification scenarios respectively.
-
-Since reunification is the patron's least preferred state, $R_p^{RU} =0$; that is, the patron is not willing to invest to provoke reunification. But the patron \textit{would} be willing to invest the amount it would lose from reunification to maintain the Status Quo: that is, $R_p^{SQ} = \frac{\alpha}{1 -\de}$. 
-
-For player $c$ the difference in continuation values from switching from the status quo to reunification is $\frac{\beta + R_c^{SQ}}{1 -\de} -R_c^{RU}$. So $c$ is willing to invest up to $\frac{\beta+ R_c^{SQ}}{1 -\de}$ toward reunification---or preventing the status quo.
-
-Player $c$ would be able to induce the secessionists to play Cede---e.g. counter an addition to $Q_s^{t-1}$ with an investment to $L_s^{t-1}$---as long as $R_c^{RU} = \frac{\beta + R_c^{SQ}}{1 -\de} > Q_s^{t-1} -\mu + R_p^t - L_s^{t-1}$.\footnote{Here we assume that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.} For this to work, the investment required of player $c$ must be no more than the gain player $c$ receives from investing.
-
-On the other hand, if $\frac{\beta + R_c^{SQ}}{1 -\de} \leq Q_s^{t-1} -\mu + R_p^t - L_s^{t-1}$, the patron's investment creates a large enough difference in the secessionist's payoffs from the status quo versus ceding (net of player $c$'s investment) so that player $c$ will not find contesting the status quo to be in its interest. Whenever the status quo will be the outcome in this way, $c$ maximizes its utility by choice of $R_c^{SQ} =0$. 
-
-Restriction (\ref{res:1}) combined with equilibrium play implies that  $Q_s^{t-1} > L_s^{t-1}$. Combining this with $R_c^{SQ} =0$, a tighter condition for preventing player $c$ from inducing reunification is $\frac{\beta}{1 -\de} + \mu \leq R_p^t$. 
-
-Since the patron is willing to invest up to $\frac{\alpha}{1 -\de}$, $\frac{\beta}{1 -\de} + \mu \leq \frac{\alpha}{1 -\de}$ is a sufficient condition to prevent $c$ from inducing the \emph{reunification} outcome.
-
-If Restriction \ref{res:new}a is violated, as the secessionists' status quo payoffs degrade from period to period, they will fall below $\omega_s^t$ before they fall below $L_s^t$. If no investment is made in $Q_s^{t-1}$, the secessionists will choose the war outcome. Restriction \ref{res:new}b guarantees that the patron will make the investment $R_p^{t'}  = \frac{\omega_s^{t-1}}{1-\de} +\mu - \frac{Q_s^{t-1}}{1-\de} \leq \mu$ to prevent the secessionists choosing war since this $R_p^{t'}$ is strictly less than the patron's expected loss from the war outcome. Note that the patron's actual investment will be the maximum of the investment required to prevent the war and ceding outcomes. \hfill $\blacksquare$
-\\
-\\
-\noindent {\bf Proof of Lemma 3} \\
-Again, in the status quo, we have $U_p^{t,SQ}= -R_p^{SQ}$ and $U_c^{t,SQ}= -R_c^{SQ}$. If the outcome is recognition of the secessionists, per-period payoffs in this absorbing state become $U_p^{t,REC}= \lambda -R_p^{REC}$ and $U_c^{t,REC}= -\nu -R_c^{REC}$ where $SQ$ and $REC$ distinguish investments under the status quo and recognition scenarios respectively.
-
-Thus the difference in continuation values from switching from the status quo to recognition for player $p$ is $\frac{\lambda +R_p^{SQ}}{1 -\de} -R_p^{REC}$. For player $c$ it is $\frac{-\nu + R_c^{SQ}}{1 -\de}-R_c^{REC}$. $R_c^{REC} =0$ since the international community will not invest to create its least preferred outcome. So $c$ is willing to invest up to $\nu$ per period toward maintaining the status quo, and $p$ is willing to invest up to $\frac{\lambda +R_p^{SQ}}{1 -\de}$ toward recognition. We have shown that the largest possible investments by $p$ in the status quo are $\frac{\beta}{1 -\de}$ in $t=1$ and $\mu$ in each period thereafter, so the largest this difference can be for $p$ is $\frac{\lambda + \beta + \mu}{1 -\de} -\mu$.
-
-If $\frac{\nu}{1-\de} < L_g^{t-1} + R_p^t - Q_g^{t-1}$, the patron's investment to augment $L_g^{t-1}$ creates a large enough difference in the secessionists' payoffs of ceding versus the status quo (net of player $c$'s investment) so that player $c$ will not find it worthwhile to re-establish the status quo outcome.
-
-On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce recognition---e.g. counter an addition to $L_g^{t-1}$ with an investment to augment $Q_g^{t-1}$---as long as $\frac{\nu}{1-\de} \geq L_g^{t-1} + R_p^t - Q_g^{t-1}$.\footnote{As in the proof of Lemma 2, we have assumed that the payoff relationship at $t$ is such that ceding is better than fighting. If this relationship is reversed, similar analysis and results hold.}
-
-Restriction (\ref{res:1}) combined with equilibrium play implies that  $Q_s^{t-1} > L_s^{t-1}$ so that a tighter condition for preventing player $p$ from inducing recognition is $\frac{\nu}{1 -\de} \geq R_p^t$. 
-
-Since the patron is willing to invest up to $\frac{\lambda + \beta + \mu}{1 -\de} -\mu$, when $\frac{\nu}{1 -\de} \geq \frac{\lambda + \beta + \mu}{1 -\de} -\mu$, player $c$'s willingness to counter the patron's investments is sufficient to prevent the \emph{recognition} outcome. A slightly weaker version of this inequality is stated as Restriction (\ref{res:4}) so that this deterrence dynamic is guaranteed to operate through the war lottery as well, as will be seen in Lemma 4. \hfill $\blacksquare$
-\\
-\\
-\noindent {\bf Proof of Lemma 4} \\
-The difference in continuation values from switching from the status quo to taking the war lottery for player $p$ is $\frac{\lambda p_s - \alpha (1-p_s)}{1 -\de} +R_p^{SQ} -R_p^{WAR}$. For player $c$ it is $\frac{-\nu p_s + \beta (1-p_s)}{1 -\de} + R_c^{SQ} -R_c^{WAR}$. As noted above, $R_c^{SQ} =0$. So $c$ is willing to invest up to $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}$ toward preventing fighting.
-
-The patron is willing to invest up to $\frac{\lambda p_s - \alpha (1-p_s)}{1 -\de} +R_p^{SQ}$ toward instigating fighting when this quantity is positive, and will not invest when the quantity is non-positive. Thus we must only examine the case where this quantity is positive.
-
-We will again set $R_p^{SQ}$ at its largest value of $\frac{\mu + \beta}{1-\de} -\mu$ as this is most restrictive. In this only case of interest, we have $\frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1 - \de} -\mu> 0$ for an upper bound on the amount the patron is willing to invest to instigate fighting.
-
-If $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  < \omega_s^t\left(R_p^t\right) - Q_s^t$, the patron's investment in $\omega_s^t$ creates a large enough difference between the payoffs from fighting and the status quo so that player $c$ will not find it worthwhile to re-establish the status quo outcome.
-
-On the other hand, player $c$ would be willing to counter whatever investment player $p$ makes to try to induce fighting---e.g. counter an addition to $\omega_s^t$ with an investment to augment $Q_s^{t-1}$---as long as $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  \geq \omega_s^t\left(R_p^t\right) - Q_s^t$.
-
-This can be expanded as $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  \geq -\zeta_{s}(1-\de) + (W_s^{t-1}+R_p^t)p_s + L_s^{t-1}(1-p_s) - Q_s^{t-1} +\mu = \omega_s^{t-1} - Q_s^{t-1} +R_p^t p_s + \mu$. 
-
-Restriction (\ref{res:1}) combined with equilibrium play implies that  $Q_s^{t-1} \geq \omega_s^{t-1}$ so a tighter condition for preventing player $p$ from inducing fighting is $\frac{\nu p_s - \beta (1-p_s)}{1 -\de} - \mu \geq R_p^t p_s$. 
-
-Since $R_p^t \leq \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1 - \de} -\mu$, if we can show $\frac{\nu p_s - \beta (1-p_s)}{1 -\de}  - \mu \geq p_s \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1 - \de} - p_s \mu$, we will have the guarantee that player $c$ will counterinvest after any effort by the patron to instigate fighting, thereby making $p$'s optimal investment in fighting zero.
-
-Multiplying Restriction (\ref{res:3}) by $-(1-p_s)$, we have $\frac{-\beta \cdot (1-p_s)}{1-\de} -\mu (1-p_s) \geq \frac{-\alpha \cdot (1-p_s)}{1-\de}$. Using this with Restriction (\ref{res:4}) multiplied by $\frac{1}{1-\de}$, we have $\frac{\nu p_s - \beta (1-p_s)}{1-\de} -\mu \geq \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1-\de} -p_s \mu$. Since it is assumed that the war lottery probabilities are non-degenerate, we also have $\frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1-\de} -p_s \mu > p_s \frac{\lambda p_s - \alpha (1-p_s) + \mu + \beta}{1-\de} -p_s \mu$. \hfill $\blacksquare$
-\\
-\\
-{\bf Proof of Proposition 2} \\
-Suppose that sanctions are applied by player $c$ in period $t+1$ after a Status Quo equilibrium such as the one supported by the construction in Proposition 1 has been established in period $t$. As the only alteration is a reduction in $Q_s^t$ by the amount of the sanctions, it is immediate that if player $p$ is willing and able to supplement player $s$'s status quo payoffs to counteract sanctions, then player $s$'s incentives to play Status Quo are not disturbed. As in Proposition 1, it is not necessary that the patron make these payments immediately if player $s$'s utility from playing Status Quo is high enough relative to its other options, but the degradation of the status quo payoffs will eventually make these payments necessary in order to sustain a Status Quo equilibrium.
-
-Therefore if sanctions are to disrupt the Status Quo equilibrium and potentially lead to ceding by the secessionists, it must be that the patron is either not able or not willing to make the investment required to maintain the status quo under player $c$'s sanctions (Condition 1).
-
-Assume then that Condition 1 holds so that the patron makes no investments in the Status Quo payoffs of player $s$. We also need the patron to withhold investments toward encouraging the secessionists to fight. Lemma 4 of Proposition 1 is not sufficient to guarantee this behavior since no investments are being made in the Status Quo. In addition, the reference outcome changes: players $p$ and $c$ must now compare their payoffs in the war scenario to the reunification outcome. To be precise, the least stringent condition is $m$ periods of Status Quo followed by the Reunification outcome, where $m$ is the maximal number of periods that it takes for the sanctions to degrade the status quo payoffs below the level of the payoffs from ceding for player $s$. 
-
-Player $p$'s continuation value when the status quo is played for $m-1$ periods before ceding is $0 - \frac{\de^m}{1-\de} \alpha$, whereas the continuation value from war is $\frac{\lambda p_s - \alpha (1-p_s)}{1-\de}$. For player $c$, it is $0 + \frac{\de^m}{1-\de} \beta$ versus $\frac{-\nu p_s + \beta (1 - p_s)}{1-\de}$. Thus the condition for $p$'s willingness to instigate fighting to outweigh $c$'s willingness to deter fighting is
-\[
-  \textstyle \frac{\lambda p_s - \alpha (1-p_s)}{1-\de} + \frac{\de^m}{1-\de} \alpha > \frac{-\nu p_s + \beta (1-p_s)}{1-\de} -  \frac{\de^m}{1-\de} \beta
-\]
-
-If this condition holds, then there will be no investments following sanctions. But it is still not guaranteed that the secessionists will choose to cede. Status Quo is no longer a long-run equilibrium strategy, but even without outside investments, it is possible that Fight could be a more attractive action than Cede.
-
-The status quo payoffs will degrade period by period in the absence of investments. Whether the secessionists choose Cede or Fight depends on which strategy yields the higher continuation value. In order to avoid conflict, sanctions must cause player $s$'s continuation value from playing Status Quo to fall below its continuation value from playing Cede before it falls below the continuation value from playing Fight. \hfill $\blacksquare$
-
-%Several possibilities exist. First, the sanctions could degrade the payoffs to ceding more than they degrade the status quo payoffs. If $S_L > \mu + S_Q$ where $S_L$ and $S_Q$ are the per-period reduction in the payoffs to ceding and maintaining the Status Quo, respectively, both payoffs will degrade until eventually player $s$ will choose \emph{Fight}. This occurs because the continuation value from \emph{Cede} will remain below that from playing \emph{Status Quo}, but the sanctions only have a partial effect in reducing the \emph{Fight} continuation value through the war lottery, while their entire impact is felt on the \emph{Status Quo} continuation value. The gap between the Status Quo and Fight continuation values that was positive without sanctions will eventually become negative, leading to conflict.
-
-%Thus we must have $\mu + S_Q > S_L$ if there is any chance that the secessionists will choose to cede.
 
 \newpage
 
-\theendnotes
+\begin{figure}
+\includegraphics{Timeline2.pdf}
+\caption{Timeline}
+\end{figure}
+
+\newpage
+
+\begin{center}
+\begin{tabular}{|  c| c | c | c |} 
+\hline
+  $g\downarrow$,     $ s\rightarrow$  & Fight & Status Quo &Cede \\ \hline
+	Fight & $p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$ &$p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$&$W_g^t, L_s^t$ \\ \hline
+	Status Quo& $p_g W_g^t + p_s L_g^t - \zeta_g, p_s W_s^t + p_g L_s^t - \zeta_s$& $\bm{Q_g^t, Q_s^t}$ &$W_g^t, L_s^t$ \\ \hline
+	Cede&$L_g^t, W_s^t$& $L_g^t, W_s^t$ &$\bm{Q_g^t, Q_s^t}$ \\ \hline
+ \multicolumn{4}{c} {Figure 2: Stage Game Payoffs}\\ 
+\end{tabular}
+\end{center}
+
+\newpage
+\begin{center}
+\includegraphics[width=6.25in]{Table_1_082214.pdf}
+\end{center}
 
 \end{document} 
