@@ -115,7 +115,6 @@ We add some more realistic elements:
 	\item Model
 	\item Status quo equilibrium
 	\item What we can say about sanctions
-	\item Conclusion
 \end{enumerate}
 \end{frame}
 
@@ -127,7 +126,7 @@ We add some more realistic elements:
 \pause
 \begin{figure}
 \includegraphics[width=\linewidth,height=\textheight,keepaspectratio]{Timeline2.pdf}
-\caption{Timeline}
+%\caption{Timeline}
 \end{figure}
 \end{frame}
 
@@ -187,9 +186,10 @@ Assumptions:
 	Fight & $\omega_{gt}, \omega_{st}$ &$\omega_{gt}, \omega_{st}$&$W_{gt}, L_{st}$ \\ \hline
 	Status Quo& $\omega_{gt}, \omega_{st}$& $Q_{gt}, Q_{st}$ &$W_{gt}, L_{st}$ \\ \hline
 	Cede&$L_{gt}, W_{st}$& $L_{gt}, W_{st}$ &$Q_{gt}, Q_{st}$ \\ \hline
- \multicolumn{4}{c} {Stage Game Payoffs}\\ 
+ %\multicolumn{4}{c} {Stage Game Payoffs}\\ 
 \end{tabular}
 \end{center}
+\vskip.05in
 where $\omega_{it} \equiv p_1 \left(W_{it}-\zeta_i\right) + \left(1-p_1\right)\left( L_{it}-\zeta_i\right)$
 \begin{itemize}
 	\item fixed cost of war $\zeta_i$
@@ -198,7 +198,8 @@ where $\omega_{it} \equiv p_1 \left(W_{it}-\zeta_i\right) + \left(1-p_1\right)\l
 			\item can also handle non-decisive war
 		\end{itemize}
 \end{itemize}
-and $Q_{st} \equiv Q_{s,t-1} -\mu + R_{pt} - R_{ct}$
+\vskip.05in
+and e.g. $Q_{st} \equiv Q_{s,t-1} -\mu + R_{pt} - R_{ct}$
 \end{frame}
 
 
@@ -206,48 +207,47 @@ and $Q_{st} \equiv Q_{s,t-1} -\mu + R_{pt} - R_{ct}$
 \subsection{}
 
 
-\begin{frame}{Main Result}
+\begin{frame}{Unrecognized Statehood as Stable Equilibrium}
 \begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Proposition 1}
   There exists an equilibrium in which the outcome is perpetual unrecognized statehood. The actions in this equilibrium are 
 	\begin{enumerate}
-		\item $p$ invests to create a buffer of $\frac{\beta}{1-\delta}$ between the payoffs from ceding and the status quo in the first period;
-		\item $p$ invests up to $\mu$ each period thereafter to maintain the buffer;
-		\item $c$ invests nothing;
-		\item both $g$ and $s$ play $Status$ $Quo$ each period.
+		\item in the first period, the patron invests to create a buffer of $\frac{\beta}{1-\delta}$ between the secessionists' payoffs from ceding and the status quo;
+		\item the patron invests up to $\mu$ each period thereafter to maintain the buffer;
+		\item the int'l community invests nothing;
+		\item both inside players choose $Status$ $Quo$ each period.
 	\end{enumerate}
 	
 \end{beamerboxesrounded}
 \end{frame}
 
-\begin{frame}{Proposition 1 Continued}
+\begin{frame}{Unrecognized Statehood as Stable Equilibrium (Con't)}
 \pause
   The following are sufficient conditions for the equilibrium:
 	\begin{enumerate}[<+->]
-		\item \textit{For both $g$ and $s$, $Q_{it} \geq L_{it} \ \forall t$.}
+		\item \textit{For each inside actor, choosing status quo provides the highest expected payoff at the beginning of the game.}
 
-		\item \emph{For both $g$ and $s$, $\frac {Q_{it}}{1-\delta} \geq  -\zeta_i+\frac{W_{it}(p_1) + L_{it}(1-p_1)}{1-\delta} \ \forall t$.}
+\item  \textit{The patron can afford to deter the int'l community from inducing reunification at the beginning of the game.}
 
-\item \textit{$\alpha \geq \beta$: reunification is more important for $p$ to avoid than for $c$ to achieve.}
+\item \textit{The patron can afford to pay to maintain the status quo.}
 
-\item  \textit{$\nu\cdot p_{1s} \geq \lambda \cdot p_{1s} + \mu + \beta$: recognition of $s$ is more important for $c$ to avoid than for $p$ to achieve.}
+\item \textit{Reunification is more important for the patron to avoid than for the int'l community to achieve.}
 
-\item  \textit{$B_{p1} \geq\frac{\beta}{1-\delta} - \left(q_{s1} - l_{s1} \right)$: the patron can afford to deter player $c$ from inducing reunification at the beginning of the game.}
+\item  \textit{Recognition is more important for the int'l community to avoid than for the patron to achieve.}
 
-\item \textit{$B_{pt} \geq \mu, \ \forall t>1$: the patron can afford to pay to maintain the status quo.}
 	\end{enumerate}
 \end{frame}
 
 \section{Sanctions}
 \begin{frame}{Sanctions (I)}
 \begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Proposition 2}
-  Assume the conditions of \emph{Proposition 1} hold in the absence of sanctions and that sanctions affect only player $s$'s Status Quo payoffs. In order for sanctions to lead to ceding by the secessionists, the following are required:
+  Assume the conditions of \emph{Proposition 1} hold in the absence of sanctions and that sanctions affect only the secessionists' Status Quo payoffs. In order for sanctions to lead to ceding by the secessionists, the following are required:
 	\pause
 	\begin{enumerate}[<+->]
 \item The patron must be unable or find it not worthwhile to invest the additional amount now required to maintain the status quo.
 
 \item The patron must be unable or find it not worthwhile to invest to instigate fighting by the secessionists.
 
-\item The continuation value from SQ must fall below that from Cede before it falls below that from Fight.
+\item The continuation value from Status Quo must fall below that from Cede before it falls below that from Fight.
 \end{enumerate}
 
 \end{beamerboxesrounded}
@@ -256,8 +256,9 @@ and $Q_{st} \equiv Q_{s,t-1} -\mu + R_{pt} - R_{ct}$
 
 \begin{frame}{Sanctions (II)}
 \begin{beamerboxesrounded}[upper=palette tertiary, shadow=true]{Proposition 3}
-  Assume the conditions of \emph{Proposition 1} hold in the absence of sanctions and that sanctions affect both player $s$'s status quo payoffs and its military capabilities. \\
+  Assume the conditions of \emph{Proposition 1} hold in the absence of sanctions and that sanctions affect both the secessionists' status quo payoffs and its military capabilities. \\
 	\pause
+	\vskip.05in
 	The parameter space over which a war will be initiated by the home state is increasing in the magnitude of the sanctions' impact on the secessionists' military capabilities.
 \end{beamerboxesrounded}
 
