@@ -106,5 +106,57 @@ We proceed by backward induction.
 \end{itemize}
 Therefore the Subgame Perfect Nash Equilibrium is $p=0$, ($SQ,SQ$) regardless of the value of $p$. 
 
+\vskip.5in
+\section{3-player version, Reunification better than Status Quo}
+Let us now consider a case where the payoffs for the secessionists are \underline{lower} in the unrecognized state ('Status Quo') than they are if they cede and rejoin the home state. We believe this will be the case a few months or years after they take control of the territory and unrecognized status has caused their economic situation to deteriorate.
+
+\subsection{Players and Strategy Spaces}
+Same as in Section 1.
+
+
+\vskip.3in
+\subsection{Timing and Information}
+Same as in Section 1.
+
+\vskip.5in
+\subsection{Payoffs}
+\begin{itemize}
+	\item The payoffs after ($SQ,SQ$) are $-p,3,\bm{0}+p$
+	\item The payoffs after ($SQ,C$) are $-10-p,5,1$
+	\item The payoffs after ($C,SQ$) are $3-p,0,5+p$
+	\item The payoffs after ($C,C$) are $-p,3,\bm{0}$
+\end{itemize}
+The only change(s) from Section 1 is that the secessionist's payoff from ($SQ,SQ$) has been reduced, and the payoffs from ($C,C$) along with it.
+
+\vskip.5in
+\subsection{Analysis}
+We proceed by backward induction.
+\begin{itemize}
+	\item In the simultaneous game between $G$ and $S$, $C$ is dominated by $SQ$ for player $G$.
+		\begin{itemize}
+			\item Therefore the Nash Equilibrium (NE) of the subgame is determined by $p$: 
+				\begin{itemize}
+					\item If $0+p \geq 1$ (i.e. $p \geq 1$), the NE is ($SQ,SQ$).
+					\item If $0+p \leq 1$ (i.e. $p \leq 1$), the NE is ($SQ,C$).
+				\end{itemize}
+		\end{itemize}
+	\item The Patron's decision: if ($SQ,SQ$) is the equilibrium in the subgame, the Patron will get a payoff of $-p$. If ($SQ,C$) is the equilibrium in the subgame, the Patron will get a payoff of $-10-p$.
+		\begin{itemize}
+			\item Since ($SQ,C$) is the worse outcome for the Patron, the patron does not want to invest at all ($p=0$) if ($SQ,C$) is going to be the outcome. 
+				\begin{itemize}
+					\item In this case, the Patron chooses $p=0$ and the Patron's total payoff is $-10$.
+				\end{itemize}
+			\item The Patron prefers ($SQ,SQ$), but to make this happen the Patron must make an investment of the $p \geq 1$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($SQ,SQ$) by choosing the smallest $p$, which is $p=1$. 
+				\begin{itemize}
+					\item In this case, the Patron chooses $p=1$ and the Patron's total payoff is $-1$.
+				\end{itemize}
+			\item Since $-1 > -10$, the Patron will choose to invest $p=1$.
+		\end{itemize}
+\end{itemize}
+Therefore the Subgame Perfect Nash Equilibrium is $p=1$, and ($SQ,SQ$) as long as $p \geq 1$, ($SQ,C$) if $p \leq 1$.
+\begin{itemize}
+	\item $p=1$, ($SQ,SQ$) is an equilibrium outcome.
+	\item $p=1$, ($SQ,C$) is also an equilibrium outcome. You can rule this one out by specifying that the Secessionists choose $SQ$ whenever they are indifferent.
+\end{itemize}
 		
 \end{document}
