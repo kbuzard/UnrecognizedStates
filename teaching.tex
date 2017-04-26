@@ -57,11 +57,10 @@ bookmarksopen=true]{hyperref}
 \end{center}
 
 \vskip.3in
-\section{Motivation}
+\section{3-player version, Status Quo better than Reunification}
+Let us consider a first case where the payoffs for the secessionists are higher in the unrecognized state ('Status Quo') than they are if they cede and rejoin the home state. This, for instance, may be the case very early after taking control of the territory before their economic situation has had a chance to deteriorate.
 
-
-\vskip.5in
-\section{Players and Strategy Spaces}
+\subsection{Players and Strategy Spaces}
 \begin{enumerate}
 	\item Home government (G) chooses $S_G \in \left\{SQ,C\right\}$ where SQ means 'Status Quo' of unrecognized statehood and C means 'Cede' the issue of status and recognize the secessionists as an independent state.
 	\item Secessionists (S) choose $S_S \in \left\{SQ,C\right\}$, same as for $G$ except when they Cede, they rejoin the home state.
@@ -70,26 +69,42 @@ bookmarksopen=true]{hyperref}
 \end{enumerate}
 
 
-\vskip.5in
-\section{Payoffs}
-Let, for instance, ($SQ,C$) mean that $G$ plays $SQ$ and $S$ plays $C$. \\
+\vskip.3in
+\subsection{Timing and Information}
+The patron makes its investment. This investment is seen by all other players. Then the home government and secessions move simultaneously.
 
-Let us consider a first case where the payoffs for the secessionists are higher in the unrecognized state ('Status Quo') than they are if they cede and rejoin the home state. This, for instance, may be the case very early after taking control of the territory before their economic situation has had a chance to deteriorate.
-Then 
+
+\vskip.5in
+\subsection{Payoffs}
+Let, for instance, ($SQ,C$) mean that $G$ plays $SQ$ and $S$ plays $C$. Then 
 \begin{itemize}
 	\item The payoffs after ($SQ,SQ$) are $-p,3,2+p$
-	\item The payoffs after ($SQ,C$) are $-10-p,5,0$
+	\item The payoffs after ($SQ,C$) are $-10-p,5,1$
 	\item The payoffs after ($C,SQ$) are $3-p,0,5+p$
 	\item The payoffs after ($C,C$) are $-p,3,2$
 \end{itemize}
 
 \vskip.5in
-\section{Model}
-N
+\subsection{Analysis}
+We proceed by backward induction.
 \begin{itemize}
-	\item 
+	\item In the simultaneous game between $G$ and $S$, $C$ is dominated by $SQ$ for player $G$.
+		\begin{itemize}
+			\item Therefore the Nash Equilibrium (NE) of the subgame is determined by $p$: 
+				\begin{itemize}
+					\item If $2+p \geq 1$ (i.e. $p \geq -1$), the NE is ($SQ,SQ$).
+					\item If $2+p \leq 1$ (i.e. $p \leq -1$), the NE is ($SQ,C$).
+					\item Recall that the smallest value of $p$ that the Patron can choose is $p=0$.
+					\item Since $p\leq-1$ is not possible, ($SQ,C$) is not possible.
+					\item Therefore ($SQ,SQ$) will be the equilibrium.
+				\end{itemize}
+		\end{itemize}
+	\item The Patron's decision: Since ($SQ,SQ$) will be the equilibrium no matter what, the Patron will get a payoff of $-p$.
+		\begin{itemize}
+			\item Since the payoff is $-p$, the Patron maximizes its payoffs by choosing the smallest possible $p$, which is $0$. 
+		\end{itemize}
 \end{itemize}
- 
+Therefore the Subgame Perfect Nash Equilibrium is $p=0$, ($SQ,SQ$) regardless of the value of $p$. 
 
 		
 \end{document}
