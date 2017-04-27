@@ -165,22 +165,30 @@ Therefore the Subgame Perfect Nash Equilibrium is $p=1$, and ($SQ,SQ$) as long a
 Now we look at the full version of the model including the international community, and continue to assume that the payoffs for the secessionists are lower in the unrecognized state ('Status Quo') than they are if they cede and rejoin the home state. 
 
 \subsection{Players and Strategy Spaces}
-Same as in Section 1.
+We add the international community:
+\begin{enumerate}
+	\item Home government (G) chooses $S_G \in \left\{SQ,C\right\}$ where SQ means 'Status Quo' of unrecognized statehood and C means 'Cede' the issue of status and recognize the secessionists as an independent state.
+	\item Secessionists (S) choose $S_S \in \left\{SQ,C\right\}$, same as for $G$ except when they Cede, they rejoin the home state.
+	\item Patron state (P) chooses $p \in [0,\infty)$ to invest in the secessionists status quo payoffs
+	\item \textbf{International community (C) chooses} $c \in [0,\infty)$ \textbf{ to invest in the secessionists payoffs from rejoining the home state}
+\end{enumerate}
+
 
 
 \vskip.3in
 \subsection{Timing and Information}
-Same as in Section 1.
+The patron makes its investment. This investment is seen by all other players. \textbf{Then the international community makes its investment. This investment is seen by all other players.} Then the home government and secessions move simultaneously.
+
 
 \vskip.5in
 \subsection{Payoffs}
+We add payoffs for the international community, and the international community's investment in the secessionists payoffs from ceding.
 \begin{itemize}
-	\item The payoffs after ($SQ,SQ$) are $-p,3,\bm{0}+p$
-	\item The payoffs after ($SQ,C$) are $-10-p,5,1$
-	\item The payoffs after ($C,SQ$) are $3-p,0,5+p$
-	\item The payoffs after ($C,C$) are $-p,3,\bm{0}$
+	\item The payoffs after ($SQ,SQ$) are $-p,\bm{-c},3,0+p$
+	\item The payoffs after ($SQ,C$) are $-10-p,\bm{5-c},5,1\bm{+c}$
+	\item The payoffs after ($C,SQ$) are $3-p,\bm{-7-c},0,5+p$
+	\item The payoffs after ($C,C$) are $-p,\bm{-c},3,0\bm{+c}$
 \end{itemize}
-The only change(s) from Section 1 is that the secessionist's payoff from ($SQ,SQ$) has been reduced, and the payoffs from ($C,C$) along with it.
 
 \vskip.5in
 \subsection{Analysis}
