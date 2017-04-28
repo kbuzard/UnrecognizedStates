@@ -146,7 +146,7 @@ We proceed by backward induction.
 				\begin{itemize}
 					\item In this case, the Patron chooses $p=0$ and the Patron's total payoff is $-10$.
 				\end{itemize}
-			\item The Patron prefers ($SQ,SQ$), but to make this happen the Patron must make an investment of the $p \geq 1$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($SQ,SQ$) by choosing the smallest $p$, which is $p=1$. 
+			\item The Patron prefers ($SQ,SQ$), but to make this happen the Patron must make an investment of $p \geq 1$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($SQ,SQ$) by choosing the smallest $p$, which is $p=1$. 
 				\begin{itemize}
 					\item In this case, the Patron chooses $p=1$ and the Patron's total payoff is $-1$.
 				\end{itemize}
@@ -198,9 +198,22 @@ We proceed by backward induction.
 		\begin{itemize}
 			\item Therefore the Nash Equilibrium (NE) of the subgame is determined by $p$: 
 				\begin{itemize}
-					\item If $0+p \geq 1$ (i.e. $p \geq 1$), the NE is ($SQ,SQ$).
-					\item If $0+p \leq 1$ (i.e. $p \leq 1$), the NE is ($SQ,C$).
+					\item If $0+p \geq 1+c$ (i.e. $p \geq 1+c$), the NE is ($SQ,SQ$).
+					\item If $0+p \leq 1+c$ (i.e. $p \leq 1+c$), the NE is ($SQ,C$).
 				\end{itemize}
+		\end{itemize}
+	\item Player $C$'s decision: if ($SQ,SQ$) is the equilibrium in the subgame, Player $C$ will get a payoff of $-c$. If ($SQ,C$) is the equilibrium in the subgame, Player $C$ will get a payoff of $5-c$.
+		\begin{itemize}
+			\item Since ($SQ,SQ$) is the worse outcome for Player $C$, Player $C$ does not want to invest at all ($c=0$) if ($SQ,SQ$) is going to be the outcome. 
+				\begin{itemize}
+					\item In this case, the Player $C$ chooses $c=0$ and Player $C$'s total payoff is $0$.
+				\end{itemize}
+			\item Player $C$ prefers ($SQ,C$), but to make this happen Player $C$ must make an investment of the $c \geq p - 1$. Because Player $C$'s payoff is $5-c$, Player $C$ maximizes its payoffs in the case where ($SQ,C$) is the outcome by choosing the smallest $c$, which is $c=p-1$. 
+				\begin{itemize}
+					\item In this case, Player $C$'s investment of $c=p-1$ makes its total payoff is $5-c = 5 - (p -1) = 6-p$.
+				\end{itemize}
+			\item If $6 - p \leq 0$ (where $0$ is Player $C$'s payoff from ($SQ,SQ$)), Player $C$ will choose to invest $c = p-1$ and the outcome will be ($SQ,C$).
+			\item If $6 - p > 0$ (i.e. $6 > p$), Player $C$ will choose to invest $c = 0$ and the outcome will be ($SQ,SQ$).
 		\end{itemize}
 	\item The Patron's decision: if ($SQ,SQ$) is the equilibrium in the subgame, the Patron will get a payoff of $-p$. If ($SQ,C$) is the equilibrium in the subgame, the Patron will get a payoff of $-10-p$.
 		\begin{itemize}
@@ -208,17 +221,16 @@ We proceed by backward induction.
 				\begin{itemize}
 					\item In this case, the Patron chooses $p=0$ and the Patron's total payoff is $-10$.
 				\end{itemize}
-			\item The Patron prefers ($SQ,SQ$), but to make this happen the Patron must make an investment of the $p \geq 1$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($SQ,SQ$) by choosing the smallest $p$, which is $p=1$. 
+			\item The Patron prefers ($SQ,SQ$), but to make this happen the Patron must make an investment of $p \geq 6$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($SQ,SQ$) by choosing the smallest $p$ that leads to ($SQ,SQ$), which is $p=6$. 
 				\begin{itemize}
-					\item In this case, the Patron chooses $p=1$ and the Patron's total payoff is $-1$.
+					\item In this case, the Patron chooses $p=6$ and the Patron's total payoff is $-6$.
 				\end{itemize}
-			\item Since $-1 > -10$, the Patron will choose to invest $p=1$.
+			\item Since $-6 > -10$, the Patron will choose to invest $p=6$.
 		\end{itemize}
 \end{itemize}
-Therefore the Subgame Perfect Nash Equilibrium is $p=1$, and ($SQ,SQ$) as long as $p \geq 1$, ($SQ,C$) if $p \leq 1$.
+Therefore the Subgame Perfect Nash Equilibrium is $p=6$, $c = 0$ if $p \geq 6$, $c = p-1$ if $p < 6$ and ($SQ,SQ$) as long as $p \geq c+1$, ($SQ,C$) if $p \leq c+ 1$.
 \begin{itemize}
-	\item $p=1$, ($SQ,SQ$) is an equilibrium outcome.
-	\item $p=1$, ($SQ,C$) is also an equilibrium outcome. You can rule this one out by specifying that the Secessionists choose $SQ$ whenever they are indifferent.
+	\item $p=6$, $c = 0$, ($SQ,SQ$) is an equilibrium outcome.
 \end{itemize}
 		
 \end{document}
