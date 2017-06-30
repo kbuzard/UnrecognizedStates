@@ -10,3 +10,5 @@ text+headers+captions (#headers/#floats/#inlines/#displayed)
 1271+5+25 (1/0/13/0) Section: The Impact of Economic Sanctions
 
 keep budget constraint, value patron places on independence 
+highlight negotiated settlement
+sanctions theory
