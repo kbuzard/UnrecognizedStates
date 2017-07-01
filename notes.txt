@@ -1,9 +1,9 @@
-Words in text: 5178
+Words in text: 4839
 Words in headers: 46
-Words outside text (captions, etc.): 284
+Words outside text (captions, etc.): 259
 Number of headers: 10
 Number of floats/tables/figures: 1
-Number of math inlines: 217
+Number of math inlines: 216
 Number of math displayed: 1
 Subcounts:
   text+headers+captions (#headers/#floats/#inlines/#displayed)
@@ -14,7 +14,7 @@ Subcounts:
 2148+6+217 (1/0/125/0) Subsection: Analysis of the ``Status Quo'' Equilibrium
 173+1+0 (1/0/1/0) Subsection: Discussion
 237+2+0 (1/0/1/0) Subsection: Alternative Outcomes
-1276+5+26 (1/1/13/0) Section: The Impact of Economic Sanctions
+937+5+1 (1/1/12/0) Section: The Impact of Economic Sanctions
 
 
 keep budget constraint, value patron places on independence 
