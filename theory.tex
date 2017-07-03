@@ -21,14 +21,14 @@ The game begins at a status quo in which the secessionist elite controls at leas
 There are an infinite number of discrete periods $t=1,2,\ldots$. Play proceeds in each period $t$ as follows (and as shown in Figure 1) until an absorbing state is reached.
 
 \begin{enumerate} 
-\item $p$ chooses an investment level $R_p^t\in \left[0,B_p^t\right]$ to influence the payoffs of $s$ and $g$, where $B_p^t$ is an exogenous limit on the finances of the patron. 
+\item $p$ chooses an investment level to influence the payoffs of $s$ and $g$. 
  
-\item $c$ chooses an investment level $R_c^t\in \mathbb{R}^+$ to influence the payoffs of $s$ and $g$.
+\item $c$ chooses an investment level to influence the payoffs of $s$ and $g$.
  
 \item Conflict Stage Game: $s$ and $g$ play a stage game in which each chooses simultaneously from the following actions: Fight, Status Quo, Cede. 
 \end{enumerate}
 
-The payoffs at the end of a period are determined by these actions and six state variables. These state variables keep track of the value of the status quo ($Q_s^t$ and $Q_g^t$), losing ($L_s^t$ and $L_g^t$) and winning the issue of status ($W_s^t$ and $W_g^t$) for the secessionists and government respectively. The transitions of the state variables are described below.
+The payoffs at the end of a period are determined by these actions and six state variables. These state variables keep track of the value of the status quo, losing and winning the issue of status for the secessionists and government respectively. 
 
 The game continues into the next period if the `inside players'---the secessionists and government---selected (status quo, status quo) or (cede, cede). Otherwise, the game ends in an absorbing state as described in Section~\ref{sec:stage}.
 
@@ -92,31 +92,31 @@ Unrecognized states are frequently viewed as temporary phenomena or as non-equil
 We begin by listing and providing intuition for a set of restrictions on the preferences of the actors and their resources for which we can guarantee that unrecognized statehood is an equilibrium outcome. This set of restrictions identifies a class of games, $\mathcal{G}$: 
 
 \begin{definition}
-\emph{The class $\mathcal{G}$ includes all those games for which the parameters satisfy the following restrictions:}
+\emph{The class $\mathcal{G}$ includes all those games for which following restrictions are satisfied:}
 
 \begin{enumerate}
-\item \textit{For both players $g$ and $s$, $Q_i^0 \geq L_i^0$: remaining in the status quo is better than ceding at the beginning of the game.}\label{res:1}
+\item \textit{For both players $g$ and $s$, remaining in the status quo is better than ceding at the beginning of the game.}\label{res:1}
 
-\item \textit{For both players $g$ and $s$, $\frac {Q_i^0}{1-\delta} \geq \frac {\omega_i^0}{1-\delta} = -\zeta_i+\frac{W_i^0(p_i) + L_i^0(1-p_i)}{1-\delta}$: the expected outcome under war is worse than the status quo at the beginning of the game.}\label{res:2}
+\item \textit{For both players $g$ and $s$, the expected outcome under war is worse than the status quo at the beginning of the game.}\label{res:2}
 
-\item \textit{Either (a) $\frac{L_s^0}{1-\delta}  > \frac{\omega_s^0}{1-\delta}$ or (b) $0 > -\mu > \frac{\lambda p_s - \alpha (1-p_s)}{1-\de}$: either the secessionists prefer ceding to war or the patron's disutility from war is greater than the per-period cost of offsetting the deterioration in the secessionists' status quo payoffs.}\label{res:new}
+\item \textit{Either the secessionists prefer ceding to war or the patron's disutility from war is greater than the per-period cost of offsetting the deterioration in the secessionists' status quo payoffs.}\label{res:new}
 
-\item \textit{$\frac{\alpha}{1-\de} \geq \frac{\beta}{1-\de} + \mu$: reunification is more important for the patron to avoid than for the international community to achieve.}\label{res:3}
+\item \textit{Reunification is more important for the patron to avoid than for the international community to achieve.}\label{res:3}
 
-\item  \textit{$\nu\cdot p_s \geq \lambda \cdot p_s + \mu + \beta$: recognition of the secessionist state is more important for the international community to avoid than for the patron to achieve.}\label{res:4}
+\item  \textit{Recognition of the secessionist state is more important for the international community to avoid than for the patron to achieve.}\label{res:4}
 
-\item  \textit{$B_p^1 \geq\frac{\beta}{1-\delta} - \left(Q_s^0 -\mu - L_s^0 \right)$: the patron can afford to deter player $c$ from inducing reunification at the beginning of the game.}\label{res:5}
+\item  \textit{The patron can afford to deter player $c$ from inducing reunification at the beginning of the game.}\label{res:5}
 
-\item \textit{$B_p^t \geq \mu, \ \forall t$: the patron can afford to pay to maintain the status quo.}\footnote{Depending on parameters, one might think that Restriction (5) is more likely to be binding than Restriction (6). If there is great variance in budget between periods for the patron, such as a greatly reduced budget in some period $t> 1$ compared to period $1$, (6) could be the binding constraint.}\label{res:6}
+\item \textit{The patron can afford to pay to maintain the status quo.}\label{res:6}
 
 \end{enumerate}
 \end{definition}
 
 There are many potential equilibrium outcomes of this game, including, under the right parameters, immediate ceding by either party as well as fighting (see Section~\ref{sec:alt}). As we are interested particularly in the outcome of long-term unrecognized statehood, here we focus on the question of the existence of an equilibrium that leads to this outcome in perpetuity. We will show that, given a game satisfying the parameter restrictions in Definition 1, at least one status quo equilibrium will exist.
 
-Our concept of equilibrium will be stationary Markov equilibrium as defined in Mailath and Samuelson (2006). That is, a strategy profile is a stationary Markov equilibrium if it is a stationary Markov strategy profile and a subgame-perfect equilibrium. In turn, a strategy profile is defined to be a stationary Markov strategy if any two ex post histories terminating in the same state play identically from the termination point forward. In other words, stationary Markov strategies ignore all details of the history aside from the current state.
+Our concept of equilibrium will be stationary Markov equilibrium as defined in Mailath and Samuelson (2006). Strategies in a stationary Markov equilibrium ignore all details of the history aside from the current state.
 
-The state is a vector of six variables comprised of the payoffs from the status quo, ceding, and winning the issue of status for each of the two inside actors. That is, $s = \left(Q_s,Q_g,L_s,L_g,W_s,W_g \right)$.\footnote{In the case of $W_s^t$ and $W_g^t$, it is more intuitive to imagine investments increasing the probability of winning a war; because the lottery is additively separable and the ``Win'' outcome is always preferred when it occurs independently in the stage game, this more convenient modeling choice is inconsequential.} Strategies for the patron and the international community are how much to invest in each of the six state variables. However, positive investments in some of the state variables can be ruled out by preference assumptions.
+The state is a vector of six variables comprised of the payoffs from the status quo, ceding, and winning the issue of status for each of the two inside actors. That is, $s = \left(Q_s,Q_g,L_s,L_g,W_s,W_g \right)$.
 
 Player $c$ dislikes war and so will never invest in either state variable associated with winning since they increase the likelihood that one of the inside actors chooses to fight. It would also not want to make the government lose and so won't invest to augment $L_g$. This leaves three state variables in which player $c$ might invest: $Q_s$, $Q_g$, $L_s$.
 

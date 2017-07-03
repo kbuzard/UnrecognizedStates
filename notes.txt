@@ -1,3 +1,9 @@
+
+keep budget constraint, value patron places on independence 
+highlight negotiated settlement
+sanctions theory
+
+These were the stats when I created 'notation' branch
 Words in text: 4839
 Words in headers: 46
 Words outside text (captions, etc.): 259
@@ -16,7 +22,3 @@ Subcounts:
 237+2+0 (1/0/1/0) Subsection: Alternative Outcomes
 937+5+1 (1/1/12/0) Section: The Impact of Economic Sanctions
 
-
-keep budget constraint, value patron places on independence 
-highlight negotiated settlement
-sanctions theory
