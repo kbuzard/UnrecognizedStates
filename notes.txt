@@ -1,18 +1,18 @@
-Words in text: 3578
+Words in text: 3468
 Words in headers: 44
-Words outside text (captions, etc.): 59
+Words outside text (captions, etc.): 37
 Number of headers: 9
 Number of floats/tables/figures: 1
-Number of math inlines: 98
-Number of math displayed: 1
+Number of math inlines: 84
+Number of math displayed: 0
 Subcounts:
   text+headers+captions (#headers/#floats/#inlines/#displayed)
 120+5+19 (1/0/0/0) Section: A Model of Unrecognized Statehood
 245+2+0 (1/0/9/0) Subsection: The Players
-881+20+22 (3/0/59/1) Subsection: Details of the Dynamic Game
+794+20+0 (3/0/45/0) Subsection: Details of the Dynamic Game
 985+9+17 (1/0/16/0) Section: Explaining Outcomes of Secessionist Conflicts: The ``Status Quo'' Equilibrium
 173+1+0 (1/0/1/0) Subsection: Discussion
-237+2+0 (1/0/1/0) Subsection: Alternative Outcomes
+214+2+0 (1/0/1/0) Subsection: Alternative Outcomes
 937+5+1 (1/1/12/0) Section: The Impact of Economic Sanctions
 
 keep budget constraint, value patron places on independence 
