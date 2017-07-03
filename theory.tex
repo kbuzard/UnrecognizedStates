@@ -79,17 +79,14 @@ Player $p$'s payoffs in period $t$ are $U_p^t= -\alpha X+\lambda Y -R_p^t$, whil
 
 
 
-\section{Explaining Outcomes of Secessionist Conflicts} 
+\section{Explaining Outcomes of Secessionist Conflicts: The ``Status Quo'' Equilibrium} 
 \label{sec:main}
-%The game has three outcomes that we will consider, each of which can be characterized by a class of equilibria. The outcome of greatest interest is both players choosing the status quo in perpetuity; we will also examine the two absorbing states, reunification and recognition by the home state (i.e. recognized statehood).\footnote{Other classes of equilibria are possible, for example it is theoretically possible for the players to agree to a lottery between the absorbing states which would yield a higher expected payoff than the status quo. However, in practice there is a credibility issue: the losing party does not have an incentive to cede if they lose the lottery. Such strategies are, in any case, not analyzed here.} 
 
-Despite the preferences of the international community for peace, the most common outcome of secessionist conflicts in the post-WWII period has been reunification with the home state via outright military reconquest. By contrast, reunification through negotiated settlement has been very rare. We will explore potential explanations for this seeming inability of the international community to achieve its aims in Section~\ref{sec:alt}. First, we turn to the outcome that we find the most puzzling: perpetual unrecognized statehood.
+Despite the preferences of the international community for peace, the most common outcome of secessionist conflicts in the post-WWII period has been reunification with the home state via outright military reconquest. By contrast, reunification through negotiated settlement has been very rare. In this section, we use a game theoretic model to explain the outcome that we find the most puzzling: perpetual unrecognized statehood.
 
-\subsection{The ``Status Quo'' Equilibrium} 
-\label{sec:mainproof}
 Unrecognized states are frequently viewed as temporary phenomena or as non-equilibrium outcomes attributable to players' misperceptions of the strategic situation, or their fundamental irrationality. Our central result shows that unrecognized statehood can be an equilibrium outcome capable of being sustained in perpetuity by fully rational, perfectly informed actors. 
 
-We begin by listing and providing intuition for a set of restrictions on the preferences of the actors and their resources for which we can guarantee that unrecognized statehood is an equilibrium outcome. This set of restrictions identifies a class of games, $\mathcal{G}$: 
+We begin by listing a set of restrictions on the preferences of the actors and their resources for which we can guarantee that unrecognized statehood is an equilibrium outcome.
 
 \begin{definition}
 \emph{The class $\mathcal{G}$ includes all those games for which following restrictions are satisfied:}
@@ -112,60 +109,41 @@ We begin by listing and providing intuition for a set of restrictions on the pre
 \end{enumerate}
 \end{definition}
 
-We show that at least one status quo equilibrium exists for any game satisfying the restrictions in Definition 1. Our concept of equilibrium will be stationary Markov equilibrium as defined in Mailath and Samuelson (2006). Strategies in a stationary Markov equilibrium ignore all details of the history aside from the current state.
+We can show that at least one status quo equilibrium exists for any game satisfying the restrictions in Definition 1. Our concept of equilibrium is stationary Markov equilibrium in which strategies ignore all details of the history aside from the current state.
 
-The state is a vector of six variables comprised of the payoffs from the status quo, ceding, and winning the issue of status for each of the two inside actors. That is, $s = \left(Q_s,Q_g,L_s,L_g,W_s,W_g \right)$.
-
-Player $c$ dislikes war and so will never invest in either state variable associated with winning since they increase the likelihood that one of the inside actors chooses to fight. It would also not want to make the government lose and so won't invest to augment $L_g$. This leaves three state variables in which player $c$ might invest: $Q_s$, $Q_g$, $L_s$.
-
-Because the patron's preferences are aligned with the secessionists and against the government, it never invests in $W_g$ or $L_s$. The only reason the patron would invest in $Q_g$ is to counter an investment by player $c$ in the government's payoffs from war; since player $c$ will not make such an investment, we can also rule out investments by the patron in $Q_g$. This leaves three state variables in which the patron may invest: $Q_s$, $L_g$ and $W_s$.
-
-We now turn to defining and describing the Status Quo Equilibrium. We will see that, in this equilibrium, the outside actors' investments are paired: the patron's investments in the secessionists' status quo payoffs deter player $c$'s investments in the secessionists' payoffs from ceding. Likewise, investments by player $c$ in the government's status quo payoffs deter the patron from investing in the government's payoffs from ceding. Investments by player $c$ in the secessionists' status quo payoffs deter the patron from investing in the secessionists' payoffs from winning the conflict via fighting. In each case, the potential  investments are such that the largest continuation payoffs in the game between the secessionists and the government are those from playing status quo.
+The state is a vector of six variables comprised of the payoffs from the status quo, ceding, and winning the issue of status for each of the two inside actors. Player $c$ dislikes war and so will never invest in either state variable associated with winning since they increase the likelihood that one of the inside actors chooses to fight. It would also not invest in the government's payoffs from ceding. The patron will never invest in the government's payoffs from winning or the secessionists' payoffs from ceding, and it will not invest in the government's status quo payoffs because player $c$ will not invest in the government's payoffs from war so there is no need to counter such an investment. This leaves three state variables in which each outside actor might invest, which we address while defining the Status Quo Equilibrium. 
 
 \begin{definition}
 A Status Quo Equilibrium is a stationary Markov equilibrium in which the outcome is perpetual unrecognized statehood.
 
-The strategies for the government and secessionists in this equilibrium are to play their best responses given the continuation values induced by the investments of the outside actors. The continuation value from choosing war is the expected future stream of payoffs from the two possible absorbing states net of the cost of war $\left(-\zeta_i +\frac{W_i^t(p_i)+ L_i^t(1-p_i)}{1-\delta}\right)$. Similarly, the continuation value from ceding is $\frac{L_i^t}{1-\de}$ while that for the status quo is $\sum_{s=t}^\infty \de^{t-s} Q_i^t$. Unless otherwise noted below, playing Status Quo is the best response for both inside actors in terms of continuation values.
+The strategies for the government and secessionists in this equilibrium are to play their best responses given the continuation values induced by the investments of the outside actors. Unless otherwise noted below, playing Status Quo is the best response for both inside actors in terms of continuation values.
 
-The strategies for the inside actors are the following, organized according to the patron's investments in each relevant state variable. In period $t$:
+The strategies for the outside actors in period $t$ are:
 
 \begin{enumerate}
-	\item The patron invests $R_p^t = \max\left\{\frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right),\omega_s^{t-1} +\mu - Q_s^{t-1},0\right\}$ to augment $Q_s^{t-1}$. Player $c$ invests $R_c^t =0$ to augment $L_s^{t-1}$.
+	\item The patron invests enough in the secessionists Status Quo payoffs to deter Player $c$ from investing in the secessionists' payoffs from Ceding. Otherwise, Player $c$ invests enough to induce the secessionists to play Cede.
 
-If $\frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right) > 0$ and $R_p^t < \frac{\beta}{1-\de} - \left( Q_s^{t-1} - \mu - L_s^{t-1}\right)$, player $c$ invests $R_c^t = L_s^{t-1} - \left(Q_s^{t-1} - \mu + R_p^t \right) + \ve$, for $\ve$ small, to augment $L_s^{t-1}$ so that the secessionists play Cede.
-
-	\item As long as $R_p^t \leq \frac{\nu}{1-\de} + \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $L_g^{t-1}$, player $c$ invests $R_c^t = R_p^t - \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $Q_g^{t-1}$. Note that the outcome is that investments to augment $L_g^{t-1}$ and $Q_g^{t-1}$ are zero.
-
-If the patron invests $R_p^t > \frac{\nu}{1-\de} + \left( Q_g^{t-1} - L_g^{t-1}\right)$ to augment $L_g^{t-1}$, player $c$ is deterred from investing in $Q_g^{t-1}$ ($R_c^t = 0$) so that the government plays Cede.
-
-	\item As long as $R_p^t \leq \frac{1}{p_s} \left[\frac{\nu p_s - \beta (1-p_s)}{1 -\de} - \mu + Q_s^{t-1} - \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_s + L_s^{t-1}(1-p_s)\right)\right]$ to augment $W_s^{t-1}$, player $c$ invests $R_c^t = R_p^tp_s + \mu - Q_s^{t-1} + \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_s + L_s^{t-1}(1-p_s)\right)$ to augment $Q_s^{t-1}$. Similar to case two, the outcome is that investments to augment $W_s^{t-1}$ and $Q_s^{t-1}$ are zero.
-
-If the patron invests $R_p^t > \frac{1}{p_s}\left[\frac{\nu p_s - \beta (1-p_s)}{1 -\de} - \mu + Q_s^{t-1} - \left(-\zeta_{s}(1-\de) + W_s^{t-1}p_s + L_s^{t-1}(1-p_s)\right)\right] $ to augment $W_s^{t-1}$, player $c$ is deterred from investing in $Q_s^{t-1}$ ($R_c^t=0$) so that the secessionists play Fight.
+	\item Player $c$ is prepared to counter the largest investment the patron is willing to make in the government's payoffs from ceding by making a counter-investment in the government's status quo payoffs. If the patron were to make an investment larger than its willingness to pay, Player $c$ would not counter and the government would play Cede.
+	
+	\item Investments by player $c$ in the secessionists' status quo payoffs deter the patron from investing in the secessionists' payoffs from winning the conflict via fighting. If the patron were to make an investment larger than its willingness to pay, Player $c$ would not counter and the secessionists would play Fight.
 \end{enumerate}
 \end{definition}
 
 To understand the construction of this equilibrium, notice that there are three possible ways to disrupt the Status Quo: (1) the international community can provoke the secessionists to Cede, (2) the patron can provoke the government to cede, or (3) the patron can provoke the secessionists to fight.\footnote{The international community might also provoke the government to fight, but it is assumed to avoid conflict.} In order to establish that the Status Quo Equilibrium exists, it must be shown that each of these three deviations will be deterred.
 
-Since the patron moves first, the only investment that takes place in the Status Quo Equilibrium is the patron's investment in the status quo payoffs of the secessionists to deter the international community from provoking the secessionists to cede the issue of sovereignty. The international community's willingness to counteract investments by the patron toward the other two disturbances implies that there will be no investments in equilibrium in cases (2) and (3).
+Since the patron moves first, the only investment that takes place in the Status Quo Equilibrium is the patron's investment in the status quo payoffs of the secessionists to deter the international community from provoking the secessionists to cede the issue of sovereignty. This requires that Restrictions (\ref{res:new}) and (\ref{res:3}) of Definition 1 hold. The patron must also have sufficient resources as per Restrictions (\ref{res:5}) and (\ref{res:6}).
 
-\begin{itemize}
-	\item Reunification: When Restrictions (\ref{res:new}) and (\ref{res:3}) of Definition 1 hold, the patron's willingness to invest to maintain the status quo is sufficient to both deter the international community from intervening to encourage reunification and to avoid the secessionists choosing to go to war.
-	\item Recognition: When Restriction (\ref{res:4}) of Definition 1 holds, the international community's willingness to invest to avoid recognition of the secessionist state is sufficient to deter the patron from investing to achieve recognition.
-	\item Fight Restrictions (\ref{res:3}) and (\ref{res:4}) of Definition 1 ensure that the international community's willingness to invest to discourage new conflict is sufficient to deter the patron from investing to instigate such fighting.
-		\begin{itemize}
-			\item Note that this result depends on an implicit assumption that the patron is not able to skew the odds of the secessionists winning the conflict in a way that cannot be nullified by the international community. All other conflict scenarios are ruled out by the international community's assumed preference to avoid conflict.
-		\end{itemize}
-\end{itemize}
+The international community's willingness to counteract investments by the patron toward the other two disturbances (i.e., Restriction (\ref{res:4})) implies that there will be no investments in equilibrium in cases (2) and (3). Case (3) also requires Restrictions (\ref{res:3}) of Definition 1 and the implicit assumption that the patron is not able to skew the odds of the secessionists winning the conflict in a way that cannot be nullified by the international community. 
 
 If, however, off-path investments are ever made such that Status Quo does not yield the highest continuation value for one of the players, that player will play Cede or Fight and the game will end.
 
-Equilibrium actions are for the patron to maintain the status quo by investing $\mu$ each period once the difference in payoffs to the secessionists from playing Status Quo and Cede reaches $\frac{\beta}{1-\de}$ (with a possible lump sum investment at $t=1$ of up to that amount); for the international community to not invest and for both inside actors to play Status Quo each period.
+Equilibrium actions are for the patron to maintain the status quo by investing enough to overcome the deterioration in the secessionists' status quo payoffs; for the international community to not invest and for both inside actors to play Status Quo each period.
 
 \begin{proposition}
 	For any game in the class of games $\mathcal{G}$, there exists at least one Status Quo Equilibrium.
 \end{proposition}
 
-The proof of Proposition 1 is available in Buzard, Graham and Horne (2017).
+The full proof of Proposition 1 is available in Buzard, Graham and Horne (2017).
 
 
 \subsection{Discussion}
@@ -185,52 +163,8 @@ There are at least two takeaways from the multiplicity of equilibrium outcomes. 
 
 \section{The Impact of Economic Sanctions}
 \label{sec:sanctions}
-%It is useful to look more specifically at how spending by the patron and player $c$ can alter the game's payoffs, and potentially its outcomes.  By analyzing comparative statics in the normal form game, we can evaluate the different strategies through which these players pursue their desired outcomes and the conditions under which they might be successful. 
 
-%Let us first consider what occurs if the patron supplies the secessionists with weapons or other military support, changing the expected payoffs from war. This would make war more appealing to the secessionist elite and less appealing to the central government, deterring attempts at reconquest. At a certain point, if the central government (and $c$) do not invest in the home state military to counteract this support, due either to their preferences or budget constraint, the expected payoff of war for the secessionists can surpass the status quo payoff, and the secessionists would have the incentives to fight:\footnote{Arrows indicate the direction of change in payoffs due to the outside action. A blank cell or "-" indicates no change.}
-
-%\begin{center}
-%\begin{tabular}{|  c| c | c | c |}
-% \hline  $g\downarrow$,     $ s\rightarrow$  & Fight & Status Quo &Cede \\ \hline
-%	Cede& $$& $$ &$$ \\ \hline
-%	Status Quo& $(\downarrow),(\uparrow)$& $$&$$ \\ \hline
-%	Fight & $(\downarrow),(\uparrow)$ &$(\downarrow),(\uparrow)$&$$\\ \hline
-% \multicolumn{4}{c} {\textit{Figure 2: Additional Military Support to the Secessionists}}
-%\end{tabular}
-%\end{center}
-%\vspace{5pt}
-
-%Alternatively, the patron state may supply humanitarian support (such as providing passports to citizens of the unrecognized state or funding schools), making the status quo more appealing and stable:
-
-
-%\begin{center}
-%\begin{tabular}{|  c| c | c | c |}
-% \hline  $g\downarrow$,     $ s\rightarrow$  & Fight & Status Quo &Cede \\ \hline
-	%Cede& $$& $$ &$(-),(\uparrow)$ \\ \hline
-%	Status Quo& $$& $(-),(\uparrow)$&$$ \\ \hline
-	%Fight & $$ &$$&$$\\ \hline
-% \multicolumn{4}{c} { \emph{Figure 3: The Effects of Humanitarian Assistance to the Secessionists}}
-%\end{tabular}
-%\end{center}
-%\vspace{5pt}
-
-
-%Similarly, $c$ can contribute resources to make ceding more likely by either party. However, because $c$ generally prefers reunification to independence, these resources are most likely to be committed to encouraging ceding by the secessionist elite (reunification), instead of ceding by the home state (recognition). 
-
-%Changes in payoffs can be made either by carrots or by sticks.  In one option $c$ provides the secessionist elite with positive inducements, like aid, in exchange for rejoining the home state. $c$ may also expend resources to make payments by the home state, such as various autonomy rights, more credible.  The effect is the same: for a price, $c$ can increase the secessionists' payoffs from ceding.
-
-%\begin{center}
-%\begin{tabular}{|  c| c | c | c |}
-% \hline  $g\downarrow$,     $ s\rightarrow$  & Fight & Status Quo &Cede \\ \hline
-%	Cede& $$& $$ &$$ \\ \hline
-%	Status Quo& $$& $$&$(-),(\uparrow)$ \\ \hline
-%	Fight & $$ &$$&$(-),(\uparrow)$\\ \hline
-% \multicolumn{4}{c} {\emph{Figure 4: Positive Inducements From Player $c$}}
-%\end{tabular}
-%\end{center}
-%\vspace{5pt}
-
-In Section~\ref{sec:mainproof}, we considered the outside actors' abilities to make investments to increase the various payoffs of the home state government and the secessionists. Player $c$, in particular, often employs another option by joining the home state in enforcing economic sanctions against the unrecognized state, an action that \emph{reduces} the secessionists' payoffs from the status quo (i.e. sanctions are equivalent to $R_c^t < 0$). Note that this may be particularly effective if $c$ is a large coalition of states acting in concert. 
+In Section~\ref{sec:main}, we considered the outside actors' abilities to make investments to increase the various payoffs of the home state government and the secessionists. Player $c$, in particular, often employs another option by joining the home state in enforcing economic sanctions against the unrecognized state, an action that \emph{reduces} the secessionists' payoffs from the status quo (i.e. sanctions are equivalent to $R_c^t < 0$). Note that this may be particularly effective if $c$ is a large coalition of states acting in concert. 
 
 Let us begin with the simplest case, in which the sanctions affect only the secessionists' status quo payoffs, as when the imposition of sanctions has a negative impact on the economy of the unrecognized state. We assume sanctions have only two effects: to narrow the difference between the payoffs from Status Quo and Fight, and to narrow the difference between the payoffs from Status Quo and Cede. If the patron wishes to maintain the status quo, its per-period investment must increase to compensate for the additional degradation of the status quo payoffs caused by the sanctions. In this case, the effect of sanctions on the unrecognized state's choice is ambiguous. Proposition 2 lists necessary conditions for the existence of an equilibrium in which ``ceding'' is the equilibrium outcome once sanctions are introduced.
 
