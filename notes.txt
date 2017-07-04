@@ -1,4 +1,4 @@
-Words in text: 3400
+Words in text: 3130
 Words in headers: 44
 Words outside text (captions, etc.): 37
 Number of headers: 9
@@ -8,33 +8,14 @@ Number of math displayed: 0
 Subcounts:
   text+headers+captions (#headers/#floats/#inlines/#displayed)
 120+5+19 (1/0/0/0) Section: A Model of Unrecognized Statehood
-245+2+0 (1/0/9/0) Subsection: The Players
+239+2+1 (1/1/9/0) Subsection: The Players
 745+20+0 (3/0/33/0) Subsection: Details of the Dynamic Game
 985+9+17 (1/0/16/0) Section: Explaining Outcomes of Secessionist Conflicts: The ``Status Quo'' Equilibrium
 173+1+0 (1/0/1/0) Subsection: Discussion
 214+2+0 (1/0/1/0) Subsection: Alternative Outcomes
-918+5+1 (1/1/5/0) Section: The Impact of Economic Sanctions
+654+5+0 (1/0/5/0) Section: The Impact of Economic Sanctions
+
 
 keep budget constraint, value patron places on independence 
 highlight negotiated settlement
 sanctions theory
-
-These were the stats when I created 'notation' branch
-Words in text: 4839
-Words in headers: 46
-Words outside text (captions, etc.): 259
-Number of headers: 10
-Number of floats/tables/figures: 1
-Number of math inlines: 216
-Number of math displayed: 1
-Subcounts:
-  text+headers+captions (#headers/#floats/#inlines/#displayed)
-120+5+19 (1/0/0/0) Section: A Model of Unrecognized Statehood
-245+2+0 (1/0/9/0) Subsection: The Players
-904+20+22 (3/0/68/1) Subsection: Details of the Dynamic Game
-75+5+0 (1/0/0/0) Section: Explaining Outcomes of Secessionist Conflicts
-2148+6+217 (1/0/125/0) Subsection: Analysis of the ``Status Quo'' Equilibrium
-173+1+0 (1/0/1/0) Subsection: Discussion
-237+2+0 (1/0/1/0) Subsection: Alternative Outcomes
-937+5+1 (1/1/12/0) Section: The Impact of Economic Sanctions
-
