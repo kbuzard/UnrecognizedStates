@@ -1,20 +1,16 @@
 \section{A Model of Unrecognized Statehood} 
-We model a dispute over a piece of territory that is controlled by a secessionist group and also claimed by a home state. The central issue of contention, independence vs. reunification, is both difficult to divide and highly valued by both sides. The side payments that can be offered in exchange for the opponent's surrender of the independence/reunification issue are sharply limited by the absence of large concessions that can credibly be made (Walter 1997, 2002; Schultz 2010).
-
-Because our model incorporates the incentives and actions of international actors, it is about to both articulate the mechanisms that create these persistent stalemates and to assess the consequences, intended and otherwise, of outside actors' attempts to foster their desired outcome.\footnote{For another example of the strategic manipulation of decision-makers into (and out of) conflict see Baliga and Sjostrom (2012).}
+We model a dispute over a piece of territory that is controlled by a secessionist group and also claimed by a home state. Because our model incorporates the incentives and actions of international actors, it is about to both articulate the mechanisms that create these persistent stalemates and to assess the consequences, intended and otherwise, of outside actors' attempts to foster their desired outcome.
 
 \subsection{The Players}
 
 We construct a model with four players: the secessionist elite ($s$), which seeks recognized independence; the central government of the home state ($g$) from which $s$ is attempting to secede, which seeks reunification; and two outside actors:the patron ($p$) and the international community ($c$).
 
-Player $c$ prefers reunification to recognized independence---a preference that is common to most states, and especially among those that fear the prospect of secessionist movements within their own borders. In practice we often observe groups of states like the OECD or the UN acting in this capacity.
+Player $c$ prefers reunification to recognized independence---a preference that is common to most states, and especially among those that fear the prospect of secessionist movements within their own borders. In practice we often observe groups of states like the OECD or the UN acting in this capacity. We also assume player $c$ prefers peace to war; this implies that player $c$ will not fund a military buildup that it expects will induce war.
 
-Player $p$ most prefers recognized independence, aligning its interests with the secessionists. We refer to $p$ as the patron because $p$ contributes resources to the unrecognized state in the status quo equilibrium. Patrons choose to contribute resources to secessionists for one or more of several reasons: 1) As an efficient mechanism for imposing costs on the home state (Salehyan et al., 2012), e.g. as Russia does to Georgia via South Ossetia and Abkhazia; 2) ethnic solidarity with the secessionists (e.g. Turkey's support of the Turkish Republic of Northern Cyprus); 3) hope of eventual annexation of the disputed territory (e.g. Armenia's support of Nagorno-Karabakh). Although there may exist patrons whose most-preferred outcome is the status quo, we examine the case where the patron's most preferred outcome is independence because this is the condition under which the status quo is least likely. We will show that even in this circumstance the status quo remains an equilibrium outcome.
+In contrast, Player $p$ most prefers recognized independence and opposed independence, aligning its interests with the secessionists. We refer to $p$ as the patron because $p$ contributes resources to the unrecognized state in the status quo equilibrium. Patrons choose to contribute resources to secessionists for one or more of several reasons: 1) As an efficient mechanism for imposing costs on the home state (Salehyan et al., 2012), e.g. as Russia does to Georgia via South Ossetia and Abkhazia; 2) ethnic solidarity with the secessionists (e.g. Turkey's support of the Turkish Republic of Northern Cyprus); 3) hope of eventual annexation of the disputed territory (e.g. Armenia's support of Nagorno-Karabakh). Although there may exist patrons whose most-preferred outcome is the status quo, we examine the case where the patron's most preferred outcome is independence because this is the condition under which the status quo is least likely. We will show that even in this circumstance the status quo remains an equilibrium outcome.
 
-\begin{figure}
-\includegraphics{Timeline2.pdf}
-\caption{Timeline}
-\end{figure}
+We do not restrict the preferences and capabilities for players $g$ and $s$, with one exception. We assert that the payoffs for the party that cedes the issue of status (independence vs. reunification) are consistently low. This reflects the fact that the issue of status is indivisible and highly valued by each side and that many of the payments that could be offered are not credible (Licklider, 1995; Walter 1997, 2002; Doyle and Sambanis, 2006; Fearon and Laitin, 2007; Schultz, 2010).
+
 
 \subsection{Details of the Dynamic Game}
 \label{sec:structure}
@@ -22,6 +18,11 @@ Player $p$ most prefers recognized independence, aligning its interests with the
 The game begins at a status quo in which the secessionist elite controls at least some of the disputed territory but cannot gain international recognition unless the central government cedes its claim to the territory. This condition is archetypical of cases in which a militarily successful war of secession ends in a ceasefire.  
 
 There are an infinite number of discrete periods $t=1,2,\ldots$. Play proceeds in each period $t$ as follows (and as shown in Figure 1) until an absorbing state is reached.
+
+\begin{figure}
+\includegraphics{Timeline2.pdf}
+\caption{Timeline}
+\end{figure}
 
 \begin{enumerate} 
 \item $p$ chooses an investment level to influence the payoffs of $s$ and $g$. 
@@ -31,33 +32,21 @@ There are an infinite number of discrete periods $t=1,2,\ldots$. Play proceeds i
 \item Conflict Stage Game: $s$ and $g$ play a stage game in which each chooses simultaneously from the following actions: Fight, Status Quo, Cede. 
 \end{enumerate}
 
-The payoffs at the end of a period are determined by these actions and six state variables. These state variables keep track of the value of the status quo, losing and winning the issue of status for the secessionists and government respectively. 
+The payoffs at the end of a period are determined by these actions and the values of state variables that keep track of the value of the status quo, losing and winning the issue of status for the secessionists and government respectively. 
 
-The game continues into the next period if the `inside players'---the secessionists and government---selected (status quo, status quo) or (cede, cede). Otherwise, the game ends in an absorbing state as described in Section~\ref{sec:stage}.
+All the state variables except for the secessionists' status quo payoffs remain unchanged from period to period unless players $p$ or $c$ make an investment. The status quo payoffs for the secessionists are automatically reduced by $\mu$ each period. The steady reduction by $\mu$ represents the costs of non-recognition.
+
+Only two outcomes of the stage game do not lead to absorbing states. If both $s$ and $g$ play Status Quo, then the status quo persists. Likewise, if both states simultaneously play Cede, we assume that both renege immediately and that the status quo is preserved for that period. In this case neither player has demonstrated a willingness to give up more than the other.
+
+If either $s$ or $g$ plays Cede while the other plays Fight or Status Quo, the game ends with payoffs in every subsequent period given by the corresponding payoffs in the stage game. Therefore, if one player agrees to cede while the other player chooses to remain in the status quo or fight, the result is a negotiated settlement benefiting the player who did not cede. 
+
+There are three ways to end up in war: either of the parties may attack first, or both may attack simultaneously. We use a lottery to determine whether the secessionists or government wins the war. Victory would, among other things, allow an unrecognized state to force recognition by the home state government.
 
 Future payoffs are discounted with a common parameter $\de \in [0,1]$. Therefore payoffs for the entire game for player $i\in \{s, g, p, c\} $ can be expressed by the discounted stream of payments $\Sigma_{t=1}^{\infty} \de^{t-1} U_i^t $ where $U_i^t$ is player $i$'s payoff in period $t$.
 
 The payoff functions and all parameters, including probabilities in the war lottery, are common knowledge for all players.
 
 
-\subsubsection{Within-period Payoffs for the Secessionists and Government}
-\label{sec:stage}
-
-We do not restrict the preferences and capabilities for players $g$ and $s$, with one exception. We assert that the payoffs for the party that cedes the issue of status (independence vs. reunification) are consistently low. This reflects the fact that the issue of status is indivisible and highly valued by each side and that many of the payments that could be offered are not credible (Licklider, 1995; Walter 1997, 2002; Doyle and Sambanis, 2006; Fearon and Laitin, 2007; Schultz, 2010).
-
-All the state variables except for the secessionists' status quo payoffs remain unchanged from period to period unless players $p$ or $c$ make an investment. The status quo payoffs for the secessionists are special in that the transition of this state variable from one period to the next involves an automatic reduction by $\mu$. The steady reduction by $\mu$ represents the costs of non-recognition discussed in the introduction.
-
-Only two outcomes of the stage game do not lead to absorbing states. If both $s$ and $g$ play Status Quo, then the status quo persists. Likewise, if both states simultaneously play Cede, we assume that both renege immediately and that the status quo is preserved for that period. In this case neither player has demonstrated a willingness to give up more than the other. Therefore, payoffs for both players ceding simultaneously are identical to the status quo payoffs.
-
-If either $s$ or $g$ plays Cede while the other plays Fight or Status Quo, the game enters an absorbing state (i.e., the game ends), with payoffs in every subsequent period given by the corresponding entry in the stage game (Figure 2). We interpret one player ceding as that player ceding the issue of status (independence vs. reunification) in exchange for some set of (relatively small) payments from the opposing player. Therefore, if one player agrees to cede while the other player chooses to remain in the status quo or fight, the result is a negotiated settlement benefiting the player who did not cede. 
-
-There are three ways to end up in war: either of the parties may attack first, or both may attack simultaneously. We denote the payoffs of war as a lottery $\Omega$. This lottery determines whether the secessionists or government wins the war. We assume the outcome of the war is an absorbing state and that players approach war lotteries as expected values. Outright victory would, among other things, allow an unrecognized state to force recognition by the home state government.
-
-
-\subsubsection{Within-period Payoffs for the Patron and International Community}
-We assume player $c$ prefers peace to war. For simplicity, we limit our modeling of $c$'s preference for peace to the assumption that $c$ will not choose to fund a military buildup that it expects will induce war. This assumption is not necessary for the basic results to hold; however, it justifies our decision not to address military support of armed reconquest by the home state as a deliberate strategy by $c$ to achieve reunification. 
-
-The patron opposes reunification while player $c$ prefers it, and the patron prefers recognized independence while player $c$ is averse to the creation of new states.
 
 
 \section{Explaining Outcomes of Secessionist Conflicts: The ``Status Quo'' Equilibrium} 
