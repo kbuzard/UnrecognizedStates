@@ -69,12 +69,12 @@ We define unrecognized states as territories in which a non-state actor controls
 
 \vskip.3in
 \section{3-player version, Status Quo better than Reunification}
-Let us consider a first case where the payoffs for the secessionists are higher in the unrecognized state ('Status Quo') than they are if they cede and rejoin the home state. This, for instance, may be the case very early after taking control of the territory before their economic situation has had a chance to deteriorate.
+Let us consider a first case where the payoffs for the secessionists are higher in the unrecognized state (`Status Quo') than they are if they cede and rejoin the home state. This, for instance, may be the case very early after taking control of the territory before their economic situation has had a chance to deteriorate.
 
 \subsection{Players and Strategy Spaces}
 \begin{enumerate}
-	\item Home government (G) chooses $S_G \in \left\{SQ,C\right\}$ where SQ means 'Status Quo' of unrecognized statehood and C means 'Cede' the issue of status and recognize the secessionists as an independent state.
-	\item Secessionists (S) choose $S_S \in \left\{SQ,C\right\}$, same as for $G$ except when they Cede, they rejoin the home state.
+	\item Home government (G) chooses $S_G \in \left\{Status Quo,Recognize\right\}$ where the `Status Quo' is unrecognized statehood and `Recognize' means the government cedes the issue of status and recognize the secessionists as an independent state.
+	\item Secessionists (S) choose $S_S \in \left\{Status Quo,Rejoin\right\}$, where `Status Quo' is remaining as an unrecognized state and `Rejoin' means they cede the issue of status and rejoin the home state.
 	\item Patron state (P) chooses $p \in [0,\infty)$ to invest in the secessionists status quo payoffs
 %	\item International community (C) chooses $c \in [0,\infty)$ to invest in the secessionists payoffs from rejoining the home state
 \end{enumerate}
@@ -87,39 +87,57 @@ The patron makes its investment. This investment is seen by all other players. T
 
 \vskip.5in
 \subsection{Payoffs}
-Let, for instance, ($SQ,C$) mean that $G$ plays $SQ$ and $S$ plays $C$. Then 
+Let, for instance, ($Status Quo,Rejoin$) mean that $G$ plays $Status Quo$ and $S$ plays $Rejoin$. Then 
 \begin{itemize}
-	\item The payoffs after ($SQ,SQ$) are $-p,3,2+p$
-	\item The payoffs after ($SQ,C$) are $-10-p,5,1$
-	\item The payoffs after ($C,SQ$) are $3-p,0,5+p$
-	\item The payoffs after ($C,C$) are $-p,3,2$
+	\item The payoffs after ($StatusQuo,StatusQuo$) are $0-p,3,2+p$
+		\begin{itemize}
+			\item The patron gets neither its favorite or its least favorite outcome. We normalize the patron's payoff from the political outcome to be zero in this case. But the patron pays a cost of whatever amount $p$ it transfers to the secessionists.
+			\item Likewise, the government and the secessionists see this outcome as being between their favorite and least favorite (they just have different favorites...). We normalize the status quo to 3 for the government and 2 for the secessionists. However, the secessionists also receive a transfer of $p$ from the patron.
+		\end{itemize}
+	\item The payoffs after ($StatusQuo,Rejoin$) are $-10-p,5,1$
+		\begin{itemize}
+			\item The patron's worst outcome is when the secessionists rejoin the home state, so the patron gets a large negative payoff from the political outcome of -10.
+			\item The government likes this outcome better than the status quo, so gets 5 instead of 3.
+			\item The secessionists dislike this outcome compared to being unrecognized, so get 1 instead of 2.
+		\end{itemize}
+	\item The payoffs after ($Recognize,StatusQuo$) are $3-p,0,5$
+		\begin{itemize}
+			\item This is the patron's favorite outcome, but the patron likes this outcome less than it dislikes reunification, so we make the patron's payoff positive but not as large as the magnitude of dislike for reunification of 10.
+			\item The government dislikes this outcome compared to having an unrecognized state, so gets 0 instead of 3.
+			\item The secessionists like this outcome better than the status quo, so gets 5 instead of 2.
+		\end{itemize}
+	\item The payoffs after ($Recognize,Rejoin$) are $-p,3,2$
+		\begin{itemize}
+			\item This is a strange case, because it's not obvious what should happen if both give in at the same time. We assume that, when this happens, nothing changes---that is, we stay in the status quo. But the secessionists don't get the $p$ because they didn't do what the patron wanted them to do.
+		\end{itemize}
 \end{itemize}
 
 \vskip.5in
 \subsection{Analysis}
 We proceed by backward induction.
 \begin{itemize}
-	\item In the simultaneous game between $G$ and $S$, $C$ is dominated by $SQ$ for player $G$.
+	\item In the simultaneous game between $G$ and $S$, $Recognize$ is dominated by $StatusQuo$ for player $G$.
 		\begin{itemize}
 			\item Therefore the Nash Equilibrium (NE) of the subgame is determined by $p$: 
 				\begin{itemize}
-					\item If $2+p \geq 1$ (i.e. $p \geq -1$), the NE is ($SQ,SQ$).
-					\item If $2+p \leq 1$ (i.e. $p \leq -1$), the NE is ($SQ,C$).
+					\item For simplicity, we will assume that the secessionists stay in the Status Quo when they're indifferent (i.e., they must be strictly worse off from being in the Status Quo in order to make a change).
+					\item If $2+p \geq 1$ (i.e. $p \geq -1$), the NE is ($Status Quo,Status Quo$).
+					\item If $2+p < 1$ (i.e. $p < -1$), the NE is ($Status Quo,Rejoin$).
 					\item Recall that the smallest value of $p$ that the Patron can choose is $p=0$.
-					\item Since $p\leq-1$ is not possible, ($SQ,C$) is not possible.
-					\item Therefore ($SQ,SQ$) will be the equilibrium.
+					\item Since $p <-1$ is not possible, ($Status Quo,Rejoin$) is not possible.
+					\item Therefore ($Status Quo,Status Quo$) will be the equilibrium.
 				\end{itemize}
 		\end{itemize}
-	\item The Patron's decision: Since ($SQ,SQ$) will be the equilibrium no matter what, the Patron will get a payoff of $-p$.
+	\item The Patron's decision: Since ($Status Quo,Status Quo$) will be the equilibrium no matter what, the Patron will get a payoff of $-p$.
 		\begin{itemize}
 			\item Since the payoff is $-p$, the Patron maximizes its payoffs by choosing the smallest possible $p$, which is $0$. 
 		\end{itemize}
 \end{itemize}
-Therefore the Subgame Perfect Nash Equilibrium is $p=0$, ($SQ,SQ$) regardless of the value of $p$. 
+Therefore the Subgame Perfect Nash Equilibrium is $p=0$, ($Status Quo,Status Quo$) regardless of the value of $p$. 
 
 \vskip.5in
 \section{3-player version, Reunification better than Status Quo}
-Let us now consider a case where the payoffs for the secessionists are \underline{lower} in the unrecognized state ('Status Quo') than they are if they cede and rejoin the home state. We believe this will be the case a few months or years after they take control of the territory and unrecognized status has caused their economic situation to deteriorate.
+Let us now consider a case where the payoffs for the secessionists are \underline{lower} in the unrecognized state ('Status Quo') than they are if they rejoin the home state. We believe this will be the case a few months or years after they take control of the territory and unrecognized status has caused their economic situation to deteriorate.
 
 \subsection{Players and Strategy Spaces}
 Same as in Section 1.
@@ -132,54 +150,54 @@ Same as in Section 1.
 \vskip.5in
 \subsection{Payoffs}
 \begin{itemize}
-	\item The payoffs after ($SQ,SQ$) are $-p,3,\bm{0}+p$
-	\item The payoffs after ($SQ,C$) are $-10-p,5,1$
-	\item The payoffs after ($C,SQ$) are $3-p,0,5+p$
-	\item The payoffs after ($C,C$) are $-p,3,\bm{0}$
+	\item The payoffs after ($Status Quo,Status Quo$) are $-p,3,\bm{0}+p$
+	\item The payoffs after ($Status Quo,Rejoin$) are $-10-p,5,1$
+	\item The payoffs after ($Rejoin,Status Quo$) are $3-p,0,5$
+	\item The payoffs after ($Rejoin,Rejoin$) are $-p,3,\bm{0}$
 \end{itemize}
-The only change(s) from Section 1 is that the secessionist's payoff from ($SQ,SQ$) has been reduced, and the payoffs from ($C,C$) along with it.
+The only change(s) from Section 1 is that the secessionist's payoff from ($Status Quo,Status Quo$) has been reduced, and the payoffs from ($Rejoin,Rejoin$) along with it.
 
 \vskip.5in
 \subsection{Analysis}
 We proceed by backward induction.
 \begin{itemize}
-	\item In the simultaneous game between $G$ and $S$, $C$ is dominated by $SQ$ for player $G$.
+	\item In the simultaneous game between $G$ and $S$, $Recognize$ is dominated by $Status Quo$ for player $G$.
 		\begin{itemize}
 			\item Therefore the Nash Equilibrium (NE) of the subgame is determined by $p$: 
 				\begin{itemize}
-					\item If $0+p \geq 1$ (i.e. $p \geq 1$), the NE is ($SQ,SQ$).
-					\item If $0+p \leq 1$ (i.e. $p \leq 1$), the NE is ($SQ,C$).
+					\item Again, assume that the secessionists stay in the Status Quo when they're indifferent.
+					\item If $0+p \geq 1$ (i.e. $p \geq 1$), the NE is ($Status Quo,Status Quo$).
+					\item If $0+p < 1$ (i.e. $p < 1$), the NE is ($Status Quo,Rejoin$).
 				\end{itemize}
 		\end{itemize}
-	\item The Patron's decision: if ($SQ,SQ$) is the equilibrium in the subgame, the Patron will get a payoff of $-p$. If ($SQ,C$) is the equilibrium in the subgame, the Patron will get a payoff of $-10-p$.
+	\item The Patron's decision: if ($Status Quo,Status Quo$) is the equilibrium in the subgame, the Patron will get a payoff of $-p$. If ($Status Quo,Rejoin$) is the equilibrium in the subgame, the Patron will get a payoff of $-10-p$.
 		\begin{itemize}
-			\item Since ($SQ,C$) is the worse outcome for the Patron, the patron does not want to invest at all ($p=0$) if ($SQ,C$) is going to be the outcome. 
+			\item Since ($Status Quo,Rejoin$) is the worse outcome for the Patron, the patron does not want to invest at all ($p=0$) if ($Status Quo,Rejoin$) is going to be the outcome. 
 				\begin{itemize}
 					\item In this case, the Patron chooses $p=0$ and the Patron's total payoff is $-10$.
 				\end{itemize}
-			\item The Patron prefers ($SQ,SQ$), but to make this happen the Patron must make an investment of $p \geq 1$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($SQ,SQ$) by choosing the smallest $p$, which is $p=1$. 
+			\item The Patron prefers ($Status Quo,Status Quo$), but to make this happen the Patron must make an investment of $p \geq 1$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($Status Quo,Status Quo$) by choosing the smallest $p$, which is $p=1$. 
 				\begin{itemize}
 					\item In this case, the Patron chooses $p=1$ and the Patron's total payoff is $-1$.
 				\end{itemize}
 			\item Since $-1 > -10$, the Patron will choose to invest $p=1$.
 		\end{itemize}
 \end{itemize}
-Therefore the Subgame Perfect Nash Equilibrium is $p=1$, and ($SQ,SQ$) as long as $p \geq 1$, ($SQ,C$) if $p \leq 1$.
+Therefore the Subgame Perfect Nash Equilibrium is $p=1$, and ($Status Quo,Status Quo$) as long as $p \geq 1$, ($Status Quo,Rejoin$) if $p < 1$.
 \begin{itemize}
-	\item $p=1$, ($SQ,SQ$) is an equilibrium outcome.
-	\item $p=1$, ($SQ,C$) is also an equilibrium outcome. You can rule this one out by specifying that the Secessionists choose $SQ$ whenever they are indifferent.
+	\item $p=1$, ($Status Quo,Status Quo$) is the equilibrium outcome.
 \end{itemize}
 
 
 \vskip.5in
 \section{4-player version, Reunification better than Status Quo}
-Now we look at the full version of the model including the international community, and continue to assume that the payoffs for the secessionists are lower in the unrecognized state ('Status Quo') than they are if they cede and rejoin the home state. 
+Now we look at the full version of the model including the international community, and continue to assume that the payoffs for the secessionists are lower in the unrecognized state (`Status Quo') than they are if they cede and rejoin the home state. 
 
 \subsection{Players and Strategy Spaces}
 We add the international community:
 \begin{enumerate}
-	\item Home government (G) chooses $S_G \in \left\{SQ,C\right\}$ where SQ means 'Status Quo' of unrecognized statehood and C means 'Cede' the issue of status and recognize the secessionists as an independent state.
-	\item Secessionists (S) choose $S_S \in \left\{SQ,C\right\}$, same as for $G$ except when they Cede, they rejoin the home state.
+	\item Home government (G) chooses $S_G \in \left\{Status Quo,Recognize\right\}$ where Status Quo means staying in unrecognized statehood and `Recognize' means to cede the issue of status and recognize the secessionists as an independent state.
+	\item Secessionists (S) choose $S_S \in \left\{Status Quo,Rejoin\right\}$, where `Status Quo' is remaining as an unrecognized state and `Rejoin' means they cede the issue of status and rejoin the home state.
 	\item Patron state (P) chooses $p \in [0,\infty)$ to invest in the secessionists status quo payoffs
 	\item \textbf{International community (C) chooses} $c \in [0,\infty)$ \textbf{ to invest in the secessionists payoffs from rejoining the home state}
 \end{enumerate}
@@ -193,56 +211,61 @@ The patron makes its investment. This investment is seen by all other players. \
 
 \vskip.5in
 \subsection{Payoffs}
-We add payoffs for the international community, and the international community's investment in the secessionists payoffs from ceding.
+We add payoffs for the international community in the second position in the payoff vector since the international community moves second. We also add the international community's investment in the secessionists payoffs from ceding. The international community's payoff from the status quo is normalized to 0. The international community most prefers reunification (the secessionists rejoin, +5) and is strongly opposed to the secessionists being recognized (-7). Here, note that the international community likes its preferred outcome MORE than the patron does, but it dislikes its least preferred outcome LESS than the patron does. This last comparison is crucial for obtaining the outcome we get.
 \begin{itemize}
-	\item The payoffs after ($SQ,SQ$) are $-p,\bm{-c},3,0+p$
-	\item The payoffs after ($SQ,C$) are $-10-p,\bm{5-c},5,1\bm{+c}$
-	\item The payoffs after ($C,SQ$) are $3-p,\bm{-7-c},0,5+p$
-	\item The payoffs after ($C,C$) are $-p,\bm{-c},3,0\bm{+c}$
+	\item The payoffs after ($Status Quo,Status Quo$) are $-p,\bm{-c},3,0+p$
+	\item The payoffs after ($Status Quo,Rejoin$) are $-10-p,\bm{5-c},5,1\bm{+c}$
+	\item The payoffs after ($Recognize,Status Quo$) are $3-p,\bm{-7-c},0,5$
+	\item The payoffs after ($Recognize,Rejoin$) are $-p,\bm{-c},3,0$
 \end{itemize}
 
 \vskip.5in
 \subsection{Analysis}
 We proceed by backward induction.
 \begin{itemize}
-	\item In the simultaneous game between $G$ and $S$, $C$ is dominated by $SQ$ for player $G$.
+	\item In the simultaneous game between $G$ and $S$, $Recognize$ is dominated by $Status Quo$ for player $G$.
 		\begin{itemize}
-			\item Therefore the Nash Equilibrium (NE) of the subgame is determined by $p$: 
+			\item Therefore the Nash Equilibrium (NE) of the subgame is determined by $p$ and $c$: 
 				\begin{itemize}
-					\item If $0+p \geq 1+c$ (i.e. $p \geq 1+c$), the NE is ($SQ,SQ$).
-					\item If $0+p \leq 1+c$ (i.e. $p \leq 1+c$), the NE is ($SQ,C$).
+					\item If $0+p \geq 1+c$ (i.e. $p \geq 1+c$), the NE is ($Status Quo,Status Quo$).
+					\item If $0+p < 1+c$ (i.e. $p < 1+c$), the NE is ($Status Quo,Rejoin$).
 				\end{itemize}
 		\end{itemize}
-	\item Player $C$'s decision: if ($SQ,SQ$) is the equilibrium in the subgame, Player $C$ will get a payoff of $-c$. If ($SQ,C$) is the equilibrium in the subgame, Player $C$ will get a payoff of $5-c$.
+	\item Player $C$'s decision: if ($Status Quo,Status Quo$) is the equilibrium in the subgame, Player $C$ will get a payoff of $-c$. If ($Status Quo,Rejoin$) is the equilibrium in the subgame, Player $C$ will get a payoff of $5-c$.
 		\begin{itemize}
-			\item Since ($SQ,SQ$) is the worse outcome for Player $C$, Player $C$ does not want to invest at all ($c=0$) if ($SQ,SQ$) is going to be the outcome. 
+			\item Since ($Status Quo,Status Quo$) is worse for Player $C$, Player $C$ does not want to invest at all ($c=0$) if ($Status Quo,Status Quo$) is going to be the outcome. 
 				\begin{itemize}
 					\item In this case, the Player $C$ chooses $c=0$ and Player $C$'s total payoff is $0$.
 				\end{itemize}
-			\item Player $C$ prefers ($SQ,C$), but to make this happen Player $C$ must make an investment of the $c \geq p - 1$. Because Player $C$'s payoff is $5-c$, Player $C$ maximizes its payoffs in the case where ($SQ,C$) is the outcome by choosing the smallest $c$, which is $c=p-1$. 
+			\item Player $C$ prefers ($Status Quo,Rejoin$), but to make this happen Player $C$ must make an investment of the $c \geq p - 1$. Because Player $C$'s payoff is $5-c$, Player $C$ maximizes its payoffs in the case where the outcome is ($Status Quo,Rejoin$) by choosing the smallest $c$, which is $c=p-1$. 
 				\begin{itemize}
 					\item In this case, Player $C$'s investment of $c=p-1$ makes its total payoff is $5-c = 5 - (p -1) = 6-p$.
 				\end{itemize}
-			\item If $6 - p \leq 0$ (where $0$ is Player $C$'s payoff from ($SQ,SQ$)), Player $C$ will choose to invest $c = p-1$ and the outcome will be ($SQ,C$).
-			\item If $6 - p > 0$ (i.e. $6 > p$), Player $C$ will choose to invest $c = 0$ and the outcome will be ($SQ,SQ$).
+			\item If $6 - p \leq 0$ (where $0$ is Player $C$'s payoff from ($Status Quo,Status Quo$)), Player $C$ will choose to invest $c = p-1$ and the outcome will be ($Status Quo,Rejoin$).
+			\item If $6 - p > 0$ (i.e. $6 > p$), Player $C$ will choose to invest $c = 0$ and the outcome will be ($Status Quo,Status Quo$).
 		\end{itemize}
-	\item The Patron's decision: if ($SQ,SQ$) is the equilibrium in the subgame, the Patron will get a payoff of $-p$. If ($SQ,C$) is the equilibrium in the subgame, the Patron will get a payoff of $-10-p$.
+	\item The Patron's decision: if ($Status Quo,Status Quo$) is the equilibrium in the subgame, the Patron will get a payoff of $-p$. If ($Status Quo,Rejoin$) is the equilibrium in the subgame, the Patron will get a payoff of $-10-p$.
 		\begin{itemize}
-			\item Since ($SQ,C$) is the worse outcome for the Patron, the patron does not want to invest at all ($p=0$) if ($SQ,C$) is going to be the outcome. 
+			\item Since ($Status Quo,Rejoin$) is worse for the Patron, the patron does not want to invest at all ($p=0$) if ($Status Quo,Rejoin$) is going to be the outcome. 
 				\begin{itemize}
 					\item In this case, the Patron chooses $p=0$ and the Patron's total payoff is $-10$.
 				\end{itemize}
-			\item The Patron prefers ($SQ,SQ$), but to make this happen the Patron must make an investment of $p \geq 6$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($SQ,SQ$) by choosing the smallest $p$ that leads to ($SQ,SQ$), which is $p=6$. 
+			\item The Patron prefers ($Status Quo,Status Quo$), but to make this happen the Patron must make an investment of $p \geq 6$. Because the Patron's payoff is $-p$, the Patron maximizes its payoffs in this case where it induces ($Status Quo,Status Quo$) by choosing the smallest $p$ that leads to ($Status Quo,Status Quo$), which is $p=6$. 
 				\begin{itemize}
 					\item In this case, the Patron chooses $p=6$ and the Patron's total payoff is $-6$.
 				\end{itemize}
 			\item Since $-6 > -10$, the Patron will choose to invest $p=6$.
 		\end{itemize}
 \end{itemize}
-Therefore the Subgame Perfect Nash Equilibrium is $p=6$, $c = 0$ if $p \geq 6$, $c = p-1$ if $p < 6$ and ($SQ,SQ$) as long as $p \geq c+1$, ($SQ,C$) if $p \leq c+ 1$.
+Therefore the Subgame Perfect Nash Equilibrium is $p=6$, $c = 0$ if $p \geq 6$, $c = p-1$ if $p < 6$ and ($Status Quo,Status Quo$) as long as $p \geq c+1$, ($Status Quo,Rejoin$) if $p \leq c+ 1$.
 \begin{itemize}
-	\item $p=6$, $c = 0$, ($SQ,SQ$) is an equilibrium outcome.
+	\item $p=6$, $c = 0$, ($Status Quo,Status Quo$) is the equilibrium outcome.
 \end{itemize}
+
+\section{Conclusion}
+We see from the comparison between the outcomes in Sections 2 and 3 that the patron only gets involved if that involvement will change the outcome--if its investments make a difference for the secessionists choice. The patron will pay enough to maintain the status quo as long as the payment is small enough (recall the cost has to be less than 10 in the analysis in Section 3.4). \\
+
+This logic carries over to the version of the game that includes the international community. The patron is willing to pay up to 10 (the difference between its payoffs from the political status in the status quo and rejoin outcomes). As long as the international community is willing to invest less to avoid its least preferred outcome than the patron is willing to invest to avoid its least preferred outcome, the patron will invest, the international community will not invest, and the status quo will prevail.
 
 \section{Works Cited}
 
